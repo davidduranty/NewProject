@@ -1,0 +1,118 @@
+.navigation-container {
+  min-width: 100%;
+  max-height: 100px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  background: $color2;
+
+  .ul {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .li {
+      color: black;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      display: flex;
+      flex-direction: column;
+
+      &:hover,
+      .active {
+        color: $color6;
+        font-size: 1.8rem;
+        transition: 0.5s ease-in-out;
+        background: rgba(255, 255, 255, 0.553);
+        border-radius: 10px 10px 0 0;
+        // -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.661);
+        // -webkit-text-fill-color: adjust-hue($color: $color6, $degrees: 0);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 5px;
+        margin-top: 3px;
+        background: white;
+        transition: 0.5s;
+      }
+      &:hover::after {
+        width: 100%;
+        transition: 0.5s ease-in-out;
+        background: $color6;
+      }
+    }
+  }
+}
+
+.logo-container {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  @include center;
+  cursor: pointer;
+  margin: 0 0 0 20px;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-family: "font1";
+    text-shadow: 4px 3px 20px white;
+  }
+}
+
+.language-container {
+  width: 10%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn-1 {
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: black;
+    font-family: "font2";
+    cursor: pointer;
+    height: 20px;
+    margin-bottom: 0px;
+    @include center;
+  }
+
+  .en {
+    padding-left: 10px;
+    border-left: 3px solid black;
+  }
+}
+
+.icons-container {
+  width: 15%;
+  @include center;
+  padding-right: 20px;
+  img {
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border-radius: 50%;
+
+    &:hover {
+      scale: 1.8;
+      transition: 0.5s ease-in-out;
+      background-color: $color6;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "font1";
+  src: url(./assets/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "font2";
+  src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+
+$color1: rgba(255, 255, 255, 0.75);
+$color2: rgba(199, 181, 173, 0.75);
+$color3: rgba(250, 128, 114, 0.75);
+$color4: rgba(38, 33, 33, 0.75);
+$color5: rgba(178, 178, 107, 0.75);
+$color6: rgb(173, 50, 50, 0.75);
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @mixin end {
+//     display: flex;
+//     justify-content: end;
+//     align-items: center;
+// }
+
+@mixin start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: $color4;
+}
+
+body {
+  background: rgba(243, 237, 237, 0.721);
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
