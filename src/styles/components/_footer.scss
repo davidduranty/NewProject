@@ -1,0 +1,220 @@
+.footer-container {
+  max-width: 100%;
+  min-height: 350px;
+  margin: 30px 11%;
+
+  // Footer Haut
+  .footer-container-haut {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: grid;
+    max-width: 100%;
+    min-height: 350px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+
+    .frais-de-port-container,
+    .paiement-securise,
+    .sav-qualite {
+      display: grid;
+      grid-template-rows: 40% 20% 20%;
+
+      .img,
+      .h2,
+      .h4 {
+        @include center;
+      }
+
+      h2 {
+        font-family: "font2";
+        font-size: 0.8rem;
+        font-weight: 100;
+      }
+
+      h4 {
+        font-size: 0.7rem;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    }
+  }
+
+  // Footer Milieu
+  .footer-container-milieu {
+    margin-top: 100px;
+    display: grid;
+    width: 100%;
+    min-height: 400px;
+    grid-template-areas: "1 1 1 1";
+    border-bottom: 1px solid rgb(203, 189, 189);
+
+    .doman-freres-container {
+      // padding: 0 10px;
+      display: grid;
+      align-items: center;
+      grid-template-rows: repeat(6, 40px);
+      // grid-template-columns: 200px;
+
+      h1 {
+        font-size: 18px;
+        font-family: "font2";
+      }
+
+      li {
+        color: $color4;
+      }
+    }
+
+    .nous-trouver-container {
+      padding: 0 10px;
+      display: grid;
+      align-items: center;
+      grid-template-rows: repeat(6, 40px);
+
+      h1 {
+        font-size: 18px;
+        font-family: "font2";
+      }
+
+      li {
+        color: $color4;
+      }
+    }
+
+    .pro-container {
+      padding: 0 10px;
+      display: grid;
+      align-items: center;
+      grid-template-rows: 40px 40px 120px;
+
+      h1 {
+        font-size: 18px;
+        font-family: "font2";
+      }
+      p {
+        color: $color4;
+      }
+
+      a {
+        width: 132px;
+        background: transparent;
+        border: none;
+        color: black;
+        font-size: 1rem;
+        font-family: "font2";
+        letter-spacing: 1px;
+        cursor: pointer;
+        display: block;
+        transition: 0.5s ease-in-out;
+        border-bottom: 3px solid black;
+        padding-bottom: 10px;
+      }
+    }
+
+    .suivez-container {
+      padding: 0 10px;
+      display: grid;
+      align-items: center;
+      grid-template-rows: 40px 40px 100px 100px 100px;
+
+      h1 {
+        font-size: 18px;
+        font-family: "font2";
+      }
+      p {
+        color: $color4;
+      }
+      input {
+        width: 100%;
+        height: 50px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(165, 159, 159, 0.803);
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+      .btn {
+        padding: 20px 0;
+        background: rgb(9, 9, 9);
+        color: $color1;
+        cursor: pointer;
+        border: none;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background: rgb(230, 222, 222);
+          color: rgb(9, 9, 9);
+          transition: 0.3s ease-in-out;
+          border: 1px solid black;
+          border-radius: 5px;
+        }
+      }
+      .icons-container-footer {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+
+        img {
+          margin-right: 30px;
+          width: 4rem;
+          height: 4rem;
+          padding: 10px;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            scale: 1.2;
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer Bas
+
+  .footer-bas {
+    .all-droits-container {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-family: "font2";
+      }
+
+      .lien-container-bas {
+        display: flex;
+
+        li {
+          padding-left: 20px;
+          text-decoration: underline;
+          font-family: "font2";
+          color: black;
+          text-underline-offset: 0.3rem;
+        }
+      }
+    }
+    .iref {
+      display: flex;
+      align-items: center;
+      margin-top: 80px;
+      .icon-iref {
+        img {
+          width: 60px;
+          height: 60px;
+          cursor: pointer;
+        }
+      }
+      .last-text {
+        padding-left: 20px;
+
+        p {
+          font-family: "font2";
+        }
+      }
+    }
+  }
+}

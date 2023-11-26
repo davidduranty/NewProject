@@ -9,7 +9,7 @@
   background: $color2;
 
   .ul {
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -70,35 +70,11 @@
   }
 }
 
-.language-container {
-  width: 10%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .btn-1 {
-    background: transparent;
-    border: none;
-    margin-right: 10px;
-    font-size: 1.1rem;
-    color: black;
-    font-family: "font2";
-    cursor: pointer;
-    height: 20px;
-    margin-bottom: 0px;
-    @include center;
-  }
-
-  .en {
-    padding-left: 10px;
-    border-left: 3px solid black;
-  }
-}
-
 .icons-container {
-  width: 15%;
-  @include center;
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   padding-right: 20px;
   img {
     margin-right: 30px;
