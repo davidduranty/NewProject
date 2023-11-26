@@ -1,0 +1,356 @@
+{
+    "thes": [
+        {
+            "img": "jardinBleu.webp",
+            "name": "JARDIN BLEU",
+            "content": "Thé noir | Rhubarbe, Fraise",
+            "price": 6.50,
+            "id": 1,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "missDoman.webp",
+            "name": "MISS DOMAN",
+            "content": "Thé vert | Gingembre, Citron, Fruit de la passion",
+            "price": 8.50,
+            "id": 2,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "paulVirginie.webp",
+            "name": "PAUL & VIRGINIE",
+            "content": "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
+            "price": 7.00,
+            "id": 3,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "bali.webp",
+            "name": "BALI",
+            "content": "Thé vert | Litchi, Pamplemousse, Pêche, Rose, Jasmin",
+            "price": 8.00,
+            "id": 4,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "coquelicot.webp",
+            "name": "COQUELICOT GOURMAND",
+            "content": "Thé noir | Framboise, Cerise, Violette, Vanille, Amande, Biscuit",
+            "price": 8.50,
+            "id": 5,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "baliSachets.webp",
+            "name": "BALI",
+            "content": "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
+            "price": 12.50,
+            "id": 6,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "nuitVersailles.webp",
+            "name": "NUIT A VERSAILLES",
+            "content": "Thé vert | Kiwi, Bergamote, Fleur d'oranger, Violette, Pêche",
+            "price": 7.00,
+            "id": 7,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "menthe.webp",
+            "name": "THE VERT A LA MENTHE AROMATISE",
+            "content": "Thé vert | Menthe",
+            "price": 7.50,
+            "id": 8,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        }
+    ],
+    "moment": [
+        {
+            "img": "breakfast.webp",
+            "name": "BREAKFAST, 24 SACHETS CRISTAL ENVELOPPES",
+            "content": "Thé noir",
+            "price": 14.00,
+            "contenance": "/ Les 24 Sachets enveloppés",
+            "id": 0,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "earl.webp",
+            "name": "EARL GREY YIN ZHEN 24 SACHETS CRISTAL ENVELOPPES",
+            "content": "Thé noir | Bergamote",
+            "price": 15.50,
+            "contenance": "/ Les 24 Sachets enveloppés",
+            "id": 1,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "darjeeling.webp",
+            "name": "DARJEELING 24 SACHETS CRISTAL ENVEVOPPES",
+            "content": "Thé noir",
+            "price": 16.00,
+            "contenance": "/ Les 24 Sachets enveloppés",
+            "id": 2,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "oolong.webp",
+            "name": "THE OOLONG - MAISON DE FAMILLE",
+            "content": "Oolong | Caramel, Vanille, Sarrazin, Clémentine",
+            "price": 11.00,
+            "contenance": "/ Les 100 g",
+            "id": 3,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "theNoir.webp",
+            "name": "THE NOIR - EARL GREY DES SEIGNEURS",
+            "content": "Thé noir | Bergamote",
+            "price": 13.50,
+            "contenance": "/ Les 100 g",
+            "id": 4,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "theInde.webp",
+            "name": "THE D'INDE - ASSAM MOKALBARI T.G.F.O.P. 2ND FLUSH",
+            "content": "Thé noir",
+            "price": 22.00,
+            "contenance": "/ Les 100 g",
+            "id": 5,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        },
+        {
+            "img": "theInde2.webp",
+            "name": "THE D'INDE - DARJEELING OKAYTI T.G.F.O.P. 2ND FLUSH",
+            "content": "Thé noir",
+            "price": 30.00,
+            "contenance": "/ Les 100 g",
+            "id": 6,
+            "bag": "👜",
+            "view": "👁️‍🗨️"
+        }
+    ],
+    "magazine": [
+        {
+            "img": "essentiel.webp",
+            "question": "COMMENT CHOISIR SON THE DU MATIN ?",
+            "content": "Chez DAMMANN Frères, on préfère le thé au café bien sûr et pour vous réveiller, et vous lever du bon pied, il vous faut choisir le bon thé ! Certains ont le sommeil ...",
+            "id": 1
+        },
+        {
+            "img": "prepa.webp",
+            "question": "COMMENT PREPARER UN THE NOIR ?",
+            "content": "Pour infuser les thés noirs, nous recommandons une infusion pendant 3 à 5 min dans une eau comprise entre 80°C et 90°C.",
+            "id": 2
+        },
+        {
+            "img": "jasmin.webp",
+            "question": "QU'EST CE QU'UN THE AUX FLEURS ?",
+            "content": "L'usage de parfumer le thé - formidable capteur de parfums - avec des fleurs fraîchements récoltées ou des fruits relève d'une tradition ancestrale. On emploie ...",
+            "id": 3
+        },
+        {
+            "img": "theBlanc.webp",
+            "question": "COMMENT PREPARER UN THE BLANC ?",
+            "content": "Pour infuser les thés blancs, nous recommandons une infusion comprise entre 4 et 8 min à 80°C.",
+            "id": 4
+        }
+    ],
+    "dej": [
+        {
+            "img": "tasse1.webp",
+            "name": "MUG EN PORCELAINE BONE CHINA, DOMAN FRÈRES",
+            "content": "Bols/Tasses/Autres | Autres",
+            "price": 13.50,
+            "id": 1
+        },
+        {
+            "img": "tasse2.webp",
+            "name": "MUG DOMAN FRÈRES HÔTEL, PORCELAINE BLANCHE",
+            "content": "Bols/Tasses/Autres | Autres",
+            "price": 8.00,
+            "id": 2
+        }
+    ],
+    "selection-small-dej": [
+        {
+            "img": "1.webp",
+            "name": "THÉ D'INDE - ASSAM HALMARI 2ND FLUSH T.G.F.O.P.",
+            "content": "Thé noir",
+            "price": 25.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 1
+        },
+        {
+            "img": "2.webp",
+            "name": "THÉ D'INDE - ASSAM SUPÉRIEUR G.F.O.P.",
+            "content": "Thé noir",
+            "price": 8.50,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 2
+        },
+        {
+            "img": "3.webp",
+            "name": "THÉ D'INDE - ASSAM SUPÉRIEUR G.B.O.P.",
+            "content": "Thé noir",
+            "price": 8.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 3
+        },
+        {
+            "img": "4.webp",
+            "name": "THÉ D'INDE - DARJEELING G.F.O.P. SUPÉRIEUR 2ND FLUSH",
+            "content": "Thé noir",
+            "price": 10.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 4
+        },
+        {
+            "img": "5.webp",
+            "name": "THÉ DE CEYLAN - CEYLAN F.O.P. SUPÉRIEUR",
+            "content": "Thé noir",
+            "price": 7.50,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 5
+        },
+        {
+            "img": "6.webp",
+            "name": "THÉ D'AFRIQUE - KENYA MILIMA G.B.O.P.",
+            "content": "Thé noir",
+            "price": 8.50,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 6
+        },
+        {
+            "img": "7.webp",
+            "name": "BLEND - AFRICAN BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.50,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 7
+        },
+        {
+            "img": "8.webp",
+            "name": "THÉ NOIR - BRUNCH TEA",
+            "content": "Thé noir",
+            "price": 9.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 8
+        },
+        {
+            "img": "9.webp",
+            "name": "THÉ NOIR - HIGHLANDS BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 9
+        },
+        {
+            "img": "10.webp",
+            "name": "BLEND - TEA FOR TWO",
+            "content": "Thé noir",
+            "price": 8.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 10
+        },
+        {
+            "img": "11.webp",
+            "name": "THÉ NOIR - ROYAL BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 11
+        },
+        {
+            "img": "12.webp",
+            "name": "BLEND - STRONG BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.50,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 12
+        }
+    ],
+    "shopping": [
+        {
+            "img": "boite.webp",
+            "name": "COFFRET BOIS NOIR - 48 SACHETS CRISTAL DE THÉS",
+            "content": "Coffrets cadeaux | Coffrets thés Sachets",
+            "price": 86.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 1
+        },
+        {
+            "img": "theiere.webp",
+            "name": "THÉIERE PARCELAINE - THÉIERE DOMAN FRERES 0.6L",
+            "content": "Théières | Porcelaine",
+            "price": 21.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 2
+        },
+        {
+            "img": "tasse.webp",
+            "name": "TASSE A THÉ ET SOUS-TASSE DOMAN FRERES",
+            "content": "Bols/Tasses/Autres | Tasses",
+            "price": 11.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 3
+        },
+        {
+            "img": "supportSachet.webp",
+            "name": "COUPELLE REPOSE-SACHET",
+            "content": "ACCESSOIRES",
+            "price": 5.00,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 4
+        },
+        {
+            "img": "boule.webp",
+            "name": "BOULE A THÉ INOX PERFORÉ - DIAM 4 CM",
+            "content": "Pour préparer votre thé",
+            "price": 5.50,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 5
+        },
+        {
+            "img": "cuillere.webp",
+            "name": "CUILLERE-MESURE INOX",
+            "content": "Pour préparer votre thé",
+            "price": 6.50,
+            "icon": "👜",
+            "view": "👁️‍🗨️",
+            "id": 6
+        }
+    ]
+}
