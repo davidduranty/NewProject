@@ -1,21 +1,17 @@
 import { Outlet } from "react-router-dom";
-import Icons from "./components/navbar/Icons";
-import Logo from "./components/navbar/Logo";
 import Navigation from "./components/navbar/Navigation";
+import Footer from "./components/footer/Footer";
 import "./styles/index.scss";
 
 function App() {
   return (
     <>
-      <div>
-        <Logo />
-        <Navigation />
-        <Icons />
-      </div>
+      <Navigation />
+      <Footer />
 
-      {/* <div>
+      <div>
         <Outlet />
-      </div> */}
+      </div>
     </>
   );
 }
