@@ -1,7 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Logo() {
-  return <div>Logo</div>;
-}
+const Logo = () => {
+  return (
+    <div className="logo-container">
+      <Link to="/home">
+        <img src="logo192.png" alt="" />
+      </Link>
+      <h1>DOMAN Tea</h1>
+    </div>
+  );
+};
 
 export default Logo;
