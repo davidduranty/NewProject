@@ -1,6 +1,5 @@
-import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App.js";
+import App from "./App.jsx";
 import React from "react";
 import "./styles/index.scss";
 import {
@@ -9,11 +8,11 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import RootLayout from "./layouts/RootLayout.js";
-import Home from "./pages/Home.js";
-import Glace from "./pages/Glace.js";
-import OldClient from "./components/navbar/formulaire/OldClient.js";
-import Favorite from "./pages/Favorite.js";
+import RootLayout from "./layouts/RootLayout.jsx";
+import Home from "./pages/Home.jsx";
+import Glace from "./pages/Glace.jsx";
+import OldClient from "./components/navbar/login/OldClient.jsx";
+import Favorite from "./pages/Favorite.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
