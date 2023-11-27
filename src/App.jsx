@@ -7,11 +7,11 @@ function App() {
   return (
     <>
       <Navigation />
-      <Footer />
 
       <div>
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 }
