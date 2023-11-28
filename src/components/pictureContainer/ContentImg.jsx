@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import imageone from "../../styles/img/img1.png";
+import imagetwo from "../../styles/img/img2.png";
 const ContentImg = () => {
   return (
     <div className="content-container">
@@ -13,7 +14,8 @@ const ContentImg = () => {
           </Link>
         </div>
       </div>
-      <div className="img2">
+      <div className="img1">
+        <img src={imagetwo} alt="" />
         <div className="grid-1">
           <h1>GRANDS CRUS</h1>
           <button type="submit">NOUVELLES R&#201;COLTES</button>
