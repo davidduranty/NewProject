@@ -1,0 +1,61 @@
+.the-container {
+  max-width: 100%;
+  // height: 100vh;
+  margin: 0 10%;
+}
+
+.teas-balls-container {
+  max-height: 120px;
+  margin: 100px 0;
+  display: flex;
+  column-gap: 10px;
+  position: relative;
+  .img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: none;
+    }
+
+    .rond-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-60%, -65%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      transition: 0.5s ease-in-out;
+      border: none;
+      border-radius: 50%;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        background: white;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+      }
+      h3 {
+        font-family: "font1";
+        letter-spacing: 1px;
+        color: white;
+        font-size: 1rem;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: black;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
