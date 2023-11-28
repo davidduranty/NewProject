@@ -1,7 +1,12 @@
 import React from "react";
+import TeasBalls from "./TeasBalls";
 
-function TeasBallsContainer() {
-  return <div>TeasBallsContainer</div>;
-}
+const TeasBallsContainer = () => {
+  return (
+    <div className="the-container">
+      <TeasBalls />
+    </div>
+  );
+};
 
 export default TeasBallsContainer;
