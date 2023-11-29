@@ -1,21 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import Card from "../cards/Card";
+import { useApi } from "../../data/Context";
 
 const SwiperBest = () => {
+  const { tea, getData } = useApi();
   const listRef = useRef();
-  const [teas, setTea] = useState([]);
+  // const [teas, setTea] = useState([]);
   // const [currentIndex, setCurrentIndex] = useState(3);
 
-  const getData = async () => {
-    try {
-      const res = await axios.get("http://localhost:3004/thes/");
-      setTea(res.data);
-    } catch (err) {
-      console.error(err.res.data);
-      setTea(undefined);
-    }
-  };
   const getDataFilter = async (word) => {
     await axios.get("http://localhost:3004/thes/").then((res) => {
       setTea(
@@ -72,7 +65,7 @@ const SwiperBest = () => {
           &#8678;
         </span>
         <ul className="caroussel" ref={listRef}>
-          {teas.map((tea) => (
+          {tea.map((tea) => (
             <Card tea={tea} key={tea.id} />
           ))}
         </ul>
