@@ -16,8 +16,18 @@ export function ApiProvider({ children }) {
       setTea(undefined);
     }
   };
+
+  const getDataFilter = async (word) => {
+    await axios.get("http://localhost:3004/thes/").then((res) => {
+      setTea(
+        res.data.filter((element) =>
+          element.name.toLowerCase().includes(word.toLowerCase())
+        )
+      );
+    });
+  };
   return (
-    <ContextGeneral.Provider value={{ tea, getData }}>
+    <ContextGeneral.Provider value={{ tea, getData, getDataFilter }}>
       {children}
     </ContextGeneral.Provider>
   );
