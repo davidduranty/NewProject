@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 
@@ -26,6 +26,10 @@ export function ApiProvider({ children }) {
       );
     });
   };
+
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <ContextGeneral.Provider value={{ tea, getData, getDataFilter }}>
       {children}
