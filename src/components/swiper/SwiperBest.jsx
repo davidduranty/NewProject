@@ -1,7 +1,8 @@
-import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import Card from "../cards/Card";
 import { useApi } from "../../data/Context";
+
+// import "./styles.scss";
 
 const SwiperBest = () => {
   const { tea, getData, getDataFilter } = useApi();
@@ -40,7 +41,7 @@ const SwiperBest = () => {
   // };
 
   return (
-    <div>
+    <>
       <div className="title">
         <h1>MEILLEURES VENTES DU MOIS</h1>
         <img src="search.png" alt="" />
@@ -51,19 +52,21 @@ const SwiperBest = () => {
         />
       </div>
       <div className="caroussel-container">
-        <span className="left" onClick={() => scrollToImage("next")}>
+        {/* <span className="left" onClick={() => scrollToImage("next")}>
           &#8678;
-        </span>
-        <ul className="caroussel" ref={listRef}>
+        </span> */}
+
+        <ul className="caroussel">
           {tea.map((tea) => (
             <Card tea={tea} key={tea.id} />
           ))}
         </ul>
-        <span className="right" onClick={() => scrollToImage("prev")}>
+
+        {/* <span className="right" onClick={() => scrollToImage("prev")}>
           &#8680;
-        </span>
+        </span> */}
       </div>
-    </div>
+    </>
   );
 };
 
