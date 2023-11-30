@@ -47,12 +47,13 @@
   margin: 20px 0;
 
   margin: 20px 10%;
-  border: 1px solid red;
+  overflow: hidden;
 
   .caroussel {
+    border: 1px solid red;
     display: flex;
     max-height: 700px;
-    margin: 0px 10%;
+    margin: 0px 30%;
     min-width: 1460px;
     overflow-x: hidden;
     gap: 10px;

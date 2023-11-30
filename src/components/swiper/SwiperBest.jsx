@@ -1,7 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import Card from "../cards/Card";
 import { useApi } from "../../data/Context";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+// import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Keyboard, Pagination, Navigation } from "swiper/modules";
 // import "./styles.scss";
 
 const SwiperBest = () => {
@@ -55,13 +60,27 @@ const SwiperBest = () => {
         {/* <span className="left" onClick={() => scrollToImage("next")}>
           &#8678;
         </span> */}
-
-        <ul className="caroussel">
-          {tea.map((tea) => (
-            <Card tea={tea} key={tea.id} />
-          ))}
-        </ul>
-
+        <Swiper
+          slidesPerView={3.7}
+          spaceBetween={0}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <ul className="caroussel">
+            {tea.map((tea) => (
+              <SwiperSlide>
+                <Card tea={tea} key={tea.id} />
+              </SwiperSlide>
+            ))}
+          </ul>
+        </Swiper>
         {/* <span className="right" onClick={() => scrollToImage("prev")}>
           &#8680;
         </span> */}
