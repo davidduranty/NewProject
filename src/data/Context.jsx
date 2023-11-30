@@ -6,6 +6,7 @@ const ContextGeneral = createContext();
 
 export function ApiProvider({ children }) {
   const [tea, setTea] = useState([]);
+  const [getMoment, setGetMoment] = useState([]);
 
   const getData = async () => {
     try {
@@ -30,8 +31,36 @@ export function ApiProvider({ children }) {
   useEffect(() => {
     getData();
   }, []);
+
+  const getDataSelect = () => {
+    axios
+      .get("http://localhost:5172/moment")
+      .then((el) => setGetMoment(el.data));
+  };
+
+  const getDataFilterMoment = async (search) => {
+    await axios
+      .get("http://localhost:5172/moment/")
+      .then((el) =>
+        setGetMoment(
+          el.data.filter((element) =>
+            element.name.toLowerCase().includes(search.toLowerCase())
+          )
+        )
+      );
+  };
+  useEffect(() => {
+    getDataSelect();
+  }, []);
   return (
-    <ContextGeneral.Provider value={{ tea, getData, getDataFilter }}>
+    <ContextGeneral.Provider
+      value={{
+        tea,
+        getDataFilter,
+        getMoment,
+        getDataFilterMoment,
+      }}
+    >
       {children}
     </ContextGeneral.Provider>
   );

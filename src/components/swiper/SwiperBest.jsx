@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
 const SwiperBest = () => {
-  const { tea, getData, getDataFilter } = useApi();
+  const { tea, getDataFilter } = useApi();
 
   return (
     <>
