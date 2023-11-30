@@ -51,17 +51,17 @@ const SwiperBest = () => {
         />
       </div>
       <div className="caroussel-container">
-        <span className="left" onClick={() => scrollToImage("next")}>
+        {/* <span className="left" onClick={() => scrollToImage("next")}>
           &#8678;
-        </span>
+        </span> */}
         <ul className="caroussel" ref={listRef}>
           {tea.map((tea) => (
             <Card tea={tea} key={tea.id} />
           ))}
         </ul>
-        <span className="right" onClick={() => scrollToImage("prev")}>
+        {/* <span className="right" onClick={() => scrollToImage("prev")}>
           &#8680;
-        </span>
+        </span> */}
       </div>
     </div>
   );
