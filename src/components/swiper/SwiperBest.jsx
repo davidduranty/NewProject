@@ -62,7 +62,7 @@ const SwiperBest = () => {
         </span> */}
         <Swiper
           slidesPerView={3.7}
-          spaceBetween={0}
+          spaceBetween={500}
           keyboard={{
             enabled: true,
           }}
