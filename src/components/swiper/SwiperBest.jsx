@@ -57,9 +57,6 @@ const SwiperBest = () => {
         />
       </div>
       <div className="caroussel-container">
-        {/* <span className="left" onClick={() => scrollToImage("next")}>
-          &#8678;
-        </span> */}
         <Swiper
           slidesPerView={3.7}
           spaceBetween={500}
@@ -75,15 +72,12 @@ const SwiperBest = () => {
         >
           <ul className="caroussel">
             {tea.map((tea) => (
-              <SwiperSlide>
-                <Card tea={tea} key={tea.id} />
+              <SwiperSlide key={tea.id}>
+                <Card tea={tea} />
               </SwiperSlide>
             ))}
           </ul>
         </Swiper>
-        {/* <span className="right" onClick={() => scrollToImage("prev")}>
-          &#8680;
-        </span> */}
       </div>
     </>
   );
