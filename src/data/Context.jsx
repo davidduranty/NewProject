@@ -9,7 +9,7 @@ export function ApiProvider({ children }) {
 
   const getData = async () => {
     try {
-      const res = await axios.get("http://localhost:3004/thes/");
+      const res = await axios.get("http://localhost:5172/thes/");
       setTea(res.data);
     } catch (err) {
       console.error(err.res.data);
@@ -18,7 +18,7 @@ export function ApiProvider({ children }) {
   };
 
   const getDataFilter = async (word) => {
-    await axios.get("http://localhost:3004/thes/").then((res) => {
+    await axios.get("http://localhost:5172/thes/").then((res) => {
       setTea(
         res.data.filter((element) =>
           element.name.toLowerCase().includes(word.toLowerCase())
