@@ -1,6 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState, useRef } from "react";
 import CardMoment from "../cards/CardMoment";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
 const SwiperSelectionMoment = () => {
   const [getMoment, setGetMoment] = useState([]);
@@ -21,11 +27,13 @@ const SwiperSelectionMoment = () => {
           )
         )
       );
-    getDataSelect();
   };
+  useEffect(() => {
+    getDataSelect();
+  }, []);
 
   return (
-    <div>
+    <>
       <div className="title">
         <h1>S&#201;LECTION DU MOMENT</h1>
         <img src="search.png" alt="" />
@@ -36,13 +44,29 @@ const SwiperSelectionMoment = () => {
         />
       </div>
       <div className="caroussel-container">
-        <ul className="caroussel">
-          {getMoment.map((moment) => (
-            <CardMoment key={moment.id} moment={moment} />
-          ))}
-        </ul>
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={40}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <ul className="caroussel">
+            {getMoment.map((moment) => (
+              <SwiperSlide key={moment.id}>
+                <CardMoment moment={moment} />
+              </SwiperSlide>
+            ))}
+          </ul>
+        </Swiper>
       </div>
-    </div>
+    </>
   );
 };
 
