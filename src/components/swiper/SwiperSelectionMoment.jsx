@@ -7,30 +7,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Keyboard, Pagination, Navigation } from "swiper/modules";
+import { useApi } from "../../data/Context";
 
 const SwiperSelectionMoment = () => {
-  const [getMoment, setGetMoment] = useState([]);
-
-  const getDataSelect = () => {
-    axios
-      .get("http://localhost:5172/moment")
-      .then((el) => setGetMoment(el.data));
-  };
-
-  const getDataFilterMoment = async (search) => {
-    await axios
-      .get("http://localhost:5172/moment/")
-      .then((el) =>
-        setGetMoment(
-          el.data.filter((element) =>
-            element.name.toLowerCase().includes(search.toLowerCase())
-          )
-        )
-      );
-  };
-  useEffect(() => {
-    getDataSelect();
-  }, []);
+  const { getMoment, getDataFilterMoment } = useApi();
 
   return (
     <>
@@ -71,8 +51,3 @@ const SwiperSelectionMoment = () => {
 };
 
 export default SwiperSelectionMoment;
-// const getDataSelect = () => {
-//   axios
-//     .get("http://localhost:3004/moment")
-//     .then((el) => setGetMoment(el.data));
-// };
