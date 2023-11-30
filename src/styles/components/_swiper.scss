@@ -46,16 +46,20 @@
   justify-content: center;
   margin: 20px 0;
 
+  margin: 20px 10%;
+  border: 1px solid red;
+
   .caroussel {
     display: flex;
-    min-height: 700px;
+    max-height: 700px;
     margin: 0px 10%;
-    max-width: 1460px;
+    min-width: 1460px;
     overflow-x: hidden;
     gap: 10px;
   }
 
   .card-container {
+    display: flex;
     min-width: 350px;
     max-height: 600px;
     margin-right: 10px;
