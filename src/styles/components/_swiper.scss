@@ -148,3 +148,37 @@
     }
   }
 }
+.arrow-fixed {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 100px;
+  right: 80px;
+  border-radius: 50%;
+  font-size: 5rem;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.647);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  transform: translateX(200px);
+  background: rgba(148, 24, 24, 0.648);
+  z-index: 20;
+
+  &:hover {
+    scale: 1.3;
+    transition: 0.4s ease-in-out;
+    background: rgba(41, 200, 200, 0.651);
+  }
+  &.active {
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
+  }
+  span {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    border-radius: 50%;
+  }
+}
