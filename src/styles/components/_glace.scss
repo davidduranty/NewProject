@@ -30,3 +30,113 @@
     line-height: 40px;
   }
 }
+.container-breakfast {
+  display: flex;
+  max-width: 80%;
+  max-height: 600px;
+  margin: 0 12%;
+
+  img {
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .tasse-map {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+
+    .ul-settings {
+      width: 100%;
+      max-width: 350px;
+      min-height: 400px;
+      border: 1px solid rgba(221, 217, 217, 0.549);
+      border-radius: 10px;
+      box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
+      cursor: pointer;
+      padding-left: 5px;
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+      }
+
+      h1 {
+        width: 100%;
+        height: 45px;
+        font-family: "font1";
+        padding-top: 5px;
+        font-size: 1.1rem;
+        min-height: 40px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-top: 30px;
+        min-height: 10px;
+        font-size: 1rem;
+        height: 30px;
+      }
+
+      p {
+        padding-top: 10px;
+        font-family: "font2";
+      }
+    }
+  }
+}
+.container-breakfast {
+  display: flex;
+  max-width: 80%;
+  max-height: 700px;
+  margin: 0 12%;
+
+  img {
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .tasse-map {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+
+    .ul-settings {
+      max-width: 350px;
+      max-height: 700px;
+      border: 1px solid rgba(221, 217, 217, 0.549);
+      border-radius: 10px;
+      box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
+      cursor: pointer;
+      padding-left: 5px;
+      margin-bottom: 20px;
+
+      img {
+        max-width: 100%;
+        min-height: 400px;
+      }
+
+      h1 {
+        width: 100%;
+        height: 45px;
+        font-family: "font1";
+        padding-top: 5px;
+        font-size: 1.1rem;
+        min-height: 40px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-top: 30px;
+        min-height: 10px;
+        font-size: 1rem;
+        height: 30px;
+      }
+
+      p {
+        padding-top: 40px;
+        font-family: "font2";
+      }
+    }
+  }
+}
