@@ -7,6 +7,7 @@ const ContextGeneral = createContext();
 export function ApiProvider({ children }) {
   const [tea, setTea] = useState([]);
   const [getMoment, setGetMoment] = useState([]);
+  const [getDej, setGetDej] = useState([]);
 
   const getData = async () => {
     try {
@@ -52,6 +53,48 @@ export function ApiProvider({ children }) {
   useEffect(() => {
     getDataSelect();
   }, []);
+
+  const getSelectionTea = () => {
+    axios
+      .get("http://localhost:5172/selection-small-dej")
+      .then((res) => setGetDej(res.data));
+  };
+  const getSearchCardDej = async (search) => {
+    await axios
+      .get("http://localhost:5172/selection-small-dej/")
+      .then((res) => {
+        setGetDej(
+          res.data.filter((el) =>
+            el.name.toLowerCase().includes(search.toLowerCase())
+          )
+        );
+      });
+  };
+  const getFromBigToSmall = async () => {
+    await axios
+      .get("http://localhost:5172/selection-small-dej/")
+      .then((res) => {
+        setGetDej(res.data.sort((a, b) => b.price - a.price));
+      });
+  };
+  const getFromSmallToBig = async () => {
+    await axios
+      .get("http://localhost:5172/selection-small-dej/")
+      .then((res) => {
+        setGetDej(res.data.sort((a, b) => a.price - b.price));
+      });
+  };
+  const getClear = () => {
+    axios
+      .get("http://localhost:5172/selection-small-dej")
+      .then((res) => setGetDej(res.data))
+      .then(() => {
+        document.getElementById("my-input").value = "";
+      });
+  };
+  useEffect(() => {
+    getSelectionTea();
+  }, []);
   return (
     <ContextGeneral.Provider
       value={{
@@ -59,6 +102,12 @@ export function ApiProvider({ children }) {
         getDataFilter,
         getMoment,
         getDataFilterMoment,
+        getDej,
+        getSelectionTea,
+        getClear,
+        getFromSmallToBig,
+        getFromBigToSmall,
+        getSearchCardDej,
       }}
     >
       {children}
