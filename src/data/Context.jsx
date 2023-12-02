@@ -103,7 +103,6 @@ export function ApiProvider({ children }) {
         getMoment,
         getDataFilterMoment,
         getDej,
-        getSelectionTea,
         getClear,
         getFromSmallToBig,
         getFromBigToSmall,
