@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 function CardSelectionSmallBreafast({ dej }) {
   const [api, setApi] = useState([]);
@@ -41,5 +42,17 @@ function CardSelectionSmallBreafast({ dej }) {
     </ul>
   );
 }
+
+CardSelectionSmallBreafast.prototype = {
+  dej: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    icon: PropTypes.string.isRequired,
+    view: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default CardSelectionSmallBreafast;
