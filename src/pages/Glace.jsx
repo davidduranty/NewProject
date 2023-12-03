@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import TitleImgTextIce from "../components/pictureContainer/TitleImgTextIce";
 import CardSmallDej from "../components/cards/CardSmallDej";
 import SwiperSelectionSmallBreakfast from "../components/swiper/swiperSelectionSmallBreakfast";
+import SwiperBreakfast from "../components/swiper/SwiperBreakfast";
 
 function Glace() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function Glace() {
       <TitleImgTextIce />
       <CardSmallDej />
       <SwiperSelectionSmallBreakfast />
+      <SwiperBreakfast />
     </>
   );
 }
