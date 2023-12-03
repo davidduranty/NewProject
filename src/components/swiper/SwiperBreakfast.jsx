@@ -14,7 +14,7 @@ const SwiperBreakfast = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3004/shopping")
+      .get("http://localhost:5172/shopping")
       .then((res) => setShop(res.data));
   }, []);
   return (
