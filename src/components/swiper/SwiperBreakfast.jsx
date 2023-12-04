@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/scss";
-import "swiper/scss/effect-coverflow";
+import "swiper/css/navigation";
 import "swiper/scss/pagination";
 
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Keyboard, Pagination, Navigation } from "swiper/modules";
 import CardBreakfast from "../cards/CardBreakfast";
 const SwiperBreakfast = () => {
   const [shop, setShop] = useState([]);
@@ -20,28 +20,29 @@ const SwiperBreakfast = () => {
   return (
     <>
       <h1 className="breakfast-title">BreakFast</h1>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        {shop.map((breakfast) => (
-          <SwiperSlide className="swiper" key={breakfast.id}>
-            <CardBreakfast breakfast={breakfast} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="caroussel-container">
+        <Swiper
+          slidesPerView={2.7}
+          spaceBetween={400}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <ul className="caroussel">
+            {shop.map((breakfast) => (
+              <SwiperSlide key={breakfast.id}>
+                <CardBreakfast breakfast={breakfast} />
+              </SwiperSlide>
+            ))}
+          </ul>
+        </Swiper>
+      </div>
     </>
   );
 };

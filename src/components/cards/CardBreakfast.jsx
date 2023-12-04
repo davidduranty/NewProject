@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 const CardBreakfast = ({ breakfast }) => {
   return (
-    <div className="container-breakfast">
+    <div className="card-container">
       <li>
         <img src={breakfast.img} alt={"Photo" + breakfast.name} />
         <h1>{breakfast.name}</h1>
