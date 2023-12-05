@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Logo from "./Logo";
 import Icons from "./Icons";
 import TeaInfusion from "../liens-navbar/TeaInfusion";
@@ -13,10 +13,27 @@ function Navigation() {
   const [showPresent, setShowPresent] = useState(false);
   const [showAccessoiries, setShowAccessoiries] = useState(false);
   const [showFamily, setShowFamily] = useState(false);
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setShowInfusion(false);
+        setShowBox(false);
+        setShowPresent(false);
+        setShowAccessoiries(false);
+        setShowFamily(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
   return (
     <div className="navigation-container">
       <Logo />
-      <ul className="ul">
+      <ul className="ul" ref={menuRef}>
         <li className="li" onClick={() => setShowInfusion(!showInfusion)}>
           THÉS & INFUSIONS
         </li>
