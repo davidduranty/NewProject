@@ -18,7 +18,7 @@ const Form = () => {
       <h1>CONNEXION</h1>
       <div className="container-client">
         <nav>
-          <Link to="/newclient">
+          <Link to="/">
             <li onClick={<Form />}>Nouveau client</li>
           </Link>
           <Link to="/oldclient">
