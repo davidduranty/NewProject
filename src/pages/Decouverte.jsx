@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import imagefour from "../../src/styles/img/img4.png";
 import { Link } from "react-router-dom";
 
 function Decouverte() {
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        document.querySelector(".arrow-fixed").classList.add("active");
+      } else {
+        document.querySelector(".arrow-fixed").classList.remove("active");
+      }
+    });
+  }, []);
   return (
     <>
       <div className="smallBreakfast">
