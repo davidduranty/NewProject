@@ -19,7 +19,9 @@ const ContentImg = () => {
         <img src={imagetwo} alt="" />
         <div className="grid-1">
           <h1>GRANDS CRUS</h1>
-          <button type="submit">NOUVELLES R&#201;COLTES</button>
+          <Link to="/decouverte">
+            <button type="submit">NOUVELLES R&#201;COLTES</button>
+          </Link>
         </div>
       </div>
       <div className="img1">
