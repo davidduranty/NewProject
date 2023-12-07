@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import Glace from "./pages/Glace.jsx";
 import OldClient from "./components/navbar/login/OldClient.jsx";
 import Favorite from "./pages/Favorite.jsx";
+import Decouverte from "./pages/Decouverte.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/glace",
         element: <Glace />,
+      },
+      {
+        path: "/decouverte",
+        element: <Decouverte />,
       },
       {
         path: "/oldclient",
