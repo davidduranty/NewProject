@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 import TitleImgTextIce from "../components/pictureContainer/TitleImgTextIce";
 import CardSmallDej from "../components/cards/CardSmallDej";

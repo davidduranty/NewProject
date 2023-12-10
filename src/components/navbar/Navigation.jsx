@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import Logo from "./Logo";
 import Icons from "./Icons";
 import TeaInfusion from "../liens-navbar/TeaInfusion";

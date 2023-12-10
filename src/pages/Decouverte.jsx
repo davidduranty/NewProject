@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import imagefour from "../../src/styles/img/img4.png";
 import { Link } from "react-router-dom";
