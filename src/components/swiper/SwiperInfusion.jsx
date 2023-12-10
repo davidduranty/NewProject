@@ -1,5 +1,5 @@
 import { useApi } from "../../data/Context";
-import CardIfusion from "../cards/CardIfusion";
+import CardInfusion from "../cards/CardInfusion";
 
 function SwiperInfusion() {
   const { getInfusion } = useApi();
@@ -8,7 +8,7 @@ function SwiperInfusion() {
       <div className="caroussel-container">
         <ul className="caroussel">
           {getInfusion.map((infusion) => (
-            <CardIfusion infusion={infusion} key={infusion.id} />
+            <CardInfusion infusion={infusion} key={infusion.id} />
           ))}
         </ul>
       </div>
