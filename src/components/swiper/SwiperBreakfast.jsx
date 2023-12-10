@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/scss";
-import "swiper/css/navigation";
-import "swiper/scss/pagination";
 
-import { Keyboard, Pagination, Navigation } from "swiper/modules";
 import CardBreakfast from "../cards/CardBreakfast";
 const SwiperBreakfast = () => {
   const [shop, setShop] = useState([]);
@@ -21,27 +18,15 @@ const SwiperBreakfast = () => {
     <>
       <h1 className="breakfast-title">BreakFast</h1>
       <div className="caroussel-container">
-        <Swiper
-          slidesPerView={2.7}
-          spaceBetween={400}
-          keyboard={{
-            enabled: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <ul className="caroussel">
+        <ul className="caroussel">
+          <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
             {shop.map((breakfast) => (
               <SwiperSlide key={breakfast.id}>
                 <CardBreakfast breakfast={breakfast} />
               </SwiperSlide>
             ))}
-          </ul>
-        </Swiper>
+          </Swiper>
+        </ul>
       </div>
     </>
   );

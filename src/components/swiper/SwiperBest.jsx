@@ -1,10 +1,6 @@
 import Card from "../cards/Card";
 import { useApi } from "../../data/Context";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
 const SwiperBest = () => {
   const { tea, getDataFilter } = useApi();
@@ -21,27 +17,15 @@ const SwiperBest = () => {
         />
       </div>
       <div className="caroussel-container">
-        <Swiper
-          slidesPerView={3.7}
-          spaceBetween={400}
-          keyboard={{
-            enabled: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <ul className="caroussel">
+        <ul className="caroussel">
+          <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
             {tea.map((tea) => (
               <SwiperSlide key={tea.id}>
                 <Card tea={tea} />
               </SwiperSlide>
             ))}
-          </ul>
-        </Swiper>
+          </Swiper>
+        </ul>
       </div>
     </>
   );
