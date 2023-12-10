@@ -355,7 +355,7 @@
     ],
     "infusions": [
         {
-            "img": "11.webp",
+            "img": "../styles/img/img_infusions/noel_a_paris.webp",
             "name": "THÉ NOIR - ROYAL BREAKFAST",
             "price": 6.00,
             "icon": "👜",

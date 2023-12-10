@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Card from "../cards/Card";
 import { useApi } from "../../data/Context";
 import { Swiper, SwiperSlide } from "swiper/react";
