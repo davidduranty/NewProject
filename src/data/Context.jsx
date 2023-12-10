@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 
@@ -8,7 +8,20 @@ export function ApiProvider({ children }) {
   const [tea, setTea] = useState([]);
   const [getMoment, setGetMoment] = useState([]);
   const [getDej, setGetDej] = useState([]);
+  const [getInfusion, setGetInfusion] = useState([]);
+  const getDataInfusion = async () => {
+    try {
+      const res = await axios.get("http://localhost:5172/infusions/");
+      setGetInfusion(res.data);
+    } catch (err) {
+      console.error(err.res.data);
+      setGetInfusion(undefined);
+    }
+  };
 
+  useEffect(() => {
+    getDataInfusion();
+  }, []);
   const getData = async () => {
     try {
       const res = await axios.get("http://localhost:5172/thes/");
@@ -107,6 +120,7 @@ export function ApiProvider({ children }) {
         getFromSmallToBig,
         getFromBigToSmall,
         getSearchCardDej,
+        getInfusion,
       }}
     >
       {children}
