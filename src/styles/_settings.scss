@@ -41,6 +41,10 @@ $color6: rgb(173, 50, 50, 0.75);
   text-decoration: none;
 }
 
+body {
+  max-width: 100%;
+}
+
 a {
   color: $color4;
 }
@@ -50,6 +54,6 @@ body {
 }
 
 html {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   scroll-behavior: smooth;
 }
