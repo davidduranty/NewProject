@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const CardInfusion = ({ infusion }) => {
   return (
     <div className="card-container">
@@ -16,5 +17,15 @@ const CardInfusion = ({ infusion }) => {
     </div>
   );
 };
-
+CardInfusion.propTypes = {
+  infusion: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    icon: PropTypes.string.isRequired,
+    view: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};
 export default CardInfusion;

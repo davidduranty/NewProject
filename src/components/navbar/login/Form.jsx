@@ -1,14 +1,8 @@
 import Home from "../../../pages/Home";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import OldClient from "./OldClient";
 
 const Form = () => {
-  const [openNewClient, setOpenNewClient] = useState();
-
-  function handleClickForm() {
-    setOpenNewClient(!openNewClient);
-  }
   return (
     <div className="container-login">
       <div className="lien-home">
@@ -51,7 +45,7 @@ const Form = () => {
         <div className="check-2">
           <input type="checkbox" />
           <p>
-            J'accepte les <a href="*">conditions générales de ventes</a> et la
+            J accepte les <a href="*">conditions générales de ventes</a> et la
             <a href="*"> politique de confidentialité</a> Doman Frères. Je
             certifie avoir 15 ans révolus.
           </p>
@@ -59,7 +53,7 @@ const Form = () => {
         <button className="btn" type="submit">
           CREER MON COMPTE
         </button>
-        <p>Les champs marqués d'une * sont obligatoires.</p>
+        <p>Les champs marqués d une * sont obligatoires.</p>
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 const CardBreakfast = ({ breakfast }) => {
   return (
@@ -19,7 +18,7 @@ const CardBreakfast = ({ breakfast }) => {
   );
 };
 
-CardBreakfast.prototype = {
+CardBreakfast.propTypes = {
   breakfast: PropTypes.shape({
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

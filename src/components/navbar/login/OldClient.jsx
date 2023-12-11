@@ -1,4 +1,3 @@
-import React from "react";
 import Home from "../../../pages/Home";
 import Navigation from "../Navigation";
 import { Link } from "react-router-dom";

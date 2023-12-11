@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const MainFooter = () => {
@@ -57,7 +56,7 @@ const MainFooter = () => {
             <li>Délais de livraison</li>
           </Link>
           <Link to="/offres">
-            <li>Nos offres d'emploi</li>
+            <li>Nos offres d emploi</li>
           </Link>
         </div>
 
@@ -77,7 +76,7 @@ const MainFooter = () => {
             <li>Nos distributeurs</li>
           </Link>
           <Link to="/kdo">
-            <li>Service cadeaux d'entreprise</li>
+            <li>Service cadeaux d entreprise</li>
           </Link>
           <Link to="/presse">
             <li>Espace Presse</li>
@@ -115,7 +114,7 @@ const MainFooter = () => {
               autoComplete="off"
             />
           </div>
-          <button className="btn">JE M'INSCRIS</button>
+          <button className="btn">JE M INSCRIS</button>
           <div className="icons-container-footer">
             <img className="face" src="facebook.png" alt="Lien Facebook" />
             <img src="instagram.png" alt="Lien Instagram" />
