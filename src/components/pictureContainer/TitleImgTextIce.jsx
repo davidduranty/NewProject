@@ -1,10 +1,8 @@
-import React from "react";
-
 function TitleImgTextIce() {
   return (
     <>
       <div className="smallBreakfast">
-        <h1>L'ETE GLACE</h1>
+        <h1>L ETE GLACE</h1>
         <img src="petit-dej.webp" alt="petit dej" />
       </div>
       <div className="textContainer">

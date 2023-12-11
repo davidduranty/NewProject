@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const FamillyTeas = () => {
@@ -23,7 +22,7 @@ const FamillyTeas = () => {
         <ul className="content">
           <h1>Nos engagements sociétaux</h1>
           <Link>
-            <li>Notre raison d'être et société à mission</li>
+            <li>Notre raison d être et société à mission</li>
           </Link>
           <Link>
             <li>Notre charte éthique</li>

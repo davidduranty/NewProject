@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const TeaInfusion = () => {
@@ -27,7 +26,7 @@ const TeaInfusion = () => {
           </Link>
         </ul>
         <ul className="content">
-          <h1>Type d'infusion</h1>
+          <h1>Type d infusion</h1>
           <Link>
             <li>Maté</li>
           </Link>
@@ -116,7 +115,7 @@ const TeaInfusion = () => {
             <li>Taïwan</li>
           </Link>
           <Link>
-            <li className="bold">Tous nos thés d'origine</li>
+            <li className="bold">Tous nos thés d origine</li>
           </Link>
         </ul>
         <ul className="content">

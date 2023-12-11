@@ -1,5 +1,3 @@
-import React from "react";
-
 const TeasBalls = () => {
   return (
     <div className="teas-balls-container">

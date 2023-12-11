@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
@@ -43,7 +42,7 @@ function CardSelectionSmallBreafast({ dej }) {
   );
 }
 
-CardSelectionSmallBreafast.prototype = {
+CardSelectionSmallBreafast.propTypes = {
   dej: PropTypes.shape({
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
