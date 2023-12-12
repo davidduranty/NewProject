@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import imagefour from "../../src/styles/img/img4.png";
 import { Link } from "react-router-dom";
 import SwiperInfusion from "../components/swiper/SwiperInfusion";
+import SwiperCoffret from "../components/swiper/SwiperCoffret";
 
 function Decouverte() {
   useEffect(() => {
@@ -34,6 +35,10 @@ function Decouverte() {
       </div>
       <h1 className="title-infusion">THÉS ET INFUSIONS DE NOËL</h1>
       <SwiperInfusion />
+      <div className="coffret-title">
+        <h2>COFFRETS DE NOËL</h2>
+      </div>
+      <SwiperCoffret />
     </>
   );
 }
