@@ -1,5 +1,5 @@
 .coffret-title {
-  margin: 50px 0 50px 20%;
+  margin: 50px 0 50px 10%;
 }
 
 .caroussel-container-box {
@@ -22,10 +22,17 @@
         .h1-box {
           max-width: 300px;
           font-size: 1.2rem;
+          min-height: 66px;
         }
         .h2-box {
+          margin-top: 10px;
           font-size: 0.8rem;
           max-width: 300px;
+        }
+        .priceAndBag-box {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
         }
       }
     }
