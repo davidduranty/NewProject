@@ -543,5 +543,39 @@
             "view": "👁️‍🗨️",
             "id": 22
         }
+    ],
+    "coffret": [
+        {
+            "img": "box-1.jpg",
+            "name": "CALENDRIER DE L'AVENT 2023, LE JARDIN ENCHANTE",
+            "content": "COFFRETS CADEAUX | COFFRETS THÉS SACHETS",
+            "price": 26.50,
+            "icon": "👜",
+            "id": 1
+        },
+        {
+            "img": "box-2.jpg",
+            "name": "COFFRET JOYEUX NOEL - COFFRET 2 BOÎTES DE THES ASSORTIS ",
+            "content": "COFFRETS CADEAUX | COFFRETS THÉS BOÎTES",
+            "price": 26.50,
+            "icon": "👜",
+            "id": 2
+        },
+        {
+            "img": "box-3.jpg",
+            "name": "COFFRET NOËLS DU MONDE - COFFRET 3 THES ASSORTIS",
+            "content": "COFFRETS CADEAUX | COFFRETS THÉS BOÎTES",
+            "price": 35.50,
+            "icon": "👜",
+            "id": 3
+        },
+        {
+            "img": "box-4.jpg",
+            "name": "COFFRET IL ETAIT UNE FOIS NOËL - COFFRET 4 BOÎTES",
+            "content": "COFFRETS CADEAUX | COFFRETS THÉS SACHETS",
+            "price": 45.00,
+            "icon": "👜",
+            "id": 4
+        }
     ]
 }

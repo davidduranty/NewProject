@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 const CardInfusion = ({ infusion }) => {
   return (
     <div className="card-container">
-      <li key={infusion.id}>
+      <li>
         <img src={infusion.img} alt={"image" + infusion.name} />
         <h1>{infusion.name}</h1>
         <h2>{infusion.content}</h2>
