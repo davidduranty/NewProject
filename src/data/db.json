@@ -577,5 +577,39 @@
             "icon": "👜",
             "id": 4
         }
+    ],
+    "boites": [
+        {
+            "img": "box_christmas.webp",
+            "name": "CHRISTMAS TEA VERT - BOÎTE 100 G",
+            "content": "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+            "price": 14.00,
+            "icon": "👜",
+            "id": 1
+        },
+        {
+            "img": "box_rooibos.webp",
+            "name": "CHRISTMAS TEA - BOÎTE 100 G",
+            "content": "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+            "price": 14.00,
+            "icon": "👜",
+            "id": 2
+        },
+        {
+            "img": "box_teaGreen.webp",
+            "name": "ROOIBOS DE NOËL - BOÎTE 100 G",
+            "content": "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE",
+            "price": 16.00,
+            "icon": "👜",
+            "id": 3
+        },
+        {
+            "img": "box_vert.webp",
+            "name": "TISANE DE NOËL - BOÎTE 100 G",
+            "content": "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, CANNELLE, GINGEMBRE",
+            "price": 18.00,
+            "icon": "👜",
+            "id": 4
+        }
     ]
 }
