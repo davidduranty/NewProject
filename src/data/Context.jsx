@@ -128,7 +128,7 @@ export function ApiProvider({ children }) {
   );
 }
 
-ApiProvider.PropTypes = {
+ApiProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 export const useApi = () => useContext(ContextGeneral);
