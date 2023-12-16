@@ -44,6 +44,12 @@ function Decouverte() {
         <h1>BOÎTES DE NOËL</h1>
       </div>
       <SwiperBoxesChristmas />
+      <div className="text-decouverte">
+        <p>
+          4 délicates boîtes de 6 sachets aux belles couleurs irisées à offrir,
+          pour orner vos tables de fêtes ou encore pour son propre plaisir...
+        </p>
+      </div>
     </>
   );
 }
