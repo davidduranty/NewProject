@@ -94,6 +94,10 @@
       }
       .container-icon {
         display: flex;
+        .btn-like-box {
+          background: none;
+          border: none;
+        }
 
         span {
           font-size: 1.4rem;
@@ -133,6 +137,7 @@
       .contenance-container-icon {
         display: flex;
         margin-left: 10px;
+
         span {
           font-size: 1.4rem;
           cursor: pointer;
