@@ -1,6 +1,24 @@
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 
 function CardBoxesChristmas({ box }) {
+  const [apiBoites, setApiBoites] = useState([]);
+  const [likeBoites, setLikeBoites] = useState(new Map());
+
+  async function toogleFavorite(name) {
+    likeBoites.set(name, likeBoites.has(name) ? !likeBoites.get(name) : true); // fonction favorite
+
+    setLikeBoites(likeBoites);
+    setApiBoites(apiBoites);
+  }
+
+  const [reload, setReload] = useState(false);
+
+  useEffect(() => {}, [reload]);
+  function onLike(name) {
+    toogleFavorite(name);
+    setReload(!reload);
+  }
   return (
     <div className="card-container-box">
       <li className="li-box">
@@ -9,7 +27,14 @@ function CardBoxesChristmas({ box }) {
         <h2 className="h2-box">{box.content}</h2>
         <div className="priceAndBag-box">
           <p>{box.price.toFixed(2)} / les 100 G</p>
-          <div className="container-icon">
+          <div className="container-icon-box">
+            <button
+              className="btn-like-box"
+              type="button"
+              onClick={() => onLike(box.name)}
+            >
+              {likeBoites.get(box.name) ? "❤️" : "🤍"}
+            </button>
             <span>{box.icon}</span>
           </div>
         </div>
