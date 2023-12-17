@@ -51,10 +51,16 @@
     width: 1460px;
     overflow-x: hidden;
     gap: 10px;
+
+    #swiperInfusion {
+      margin: 0 auto;
+      width: 100%;
+    }
   }
 
   .card-container {
     display: flex;
+    justify-content: center;
     width: 350px;
     min-height: 600px;
     margin-right: 10px;
@@ -94,7 +100,7 @@
       }
       .container-icon {
         display: flex;
-        .btn-like-box {
+        .bt {
           background: none;
           border: none;
         }
