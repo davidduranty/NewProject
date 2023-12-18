@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import SwiperInfusion from "../components/swiper/SwiperInfusion";
 import SwiperCoffret from "../components/swiper/SwiperCoffret";
 import SwiperBoxesChristmas from "../components/swiper/SwiperBoxesChristmas";
+import SwiperBoxesXFour from "../components/swiper/SwiperBoxesXFour";
 
 function Decouverte() {
   useEffect(() => {
@@ -50,6 +51,7 @@ function Decouverte() {
           pour orner vos tables de fêtes ou encore pour son propre plaisir...
         </p>
       </div>
+      <SwiperBoxesXFour />
     </>
   );
 }

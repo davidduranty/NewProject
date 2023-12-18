@@ -611,5 +611,39 @@
             "icon": "👜",
             "id": 4
         }
+    ],
+    "boites_suites": [
+        {
+            "img": "boite1.webp",
+            "name": "BOÎTE 6 SACHETS CRISTAL - NOËL À MANHATTAN",
+            "content": "THÉ VERT | CHÂTAIGNE, SIROP D'ÉRABLE, CHOCOLAT, POMME, CLÉMENTINE",
+            "price": 6.50,
+            "icon": "👜",
+            "id": 1
+        },
+        {
+            "img": "boite2.webp",
+            "name": "BOÎTE 6 SACHETS CRISTAL - NOËL À PARIS",
+            "content": "THÉ NOIR | PAIN D'ÉPICES, AMANDE, CERISE",
+            "price": 6.50,
+            "icon": "👜",
+            "id": 2
+        },
+        {
+            "img": "boite3.webp",
+            "name": "BOÎTE 6 SACHETS CRISTAL - FLOCONS D'ÉPICES",
+            "content": "THÉ NOIR | ORANGE, PAIN D'ÉPICES",
+            "price": 7.50,
+            "icon": "👜",
+            "id": 3
+        },
+        {
+            "img": "boite4.webp",
+            "name": "BOÎTE 6 SACHETS CRISTAL - NOËL À PÉKIN",
+            "content": "THÉ NOIR | FRUIT DE LA PASSION, ANANAS, BERGAMOTE",
+            "price": 9.50,
+            "icon": "👜",
+            "id": 4
+        }
     ]
 }
