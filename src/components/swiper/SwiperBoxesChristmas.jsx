@@ -17,7 +17,7 @@ function SwiperBoxesChristmas() {
 
   useEffect(() => {
     setData();
-  });
+  }, []);
 
   return (
     <>
