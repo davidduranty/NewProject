@@ -26,7 +26,7 @@ function CardSachet({ sachet }) {
         <h1 className="h1-box">{sachet.name}</h1>
         <h2 className="h2-box">{sachet.content}</h2>
         <div className="priceAndBag-box">
-          <p>{sachet.price.toFixed(2)} 6 sachets</p>
+          <p>{sachet.price.toFixed(2)} / Boîte</p>
           <div className="container-icon-box">
             <button
               className="btn-like-box"
