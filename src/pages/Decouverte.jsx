@@ -6,6 +6,7 @@ import SwiperInfusion from "../components/swiper/SwiperInfusion";
 import SwiperCoffret from "../components/swiper/SwiperCoffret";
 import SwiperBoxesChristmas from "../components/swiper/SwiperBoxesChristmas";
 import SwiperBoxesXFour from "../components/swiper/SwiperBoxesXFour";
+import SwiperSachets from "../components/swiper/SwiperSachets";
 
 function Decouverte() {
   useEffect(() => {
@@ -52,6 +53,10 @@ function Decouverte() {
         </p>
       </div>
       <SwiperBoxesXFour />
+      <div className="coffret-title">
+        <h1>SACHETS DE NOËL</h1>
+      </div>
+      <SwiperSachets />
     </>
   );
 }
