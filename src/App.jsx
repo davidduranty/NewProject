@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navigation from "./components/navbar/Navigation";
 import Footer from "./components/footer/Footer";
 import "./styles/index.scss";
@@ -11,11 +11,6 @@ function App() {
 
       <div>
         <Outlet />
-        <div className="title-first-page">
-          <Link to="/home">
-            <h1>BIENVENUE</h1>
-          </Link>
-        </div>
       </div>
       <ArrowFixed />
       <Footer />

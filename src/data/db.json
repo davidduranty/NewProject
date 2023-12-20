@@ -645,5 +645,55 @@
             "icon": "👜",
             "id": 4
         }
+    ],
+    "sachet": [
+        {
+            "img": "sachet1.webp",
+            "name": "CHRISTMAS TEA VERT - 25 SACHETS CRISTAL",
+            "content": "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+            "price": 12.00,
+            "icon": "👜",
+            "id": 1
+        },
+        {
+            "img": "sachet2.webp",
+            "name": "CHRISTMAS TEA - 25 SACHETS CRISTAL",
+            "content": "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+            "price": 11.50,
+            "icon": "👜",
+            "id": 2
+        },
+        {
+            "img": "sachet3.webp",
+            "name": "ROOIBOS DE NOËL - 25 SACHETS CRISTAL",
+            "content": "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE",
+            "price": 13.00,
+            "icon": "👜",
+            "id": 3
+        },
+        {
+            "img": "sachet4.webp",
+            "name": "TISANE DE NOËL - 25 SACHETS CRISTAL",
+            "content": "TISANE | CHOCOLAT, CARDAMOME, CANNELLE, GINGEMBRE",
+            "price": 14.00,
+            "icon": "👜",
+            "id": 4
+        },
+        {
+            "img": "sachet5.webp",
+            "name": "CHRISTMAS TEA - 24 SACHETS CRISTAL ENVELOPPES",
+            "content": "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+            "price": 13.50,
+            "icon": "👜",
+            "id": 5
+        },
+        {
+            "img": "sachet6.webp",
+            "name": "TISANE DE NOËL - 24 SACHETS CRISTAL ENVELOPPES",
+            "content": "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, GINGEMBRE, GIROFLE, POIVRE, BAIE ROSE",
+            "price": 17.50,
+            "icon": "👜",
+            "id": 6
+        }
     ]
 }
