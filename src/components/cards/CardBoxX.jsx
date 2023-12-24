@@ -6,10 +6,14 @@ function CardBoxX({ boxX }) {
   const [count, setCount] = useState(0);
 
   function handleClickLess() {
-    setCount(count - 1);
+    if (count > 0) {
+      setCount(count - 1);
+    }
   }
   function handleClickMore() {
-    setCount(count + 1);
+    if (count < 12) {
+      setCount(count + 1);
+    }
   }
 
   async function toogleFavorite(name) {
