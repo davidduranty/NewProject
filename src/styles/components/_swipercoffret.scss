@@ -4,6 +4,7 @@
 
 .caroussel-container-box {
   margin: 0 10%;
+
   .caroussel-box {
     display: flex;
     gap: 40px;
@@ -36,6 +37,26 @@
           margin-top: 20px;
           display: flex;
           justify-content: space-between;
+
+          p {
+            display: flex;
+            align-items: center;
+          }
+          .count-container {
+            border-radius: 5px;
+            min-width: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .btn-less,
+            .btn-more {
+              padding: 5px;
+            }
+            .result {
+              margin: 0 5px;
+            }
+          }
           .btn-like-box {
             background: none;
             border: none;
