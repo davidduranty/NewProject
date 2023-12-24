@@ -3,6 +3,14 @@ import { useEffect, useState } from "react";
 function CardBoxX({ boxX }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
+  const [count, setCount] = useState(0);
+
+  function handleClickLess() {
+    setCount(count - 1);
+  }
+  function handleClickMore() {
+    setCount(count + 1);
+  }
 
   async function toogleFavorite(name) {
     likeBoites.set(name, likeBoites.has(name) ? !likeBoites.get(name) : true); // fonction favorite
@@ -25,7 +33,16 @@ function CardBoxX({ boxX }) {
         <h1 className="h1-box">{boxX.name}</h1>
         <h2 className="h2-box">{boxX.content}</h2>
         <div className="priceAndBag-box">
-          <p>{boxX.price.toFixed(2)} 6 sachets</p>
+          <p>{boxX.price.toFixed(2)}/ Les 6 sachets</p>
+          <div className="count-container">
+            <button className="btn-less" onClick={handleClickLess}>
+              -
+            </button>
+            <span className="result">{count}</span>
+            <button className="btn-more" onClick={handleClickMore}>
+              +
+            </button>
+          </div>
           <div className="container-icon-box">
             <button
               className="btn-like-box"
