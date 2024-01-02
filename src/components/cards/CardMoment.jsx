@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
+import { useApi } from "../../data/Context";
 
 const CardMoment = ({ moment }) => {
+  const { count, handleClickLess, handleClickMore } = useApi();
   return (
     <div className="card-container">
       <li key={moment.id}>
@@ -10,6 +12,15 @@ const CardMoment = ({ moment }) => {
         <div className="contenance">
           <div className="contenance-priceAndBag">
             <p>{moment.price.toFixed(2)}</p>
+            <div className="count-container">
+              <button className="btn-less" onClick={handleClickLess}>
+                -
+              </button>
+              <span className="result">{count}</span>
+              <button className="btn-more" onClick={handleClickMore}>
+                +
+              </button>
+            </div>
             <h4>{moment.contenance}</h4>
           </div>
           <div className="contenance-container-icon">

@@ -9,6 +9,7 @@ export function ApiProvider({ children }) {
   const [getMoment, setGetMoment] = useState([]);
   const [getDej, setGetDej] = useState([]);
   const [getInfusion, setGetInfusion] = useState([]);
+  const [count, setCount] = useState(0);
   const getDataInfusion = async () => {
     try {
       const res = await axios.get("http://localhost:5172/infusions/");
@@ -108,6 +109,17 @@ export function ApiProvider({ children }) {
   useEffect(() => {
     getSelectionTea();
   }, []);
+
+  function handleClickLess() {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  }
+  function handleClickMore() {
+    if (count < 12) {
+      setCount(count + 1);
+    }
+  }
   return (
     <ContextGeneral.Provider
       value={{
@@ -121,6 +133,9 @@ export function ApiProvider({ children }) {
         getFromBigToSmall,
         getSearchCardDej,
         getInfusion,
+        handleClickLess,
+        handleClickMore,
+        count,
       }}
     >
       {children}
