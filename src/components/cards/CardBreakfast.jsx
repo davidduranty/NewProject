@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
+import { useApi } from "../../data/Context";
 const CardBreakfast = ({ breakfast }) => {
+  const { count, handleClickLess, handleClickMore } = useApi();
   return (
     <div className="card-container">
       <li>
@@ -8,6 +10,15 @@ const CardBreakfast = ({ breakfast }) => {
         <h2>{breakfast.content}</h2>
         <div className="breakfast-add">
           <p>{breakfast.price.toFixed(2)} £</p>
+          <div className="count-container">
+            <button className="btn-less" onClick={handleClickLess}>
+              -
+            </button>
+            <span className="result">{count}</span>
+            <button className="btn-more" onClick={handleClickMore}>
+              +
+            </button>
+          </div>
           <div>
             <p>{breakfast.icon}</p>
             <p>{breakfast.view}</p>

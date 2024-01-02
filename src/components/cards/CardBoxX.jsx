@@ -1,20 +1,10 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import { useApi } from "../../data/Context";
 function CardBoxX({ boxX }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
-  const [count, setCount] = useState(0);
-
-  function handleClickLess() {
-    if (count > 0) {
-      setCount(count - 1);
-    }
-  }
-  function handleClickMore() {
-    if (count < 12) {
-      setCount(count + 1);
-    }
-  }
+  const { count, handleClickLess, handleClickMore } = useApi();
 
   async function toogleFavorite(name) {
     likeBoites.set(name, likeBoites.has(name) ? !likeBoites.get(name) : true); // fonction favorite

@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
+import { useApi } from "../../data/Context";
 function CardCoffret({ coffret }) {
   const [apiCoffret, setApiCoffret] = useState([]);
   const [likeCoffret, setLikeCoffret] = useState(new Map());
+  const { count, handleClickLess, handleClickMore } = useApi();
 
   async function toogleFavorite(name) {
     likeCoffret.set(
@@ -33,6 +35,15 @@ function CardCoffret({ coffret }) {
         <h2 className="h2-box">{coffret.content}</h2>
         <div className="priceAndBag-box">
           <p>{coffret.price.toFixed(2)} / les 100 G</p>
+          <div className="count-container">
+            <button className="btn-less" onClick={handleClickLess}>
+              -
+            </button>
+            <span className="result">{count}</span>
+            <button className="btn-more" onClick={handleClickMore}>
+              +
+            </button>
+          </div>
           <div className="container-icon-box">
             <button
               className="btn-like-box"

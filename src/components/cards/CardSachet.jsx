@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { useApi } from "../../data/Context";
 
 function CardSachet({ sachet }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
+  const { count, handleClickLess, handleClickMore } = useApi();
 
   async function toogleFavorite(name) {
     likeBoites.set(name, likeBoites.has(name) ? !likeBoites.get(name) : true); // fonction favorite
@@ -27,6 +29,15 @@ function CardSachet({ sachet }) {
         <h2 className="h2-box">{sachet.content}</h2>
         <div className="priceAndBag-box">
           <p>{sachet.price.toFixed(2)} / Boîte</p>
+          <div className="count-container">
+            <button className="btn-less" onClick={handleClickLess}>
+              -
+            </button>
+            <span className="result">{count}</span>
+            <button className="btn-more" onClick={handleClickMore}>
+              +
+            </button>
+          </div>
           <div className="container-icon-box">
             <button
               className="btn-like-box"

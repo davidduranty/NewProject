@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import { useApi } from "../../data/Context";
 
 function CardSelectionSmallBreafast({ dej }) {
   const [api, setApi] = useState([]);
   const [favorites, setFavorites] = useState(new Map());
+  const { count, handleClickLess, handleClickMore } = useApi();
 
   async function toogleFavorite(name) {
     favorites.set(name, favorites.has(name) ? !favorites.get(name) : true); // fonction favorite
@@ -26,6 +28,15 @@ function CardSelectionSmallBreafast({ dej }) {
       <h2>{dej.content}</h2>
       <div className="breakfast-add">
         <p>{dej.price.toFixed(2)} / Les 100g</p>
+        <div className="count-container">
+          <button className="btn-less" onClick={handleClickLess}>
+            -
+          </button>
+          <span className="result">{count}</span>
+          <button className="btn-more" onClick={handleClickMore}>
+            +
+          </button>
+        </div>
         <div>
           <button
             className="btn-like"
