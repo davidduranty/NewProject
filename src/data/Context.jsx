@@ -10,6 +10,15 @@ export function ApiProvider({ children }) {
   const [getDej, setGetDej] = useState([]);
   const [getInfusion, setGetInfusion] = useState([]);
   const [count, setCount] = useState(0);
+  const [favorites, setFavorites] = useState(new Map());
+
+  async function toogleFavorite(name) {
+    favorites.set(name, favorites.has(name) ? !favorites.get(name) : true); // fonction favorite
+
+    setFavorites(favorites);
+    setGetDej(getDej);
+  }
+
   const getDataInfusion = async () => {
     try {
       const res = await axios.get("http://localhost:5172/infusions/");
@@ -136,6 +145,9 @@ export function ApiProvider({ children }) {
         handleClickLess,
         handleClickMore,
         count,
+        toogleFavorite,
+        setGetDej,
+        favorites,
       }}
     >
       {children}
