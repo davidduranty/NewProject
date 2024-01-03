@@ -2,17 +2,24 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 
-function CardSelectionSmallBreafast({ dej }) {
-  const [api, setApi] = useState([]);
-  const [favorites, setFavorites] = useState(new Map());
-  const { count, handleClickLess, handleClickMore } = useApi();
+function CardSelectionSmallBreafast() {
+  // const [api, setApi] = useState([]);
+  // const [favorites, setFavorites] = useState(new Map());
+  const {
+    count,
+    handleClickLess,
+    handleClickMore,
+    favorites,
+    toogleFavorite,
+    getDej,
+  } = useApi();
 
-  async function toogleFavorite(name) {
-    favorites.set(name, favorites.has(name) ? !favorites.get(name) : true); // fonction favorite
+  // async function toogleFavorite(name) {
+  //   favorites.set(name, favorites.has(name) ? !favorites.get(name) : true); // fonction favorite
 
-    setFavorites(favorites);
-    setApi(api);
-  }
+  //   setFavorites(favorites);
+  //   setApi(api);
+  // }
 
   const [reload, setReload] = useState(false);
 
@@ -23,32 +30,36 @@ function CardSelectionSmallBreafast({ dej }) {
   }
   return (
     <ul className="ul-settings-select">
-      <img src={dej.img} alt={"Thé" + dej.name} />
-      <h1>{dej.name}</h1>
-      <h2>{dej.content}</h2>
-      <div className="breakfast-add">
-        <p>{dej.price.toFixed(2)} / Les 100g</p>
-        <div className="count-container">
-          <button className="btn-less" onClick={handleClickLess}>
-            -
-          </button>
-          <span className="result">{count}</span>
-          <button className="btn-more" onClick={handleClickMore}>
-            +
-          </button>
+      {getDej.map((dej) => (
+        <div key={dej}>
+          <img src={dej.img} alt={"Thé" + dej.name} />
+          <h1>{dej.name}</h1>
+          <h2>{dej.content}</h2>
+          <div className="breakfast-add">
+            <p>{dej.price.toFixed(2)} / Les 100g</p>
+            <div className="count-container">
+              <button className="btn-less" onClick={handleClickLess}>
+                -
+              </button>
+              <span className="result">{count}</span>
+              <button className="btn-more" onClick={handleClickMore}>
+                +
+              </button>
+            </div>
+            <div>
+              <button
+                className="btn-like"
+                type="button"
+                onClick={() => onLike(dej.name)}
+              >
+                {favorites.get(dej.name) ? "❤️" : "🤍"}
+              </button>
+              <p>{dej.icon}</p>
+              <p>{dej.view}</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <button
-            className="btn-like"
-            type="button"
-            onClick={() => onLike(dej.name)}
-          >
-            {favorites.get(dej.name) ? "❤️" : "🤍"}
-          </button>
-          <p>{dej.icon}</p>
-          <p>{dej.view}</p>
-        </div>
-      </div>
+      ))}
     </ul>
   );
 }
