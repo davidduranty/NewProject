@@ -1,12 +1,15 @@
 .content-container {
-  width: 100%;
+  // width: 100%;
   .img1 {
     position: relative;
-    min-width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     opacity: 0.7;
+    img {
+      max-width: 100%;
+    }
 
     .grid-1 {
       position: absolute;
