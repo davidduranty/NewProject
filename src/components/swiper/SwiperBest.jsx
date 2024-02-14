@@ -6,15 +6,17 @@ const SwiperBest = () => {
   const { tea, getDataFilter } = useApi();
 
   return (
-    <>
+    <div className="container-response">
       <div className="title">
         <h1>MEILLEURES VENTES DU MOIS</h1>
-        <img src="search.png" alt="" />
-        <input
-          type="text"
-          placeholder="Recherche"
-          onChange={(e) => getDataFilter(e.target.value)}
-        />
+        <div className="container-search-icon">
+          <img src="search.png" alt="icon search" />
+          <input
+            type="text"
+            placeholder="Recherche"
+            onChange={(e) => getDataFilter(e.target.value)}
+          />
+        </div>
       </div>
       <div className="caroussel-container">
         <ul className="caroussel">
@@ -27,7 +29,7 @@ const SwiperBest = () => {
           </Swiper>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
