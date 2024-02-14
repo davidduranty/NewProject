@@ -19,9 +19,9 @@ function Icons() {
   return (
     <div className="icons-container" ref={menuRef}>
       <img src="user.png" alt="" onClick={() => setOpen(!open)} />
-      <Link to="/favorite">
-        <img src="favorite.png" alt="" />
-      </Link>
+
+      <img src="favorite.png" alt="" />
+
       <img src="bag.png" alt="" />
       {open && <Form />}
     </div>
