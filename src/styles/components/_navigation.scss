@@ -1,11 +1,12 @@
 .navigation-container {
-  min-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 12px;
   display: flex;
-  // position: fixed;
-  top: 0;
-  right: 0;
   z-index: 10000;
   background: $color2;
+  min-height: 80px;
 
   .ul {
     width: 70%;
@@ -88,6 +89,34 @@
         // background-color: $color6;
         border-radius: 50%;
       }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navigation-container {
+    width: 100%;
+    .ul {
+      .li {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-container {
+    width: 100%;
+    .logo-container {
+      width: 15%;
+      margin-left: -10px;
+    }
+    .ul {
+      width: 40%;
+      .li {
+        display: none;
+      }
+    }
+    .icons-container {
+      min-width: 40%;
     }
   }
 }

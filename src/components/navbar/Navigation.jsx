@@ -31,7 +31,7 @@ function Navigation() {
     };
   }, []);
   return (
-    <div className="container-response">
+    <div className="container-max">
       <div className="navigation-container">
         <Logo />
         <ul className="ul" ref={menuRef}>
