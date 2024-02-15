@@ -10,12 +10,15 @@ const SwiperSelectionMoment = () => {
     <>
       <div className="title">
         <h1>S&#201;LECTION DU MOMENT</h1>
-        <img src="search.png" alt="" />
-        <input
-          type="text"
-          placeholder="Recherche"
-          onChange={(e) => getDataFilterMoment(e.target.value)}
-        />
+        <div className="container-moment-search">
+          <img className="search-moment" src="search.png" alt="" />
+          <input
+            className="input-moment"
+            type="text"
+            placeholder="Recherche"
+            onChange={(e) => getDataFilterMoment(e.target.value)}
+          />
+        </div>
       </div>
       <div className="caroussel-container">
         <ul className="caroussel">
