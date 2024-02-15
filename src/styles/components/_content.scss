@@ -3,7 +3,7 @@
   .img1 {
     position: relative;
     max-width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -45,6 +45,21 @@
           scale: 1.2;
           transition: 0.5s ease-in-out;
           overflow: hidden;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 430px) {
+  .content-container {
+    width: 100%;
+    .img1 {
+      img {
+        max-height: 50vh;
+      }
+      .grid-1 {
+        h1 {
+          font-size: 2rem;
         }
       }
     }
