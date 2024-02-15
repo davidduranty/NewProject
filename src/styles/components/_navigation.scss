@@ -66,6 +66,7 @@
       font-size: 0.8rem;
       font-family: "font1";
       text-shadow: 4px 3px 20px white;
+      text-align: center;
     }
   }
 
@@ -74,7 +75,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: 20px;
+    // padding-right: 20px;
     img {
       margin-right: 30px;
       width: 20px;
@@ -106,8 +107,8 @@
   .navigation-container {
     width: 100%;
     .logo-container {
-      width: 15%;
-      margin-left: -10px;
+      width: 20%;
+      padding-left: -10px;
     }
     .ul {
       width: 40%;
@@ -117,6 +118,7 @@
     }
     .icons-container {
       min-width: 40%;
+      padding-right: 10px;
     }
   }
 }
