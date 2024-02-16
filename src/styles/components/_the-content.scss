@@ -62,11 +62,11 @@
     }
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 350px) {
   .the-container {
-    width: 100%;
+    min-width: 700px;
     display: flex;
-    height: 160vh;
+    height: 140vh;
     justify-content: center;
     align-items: start;
     .teas-balls-container {

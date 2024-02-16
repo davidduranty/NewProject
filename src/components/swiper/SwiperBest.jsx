@@ -6,7 +6,7 @@ const SwiperBest = () => {
   const { tea, getDataFilter } = useApi();
 
   return (
-    <div className="container-response">
+    <div>
       <div className="title">
         <h1>MEILLEURES VENTES DU MOIS</h1>
         <div className="container-search-icon">
