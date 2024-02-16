@@ -50,14 +50,24 @@
     }
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 350px) {
   .content-container {
     width: 100%;
     .img1 {
+      min-width: 700px;
       img {
+        min-width: 700px;
         max-height: 50vh;
       }
       .grid-1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         h1 {
           font-size: 2rem;
         }

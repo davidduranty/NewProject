@@ -1,5 +1,5 @@
 .title {
-  margin: 50px 8%;
+  // margin: 50px 8%;
   max-width: 100%;
   display: flex;
   justify-content: space-around;
@@ -228,33 +228,43 @@
     }
   }
 }
-@media screen and (min-width: 430px) {
-  .title {
-    display: flex;
-    flex-direction: column;
-    min-height: 150px;
-    h1 {
-      font-size: 1rem;
-      text-align: center;
-    }
-    .container-moment-search {
+@media screen and (min-width: 350px) {
+  div {
+    .title {
+      margin-left: 30%;
+
+      width: 100%;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      .search-moment {
-        width: 50px;
+      flex-direction: column;
+      min-height: 150px;
+      // margin: 0 auto;
+      h1 {
+        font-size: 1rem;
+        text-align: center;
       }
-      .input-moment {
-        width: 50%;
-        margin-left: 10px;
-        border-radius: 10px;
-        padding-left: 10px;
-        font-size: 1.5rem;
+      .container-moment-search {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .search-moment {
+          width: 50px;
+        }
+        .input-moment {
+          width: 50%;
+          margin-left: 10px;
+          border-radius: 10px;
+          padding-left: 10px;
+          font-size: 1.5rem;
+        }
+      }
+      .container-search-icon {
+        display: flex;
+        justify-content: space-around;
       }
     }
-    .container-search-icon {
-      display: flex;
-      justify-content: space-around;
+    .caroussel-container {
+      margin: 20px -140px 0 20%;
+      overflow: hidden;
     }
   }
 }

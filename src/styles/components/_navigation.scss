@@ -55,7 +55,7 @@
     flex-direction: column;
     @include center;
     cursor: pointer;
-    margin: 0 0 0 20px;
+    // margin: 0 0 0 20px;
 
     img {
       width: 30px;
@@ -120,5 +120,10 @@
       min-width: 40%;
       padding-right: 10px;
     }
+  }
+}
+@media screen and (min-width: 350px) {
+  .navigation-container {
+    width: 700px;
   }
 }

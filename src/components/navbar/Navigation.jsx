@@ -31,37 +31,35 @@ function Navigation() {
     };
   }, []);
   return (
-    <div className="container-max">
-      <div className="navigation-container">
-        <Logo />
-        <ul className="ul" ref={menuRef}>
-          <li className="li" onClick={() => setShowInfusion(!showInfusion)}>
-            THÉS & INFUSIONS
-          </li>
-          <li className="li" onClick={() => setShowBox(!showBox)}>
-            BOITES & SACHETS
-          </li>
-          <li className="li" onClick={() => setShowPresent(!showPresent)}>
-            COFFRETS & CADEAUX
-          </li>
-          <li
-            className="li"
-            onClick={() => setShowAccessoiries(!showAccessoiries)}
-          >
-            ACCESSOIRES
-          </li>
-          <li className="li">GOURMANDISES</li>
-          <li className="li" onClick={() => setShowFamily(!showFamily)}>
-            DOMAN
-          </li>
-          {showInfusion && <TeaInfusion />}
-          {showBox && <BoiteSachets />}
-          {showPresent && <CoffretKdo />}
-          {showAccessoiries && <Accessoires />}
-          {showFamily && <FamillyTeas />}
-        </ul>
-        <Icons />
-      </div>
+    <div className="navigation-container">
+      <Logo />
+      <ul className="ul" ref={menuRef}>
+        <li className="li" onClick={() => setShowInfusion(!showInfusion)}>
+          THÉS & INFUSIONS
+        </li>
+        <li className="li" onClick={() => setShowBox(!showBox)}>
+          BOITES & SACHETS
+        </li>
+        <li className="li" onClick={() => setShowPresent(!showPresent)}>
+          COFFRETS & CADEAUX
+        </li>
+        <li
+          className="li"
+          onClick={() => setShowAccessoiries(!showAccessoiries)}
+        >
+          ACCESSOIRES
+        </li>
+        <li className="li">GOURMANDISES</li>
+        <li className="li" onClick={() => setShowFamily(!showFamily)}>
+          DOMAN
+        </li>
+        {showInfusion && <TeaInfusion />}
+        {showBox && <BoiteSachets />}
+        {showPresent && <CoffretKdo />}
+        {showAccessoiries && <Accessoires />}
+        {showFamily && <FamillyTeas />}
+      </ul>
+      <Icons />
     </div>
   );
 }
