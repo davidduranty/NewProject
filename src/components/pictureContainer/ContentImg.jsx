@@ -10,24 +10,30 @@ const ContentImg = () => {
         <div className="grid-1">
           <h1>L &#201;T&#201; GLAC&#201;</h1>
           <Link to="/glace">
-            <button type="submit">D&#201;COUVRIR</button>
+            <button className="btn-grid" type="submit">
+              D&#201;COUVRIR
+            </button>
           </Link>
         </div>
       </div>
       <div className="img1">
         <img src={imagetwo} alt="" />
-        <div className="grid-1">
+        <div className="grid-2">
           <h1>GRANDS CRUS</h1>
           <Link to="/decouverte">
-            <button type="submit">NOUVELLES R&#201;COLTES</button>
+            <button className="btn-grid" type="submit">
+              NOUVELLES R&#201;COLTES
+            </button>
           </Link>
         </div>
       </div>
       <div className="img1">
         <img src={imagethree} alt="" />
-        <div className="grid-1">
+        <div className="grid-3">
           <h1>FLEURS BLANCHES</h1>
-          <button type="submit">D&#201;COUVRIR</button>
+          <button className="btn-grid" type="submit">
+            D&#201;COUVRIR
+          </button>
         </div>
       </div>
     </div>

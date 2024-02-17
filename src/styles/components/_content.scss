@@ -26,7 +26,76 @@
         color: white;
         font-size: 4rem;
       }
+      button {
+        min-width: 100%;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        font-family: "font2";
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
 
+        &:hover {
+          scale: 1.2;
+          transition: 0.5s ease-in-out;
+          overflow: hidden;
+        }
+      }
+    }
+    .grid-2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 130px;
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 4rem;
+      }
+      button {
+        min-width: 100%;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        font-family: "font2";
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+
+        &:hover {
+          scale: 1.2;
+          transition: 0.5s ease-in-out;
+          overflow: hidden;
+        }
+      }
+    }
+    .grid-3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 130px;
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 4rem;
+      }
       button {
         min-width: 100%;
         background: transparent;
@@ -56,20 +125,54 @@
     .img1 {
       min-width: 700px;
       img {
-        min-width: 700px;
+        object-fit: cover;
+        max-width: 70%;
         max-height: 50vh;
       }
       .grid-1 {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-130%, -50%);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         h1 {
-          font-size: 2rem;
+          font-size: 1.5rem;
+        }
+        .btn-grid {
+          color: white;
+        }
+      }
+      .grid-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-105%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+          font-size: 1.5rem;
+        }
+        .btn-grid {
+          color: white;
+          background: none;
+        }
+      }
+      .grid-3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+          font-size: 1.5rem;
         }
       }
     }

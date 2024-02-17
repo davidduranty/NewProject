@@ -7,15 +7,17 @@ const SwiperBest = () => {
 
   return (
     <div>
-      <div className="title">
-        <h1>MEILLEURES VENTES DU MOIS</h1>
-        <div className="container-search-icon">
-          <img src="search.png" alt="icon search" />
-          <input
-            type="text"
-            placeholder="Recherche"
-            onChange={(e) => getDataFilter(e.target.value)}
-          />
+      <div className="title-best-container">
+        <div className="title-best">
+          <h1>MEILLEURES VENTES DU MOIS</h1>
+          <div className="container-search-icon">
+            <img src="search.png" alt="icon search" />
+            <input
+              type="text"
+              placeholder="Recherche"
+              onChange={(e) => getDataFilter(e.target.value)}
+            />
+          </div>
         </div>
       </div>
       <div className="caroussel-container">

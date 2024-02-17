@@ -9,7 +9,7 @@
   min-height: 80px;
 
   .ul {
-    width: 70%;
+    // width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -93,7 +93,7 @@
     }
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .navigation-container {
     width: 100%;
     .ul {
@@ -103,7 +103,7 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation-container {
     width: 100%;
     .logo-container {
@@ -125,5 +125,11 @@
 @media screen and (min-width: 350px) {
   .navigation-container {
     width: 700px;
+    .ul {
+      width: 30%;
+      .li {
+        display: none;
+      }
+    }
   }
 }
