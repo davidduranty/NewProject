@@ -1,15 +1,11 @@
 .navigation-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 12px;
   display: flex;
   z-index: 10000;
   background: $color2;
   min-height: 80px;
 
   .ul {
-    // width: 70%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,7 +51,7 @@
     flex-direction: column;
     @include center;
     cursor: pointer;
-    // margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
 
     img {
       width: 30px;
@@ -89,46 +85,6 @@
         transition: 0.5s ease-in-out;
         // background-color: $color6;
         border-radius: 50%;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1000px) {
-  .navigation-container {
-    width: 100%;
-    .ul {
-      .li {
-        font-size: 0.5rem;
-      }
-    }
-  }
-}
-@media screen and (min-width: 768px) {
-  .navigation-container {
-    width: 100%;
-    .logo-container {
-      width: 20%;
-      padding-left: -10px;
-    }
-    .ul {
-      width: 40%;
-      .li {
-        display: none;
-      }
-    }
-    .icons-container {
-      min-width: 40%;
-      padding-right: 10px;
-    }
-  }
-}
-@media screen and (min-width: 350px) {
-  .navigation-container {
-    width: 700px;
-    .ul {
-      width: 30%;
-      .li {
-        display: none;
       }
     }
   }

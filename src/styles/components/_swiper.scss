@@ -1,5 +1,5 @@
 .title-best {
-  // margin: 50px 8%;
+  margin: 50px 8%;
   max-width: 100%;
   display: flex;
   justify-content: space-around;
@@ -10,9 +10,25 @@
     letter-spacing: 5px;
     margin-right: 20px;
   }
+  .container-moment-search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .search-moment {
+      margin: 0 20px;
+    }
+    .input-moment {
+      width: 50%;
+      margin-left: 10px;
+      border-radius: 10px;
+      padding-left: 10px;
+      font-size: 1.5rem;
+      height: 28px;
+    }
+  }
   .container-search-icon {
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
     .search-moment {
       width: 30px;
@@ -74,7 +90,7 @@
     justify-content: center;
     width: 350px;
     min-height: 600px;
-    // margin: 0 10%;
+    margin: 0 10%;
     border: 1px solid rgba(221, 217, 217, 0.549);
     border-radius: 10px;
     box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
@@ -226,47 +242,5 @@
     p {
       cursor: pointer;
     }
-  }
-}
-@media screen and (min-width: 350px) {
-  .title-best-container {
-    width: 450px;
-
-    // width: 435px;
-    .title-best {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      min-height: 150px;
-      // margin: 0 auto;
-      h1 {
-        font-size: 1rem;
-        text-align: center;
-      }
-      .container-moment-search {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .search-moment {
-          width: 50px;
-        }
-        .input-moment {
-          width: 50%;
-          margin-left: 10px;
-          border-radius: 10px;
-          padding-left: 10px;
-          font-size: 1.5rem;
-        }
-      }
-      .container-search-icon {
-        display: flex;
-        justify-content: space-around;
-      }
-    }
-  }
-  .caroussel-container {
-    // margin: 20px -140px 0 20%;
-    overflow: hidden;
   }
 }
