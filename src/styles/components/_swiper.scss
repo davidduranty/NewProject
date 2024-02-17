@@ -1,4 +1,4 @@
-.title {
+.title-best {
   // margin: 50px 8%;
   max-width: 100%;
   display: flex;
@@ -229,12 +229,14 @@
   }
 }
 @media screen and (min-width: 350px) {
-  div {
-    .title {
-      margin-left: 30%;
+  .title-best-container {
+    width: 450px;
 
+    // width: 435px;
+    .title-best {
       width: 100%;
       display: flex;
+      justify-content: center;
       flex-direction: column;
       min-height: 150px;
       // margin: 0 auto;
@@ -262,9 +264,9 @@
         justify-content: space-around;
       }
     }
-    .caroussel-container {
-      margin: 20px -140px 0 20%;
-      overflow: hidden;
-    }
+  }
+  .caroussel-container {
+    // margin: 20px -140px 0 20%;
+    overflow: hidden;
   }
 }
