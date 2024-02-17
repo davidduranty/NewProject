@@ -218,3 +218,35 @@
     }
   }
 }
+@media screen and (min-width: 350px) {
+  .footer-container {
+    margin: 0 auto;
+    .footer-container-haut {
+      display: flex;
+      flex-direction: column;
+      .frais-de-port-container {
+        margin-bottom: 20px;
+        .h4 {
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
+    .paiement-securise {
+      h2 {
+        margin-top: 10px;
+      }
+      h4 {
+        margin-top: 10px;
+      }
+    }
+    .sav-qualite {
+      h2 {
+        margin-top: 10px;
+      }
+      h4 {
+        margin-top: 10px;
+      }
+    }
+  }
+}
