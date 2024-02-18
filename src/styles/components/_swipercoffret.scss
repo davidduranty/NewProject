@@ -76,3 +76,30 @@
     font-family: "font2";
   }
 }
+.card-container {
+  .priceAndBag {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      display: flex;
+      align-items: center;
+    }
+    .count-container {
+      border-radius: 5px;
+      min-width: 20%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .btn-less,
+      .btn-more {
+        padding: 5px;
+      }
+      .result {
+        margin: 0 5px;
+      }
+    }
+  }
+}

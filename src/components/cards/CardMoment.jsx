@@ -12,6 +12,7 @@ const CardMoment = ({ moment }) => {
         <div className="contenance">
           <div className="contenance-priceAndBag">
             <p>{moment.price.toFixed(2)}</p>
+            <h4>{moment.contenance}</h4>
             <div className="count-container">
               <button className="btn-less" onClick={handleClickLess}>
                 -
@@ -21,7 +22,6 @@ const CardMoment = ({ moment }) => {
                 +
               </button>
             </div>
-            <h4>{moment.contenance}</h4>
           </div>
           <div className="contenance-container-icon">
             <span>{moment.bag}</span>
