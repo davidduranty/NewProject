@@ -1,8 +1,21 @@
+import { useState } from "react";
 import Home from "../../../pages/Home";
-import { Link } from "react-router-dom";
+
 import OldClient from "./OldClient";
 
 const Form = () => {
+  const [showNewClient, setShowNewClient] = useState(false);
+  const [showOldClient, setShowOldClient] = useState(false);
+
+  const openNewClientPopup = () => {
+    setShowNewClient(true);
+    setShowOldClient(false);
+  };
+
+  const openOldClientPopup = () => {
+    setShowNewClient(false);
+    setShowOldClient(true);
+  };
   return (
     <div className="container-login">
       <div className="lien-home">
@@ -11,14 +24,8 @@ const Form = () => {
       </div>
       <h1>CONNEXION</h1>
       <div className="container-client">
-        <nav>
-          <Link to="/">
-            <li onClick={<Form />}>Nouveau client</li>
-          </Link>
-          <Link to="/oldclient">
-            <li onClick={<OldClient />}>Déjà client</li>
-          </Link>
-        </nav>
+        <li onClick={openNewClientPopup}>Nouveau Client</li>
+        <li onClick={openOldClientPopup}>Déjà Client</li>
       </div>
       <div className="form">
         <div className="mrs-mr">
