@@ -1,24 +1,37 @@
-import Home from "../../../pages/Home";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import OldClient from "./OldClient";
+import { Link } from "react-router-dom";
 
 const Form = () => {
+  const [showNewClient, setShowNewClient] = useState(false);
+  const [showOldClient, setShowOldClient] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openNewClientPopup = () => {
+    setShowNewClient(true);
+    setShowOldClient(false);
+  };
+
+  const openOldClientPopup = () => {
+    setShowNewClient(false);
+    setShowOldClient(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
   return (
-    <div className="container-login">
+    <div className={`container-login ${showPopup ? "show" : "hide"}`}>
       <div className="lien-home">
-        <a href={<Home />}>Accueil</a>
+        <Link to="/home">
+          <li onClick={closePopup}>Accueil</li>
+        </Link>
         <p>| Connexion</p>
       </div>
       <h1>CONNEXION</h1>
       <div className="container-client">
-        <nav>
-          <Link to="/">
-            <li onClick={<Form />}>Nouveau client</li>
-          </Link>
-          <Link to="/oldclient">
-            <li onClick={<OldClient />}>Déjà client</li>
-          </Link>
-        </nav>
+        <li onClick={openNewClientPopup}>Nouveau Client</li>
+        <li onClick={openOldClientPopup}>Déjà Client</li>
       </div>
       <div className="form">
         <div className="mrs-mr">
@@ -55,6 +68,8 @@ const Form = () => {
         </button>
         <p>Les champs marqués d une * sont obligatoires.</p>
       </div>
+      {showNewClient && <Form />}
+      {showOldClient && <OldClient />}
     </div>
   );
 };
