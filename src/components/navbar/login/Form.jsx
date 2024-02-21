@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Home from "../../../pages/Home";
-
 import OldClient from "./OldClient";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const [showNewClient, setShowNewClient] = useState(false);
   const [showOldClient, setShowOldClient] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const openNewClientPopup = () => {
     setShowNewClient(true);
@@ -16,10 +16,16 @@ const Form = () => {
     setShowNewClient(false);
     setShowOldClient(true);
   };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
   return (
-    <div className="container-login">
+    <div className={`container-login ${showPopup ? "show" : "hide"}`}>
       <div className="lien-home">
-        <a href={<Home />}>Accueil</a>
+        <Link to="/home">
+          <li onClick={closePopup}>Accueil</li>
+        </Link>
         <p>| Connexion</p>
       </div>
       <h1>CONNEXION</h1>
@@ -62,6 +68,8 @@ const Form = () => {
         </button>
         <p>Les champs marqués d une * sont obligatoires.</p>
       </div>
+      {showNewClient && <Form />}
+      {showOldClient && <OldClient />}
     </div>
   );
 };
