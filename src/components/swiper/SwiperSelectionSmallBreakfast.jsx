@@ -3,21 +3,8 @@ import { useApi } from "../../data/Context";
 import CardSelectionSmallBreafast from "../cards/CardSelectionSmallBreafast";
 
 function SwiperSelectionSmallBreakfast() {
-  // const [rangeValue, setRangeValue] = useState(1);
-  const {
-    getDej,
-    getClear,
-    getFromSmallToBig,
-    getFromBigToSmall,
-    getSearchCardDej,
-  } = useApi();
-
-  // const getDisplay = () => {
-  //   let input = document.querySelector(".selection-map");
-  //   if (rangeValue < 4) {
-  //     input.classList.add("lessFour");
-  //   }
-  // };
+  const { getClear, getFromSmallToBig, getFromBigToSmall, getSearchCardDej } =
+    useApi();
 
   return (
     <>
@@ -41,22 +28,7 @@ function SwiperSelectionSmallBreakfast() {
         </span>
       </div>
       <div className="selection-map">
-        {/* <div className="input-range">
-          <label htmlFor="" onChange={getDisplay}>
-            {rangeValue}
-          </label>
-          <input
-            id="input"
-            type="range"
-            min="0"
-            max="12"
-            defaultValue={rangeValue}
-            onChange={(e) => setRangeValue(e.target.value)}
-          />
-        </div> */}
-        {getDej.map((dej) => (
-          <CardSelectionSmallBreafast dej={dej} key={dej.id} />
-        ))}
+        <CardSelectionSmallBreafast />
       </div>
     </>
   );

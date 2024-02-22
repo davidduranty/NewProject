@@ -57,6 +57,7 @@
       cursor: pointer;
       padding-left: 5px;
       margin-bottom: 20px;
+      display: flex;
 
       img {
         width: 100%;
@@ -152,7 +153,6 @@
 
   .lessFour {
     display: flex;
-    border: 3px solid red;
   }
 
   .input-range {
@@ -179,7 +179,6 @@
   }
 
   .ul-settings-select {
-    // border: 3px solid red;
     margin: 0 auto;
     max-width: 350px;
     border: 1px solid rgba(221, 217, 217, 0.549);
@@ -187,6 +186,9 @@
     box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
     margin-bottom: 20px;
     cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
     img {
       max-width: 350px;
