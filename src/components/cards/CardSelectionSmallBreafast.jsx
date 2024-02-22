@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 
 function CardSelectionSmallBreafast() {
+  // const [rangeValue, setRangeValue] = useState(12);
   // const [api, setApi] = useState([]);
   // const [favorites, setFavorites] = useState(new Map());
   const {
@@ -20,6 +21,12 @@ function CardSelectionSmallBreafast() {
   //   setFavorites(favorites);
   //   setApi(api);
   // }
+  // const getDisplay = () => {
+  //   let input = document.querySelector(".selection-map");
+  //   if (rangeValue < 4) {
+  //     input.classList.add("lessFour");
+  //   }
+  // };
 
   const [reload, setReload] = useState(false);
 
@@ -29,9 +36,10 @@ function CardSelectionSmallBreafast() {
     setReload(!reload);
   }
   return (
-    <ul className="ul-settings-select">
+    // <ul >
+    <>
       {getDej.map((dej) => (
-        <div key={dej}>
+        <div className="ul-settings-select" key={dej}>
           <img src={dej.img} alt={"Thé" + dej.name} />
           <h1>{dej.name}</h1>
           <h2>{dej.content}</h2>
@@ -60,7 +68,21 @@ function CardSelectionSmallBreafast() {
           </div>
         </div>
       ))}
-    </ul>
+      {/* <div className="input-range">
+        <label htmlFor="" onChange={getDisplay}>
+          {rangeValue}
+        </label>
+        <input
+          id="input"
+          type="range"
+          min="0"
+          max="12"
+          defaultValue={rangeValue}
+          onChange={(e) => setRangeValue(e.target.value)}
+        />
+      </div> */}
+    </>
+    // </ul>
   );
 }
 
