@@ -29,9 +29,10 @@ function CardSelectionSmallBreafast() {
     setReload(!reload);
   }
   return (
-    <ul className="ul-settings-select">
+    // <ul >
+    <>
       {getDej.map((dej) => (
-        <div key={dej}>
+        <div className="ul-settings-select" key={dej}>
           <img src={dej.img} alt={"Thé" + dej.name} />
           <h1>{dej.name}</h1>
           <h2>{dej.content}</h2>
@@ -60,7 +61,8 @@ function CardSelectionSmallBreafast() {
           </div>
         </div>
       ))}
-    </ul>
+    </>
+    // </ul>
   );
 }
 

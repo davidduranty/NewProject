@@ -1,9 +1,9 @@
 import { useApi } from "../../data/Context";
-import { useState } from "react";
+// import { useState } from "react";
 import CardSelectionSmallBreafast from "../cards/CardSelectionSmallBreafast";
 
 function SwiperSelectionSmallBreakfast() {
-  const [rangeValue, setRangeValue] = useState(12);
+  // const [rangeValue, setRangeValue] = useState(1);
   const {
     getDej,
     getClear,
@@ -12,12 +12,12 @@ function SwiperSelectionSmallBreakfast() {
     getSearchCardDej,
   } = useApi();
 
-  const getDisplay = () => {
-    let input = document.querySelector(".selection-map");
-    if (rangeValue < 4) {
-      input.classList.add("lessFour");
-    }
-  };
+  // const getDisplay = () => {
+  //   let input = document.querySelector(".selection-map");
+  //   if (rangeValue < 4) {
+  //     input.classList.add("lessFour");
+  //   }
+  // };
 
   return (
     <>
@@ -41,7 +41,7 @@ function SwiperSelectionSmallBreakfast() {
         </span>
       </div>
       <div className="selection-map">
-        <div className="input-range">
+        {/* <div className="input-range">
           <label htmlFor="" onChange={getDisplay}>
             {rangeValue}
           </label>
@@ -53,8 +53,8 @@ function SwiperSelectionSmallBreakfast() {
             defaultValue={rangeValue}
             onChange={(e) => setRangeValue(e.target.value)}
           />
-        </div>
-        {getDej.slice(0, rangeValue).map((dej) => (
+        </div> */}
+        {getDej.map((dej) => (
           <CardSelectionSmallBreafast dej={dej} key={dej.id} />
         ))}
       </div>
