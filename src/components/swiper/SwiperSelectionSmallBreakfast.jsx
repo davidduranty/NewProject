@@ -8,7 +8,7 @@ function SwiperSelectionSmallBreakfast() {
 
   return (
     <>
-      <div className="title">
+      <div className="title-breakfast-container">
         <h1>SÉLECTION PETIT-DÉJEUNER</h1>
         <img src="search.png" alt="" />
         <input
