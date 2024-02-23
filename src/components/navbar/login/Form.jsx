@@ -30,8 +30,10 @@ const Form = () => {
       </div>
       <h1>CONNEXION</h1>
       <div className="container-client">
-        <li onClick={openNewClientPopup}>Nouveau Client</li>
-        <li onClick={openOldClientPopup}>Déjà Client</li>
+        <nav>
+          <li onClick={openNewClientPopup}>Nouveau Client</li>
+          <li onClick={openOldClientPopup}>Déjà Client</li>
+        </nav>
       </div>
       <div className="form">
         <div className="mrs-mr">
