@@ -9,23 +9,33 @@ function SwiperSelectionSmallBreakfast() {
   return (
     <>
       <div className="title-breakfast-container">
-        <h1>SÉLECTION PETIT-DÉJEUNER</h1>
-        <img src="search.png" alt="" />
-        <input
-          id="my-input"
-          type="text"
-          placeholder="Recherche"
-          onChange={(e) => getSearchCardDej(e.target.value)}
-        />
-        <button className="spanUp" onClick={(e) => getFromSmallToBig(e.target)}>
-          &#8593;
-        </button>
-        <span className="spanLess" onClick={(e) => getFromBigToSmall(e.target)}>
-          &#8595;
-        </span>
-        <span className="clear" onClick={(e) => getClear(e.target)}>
-          &#9850;
-        </span>
+        <div className="title-breakfast-content">
+          <h1>SÉLECTION PETIT-DÉJEUNER</h1>
+        </div>
+        <div className="filter-container-small-breakfast">
+          <img src="search.png" alt="" />
+          <input
+            id="my-input"
+            type="text"
+            placeholder="Recherche"
+            onChange={(e) => getSearchCardDej(e.target.value)}
+          />
+          <button
+            className="spanUp-filter"
+            onClick={(e) => getFromSmallToBig(e.target)}
+          >
+            &#8593;
+          </button>
+          <button
+            className="spanLess-filter"
+            onClick={(e) => getFromBigToSmall(e.target)}
+          >
+            &#8595;
+          </button>
+          <button className="clear-filter" onClick={(e) => getClear(e.target)}>
+            &#9850;
+          </button>
+        </div>
       </div>
       <div className="selection-map">
         <CardSelectionSmallBreafast />
