@@ -254,6 +254,23 @@
       p {
         color: black;
       }
+      .count-container-small-break {
+        margin: 0 auto;
+
+        display: flex;
+        align-items: end;
+        padding-bottom: 5px;
+        .btn-less-small-break,
+        .btn-more-small-break {
+          padding: 3px;
+        }
+        .btn-less-small-break {
+          margin-right: 5px;
+        }
+        .btn-more-small-break {
+          margin-left: 5px;
+        }
+      }
 
       div {
         display: flex;
