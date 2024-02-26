@@ -10,16 +10,16 @@ const CardBreakfast = ({ breakfast }) => {
         <h2>{breakfast.content}</h2>
         <div className="breakfast-add">
           <p>{breakfast.price.toFixed(2)} £</p>
-          <div className="count-container">
-            <button className="btn-less" onClick={handleClickLess}>
+          <div className="count-container-break">
+            <button className="btn-less-break" onClick={handleClickLess}>
               -
             </button>
             <span className="result">{count}</span>
-            <button className="btn-more" onClick={handleClickMore}>
+            <button className="btn-more-break" onClick={handleClickMore}>
               +
             </button>
           </div>
-          <div>
+          <div className="container-break-icon">
             <p>{breakfast.icon}</p>
             <p>{breakfast.view}</p>
           </div>
