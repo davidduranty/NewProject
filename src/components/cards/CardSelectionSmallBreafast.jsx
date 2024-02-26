@@ -45,12 +45,18 @@ function CardSelectionSmallBreafast() {
           <h2>{dej.content}</h2>
           <div className="breakfast-add">
             <p>{dej.price.toFixed(2)} / Les 100g</p>
-            <div className="count-container">
-              <button className="btn-less" onClick={handleClickLess}>
+            <div className="count-container-small-break">
+              <button
+                className="btn-less-small-break"
+                onClick={handleClickLess}
+              >
                 -
               </button>
               <span className="result">{count}</span>
-              <button className="btn-more" onClick={handleClickMore}>
+              <button
+                className="btn-more-small-break"
+                onClick={handleClickMore}
+              >
                 +
               </button>
             </div>
