@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 
 function CardSelectionSmallBreafast() {
-  // const [rangeValue, setRangeValue] = useState(12);
+  const [rangeValue, setRangeValue] = useState(12);
   // const [api, setApi] = useState([]);
   // const [favorites, setFavorites] = useState(new Map());
   const {
@@ -38,7 +38,7 @@ function CardSelectionSmallBreafast() {
   return (
     // <ul >
     <>
-      {getDej.map((dej) => (
+      {getDej.slice(0, rangeValue).map((dej) => (
         <div className="ul-settings-select" key={dej}>
           <img src={dej.img} alt={"Thé" + dej.name} />
           <h1>{dej.name}</h1>
@@ -74,10 +74,8 @@ function CardSelectionSmallBreafast() {
           </div>
         </div>
       ))}
-      {/* <div className="input-range">
-        <label htmlFor="" onChange={getDisplay}>
-          {rangeValue}
-        </label>
+      <div className="input-range">
+        <label htmlFor="">{rangeValue}</label>
         <input
           id="input"
           type="range"
@@ -86,7 +84,7 @@ function CardSelectionSmallBreafast() {
           defaultValue={rangeValue}
           onChange={(e) => setRangeValue(e.target.value)}
         />
-      </div> */}
+      </div>
     </>
     // </ul>
   );
