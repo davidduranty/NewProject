@@ -1,8 +1,21 @@
 import Home from "../../../pages/Home";
 import Navigation from "../Navigation";
 import { Link } from "react-router-dom";
+import Form from "./Form";
+import { useState } from "react";
 
 export default function OldClient() {
+  const [getNew, setGetNew] = useState();
+  const [getOld, setGetOld] = useState();
+
+  function getNewClient() {
+    setGetNew(true);
+    setGetOld(false);
+  }
+  function getOldClient() {
+    setGetOld(true);
+    setGetNew(false);
+  }
   return (
     <div>
       <Navigation />
@@ -13,14 +26,8 @@ export default function OldClient() {
         </div>
         <h1>CONNEXION</h1>
         <div className="container-client">
-          <nav>
-            <Link to="/">
-              <li>Nouveau client</li>
-            </Link>
-            <Link to="/oldclient">
-              <li>Déjà client</li>
-            </Link>
-          </nav>
+          <button onClick={getNewClient}>Nouveau client</button>
+          <button onClick={getOldClient}>Déjà client</button>
         </div>
         <div className="form-input form-client">
           <input type="email" placeholder="Email *" autoComplete="none" />
@@ -36,6 +43,8 @@ export default function OldClient() {
           <p className="mdp-loose">MOT DE PASSE OUBLIÉ ?</p>
         </Link>
       </div>
+      {getNew && <Form />}
+      {getOld && <OldClient />}
     </div>
   );
 }
