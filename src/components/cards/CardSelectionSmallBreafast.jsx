@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 
 function CardSelectionSmallBreafast() {
   const [rangeValue, setRangeValue] = useState(12);
-  // const [api, setApi] = useState([]);
-  // const [favorites, setFavorites] = useState(new Map());
+
   const {
     count,
     handleClickLess,
@@ -14,19 +13,6 @@ function CardSelectionSmallBreafast() {
     toogleFavorite,
     getDej,
   } = useApi();
-
-  // async function toogleFavorite(name) {
-  //   favorites.set(name, favorites.has(name) ? !favorites.get(name) : true); // fonction favorite
-
-  //   setFavorites(favorites);
-  //   setApi(api);
-  // }
-  // const getDisplay = () => {
-  //   let input = document.querySelector(".selection-map");
-  //   if (rangeValue < 4) {
-  //     input.classList.add("lessFour");
-  //   }
-  // };
 
   const [reload, setReload] = useState(false);
 
@@ -90,16 +76,16 @@ function CardSelectionSmallBreafast() {
   );
 }
 
-CardSelectionSmallBreafast.propTypes = {
-  dej: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    icon: PropTypes.string.isRequired,
-    view: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-  }).isRequired,
-};
+// CardSelectionSmallBreafast.propTypes = {
+//   dej: PropTypes.shape({
+//     img: PropTypes.string.isRequired,
+//     name: PropTypes.string.isRequired,
+//     content: PropTypes.string.isRequired,
+//     price: PropTypes.number.isRequired,
+//     icon: PropTypes.string.isRequired,
+//     view: PropTypes.string.isRequired,
+//     id: PropTypes.number.isRequired,
+//   }).isRequired,
+// };
 
 export default CardSelectionSmallBreafast;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useApi } from "../data/Context";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 function Favorite() {
   const {
@@ -53,16 +53,16 @@ function Favorite() {
     </ul>
   );
 }
-Favorite.propTypes = {
-  dej: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    icon: PropTypes.string.isRequired,
-    view: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-  }).isRequired,
-};
+// Favorite.propTypes = {
+//   dej: PropTypes.shape({
+//     img: PropTypes.string.isRequired,
+//     name: PropTypes.string.isRequired,
+//     content: PropTypes.string.isRequired,
+//     price: PropTypes.number.isRequired,
+//     icon: PropTypes.string.isRequired,
+//     view: PropTypes.string.isRequired,
+//     id: PropTypes.number.isRequired,
+//   }).isRequired,
+// };
 
 export default Favorite;
