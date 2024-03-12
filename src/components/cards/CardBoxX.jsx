@@ -4,7 +4,20 @@ import { useApi } from "../../data/Context";
 function CardBoxX({ boxX }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
-  const { count, handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore } = useApi();
+  const [count, setCount] = useState(0);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+    handleClickMore();
+  };
+
+  const handleDecrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+      handleClickLess();
+    }
+  };
 
   async function toogleFavorite(name) {
     likeBoites.set(name, likeBoites.has(name) ? !likeBoites.get(name) : true); // fonction favorite
@@ -29,11 +42,11 @@ function CardBoxX({ boxX }) {
         <div className="priceAndBag-box">
           <p>{boxX.price.toFixed(2)}/ Les 6 sachets</p>
           <div className="count-container">
-            <button className="btn-less" onClick={handleClickLess}>
+            <button className="btn-less" onClick={handleDecrement}>
               -
             </button>
             <span className="result">{count}</span>
-            <button className="btn-more" onClick={handleClickMore}>
+            <button className="btn-more" onClick={handleIncrement}>
               +
             </button>
           </div>
