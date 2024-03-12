@@ -4,7 +4,20 @@ import { useApi } from "../../data/Context";
 function CardCoffret({ coffret }) {
   const [apiCoffret, setApiCoffret] = useState([]);
   const [likeCoffret, setLikeCoffret] = useState(new Map());
-  const { count, handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore } = useApi();
+  const [count, setCount] = useState(0);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+    handleClickMore();
+  };
+
+  const handleDecrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+      handleClickLess();
+    }
+  };
 
   async function toogleFavorite(name) {
     likeCoffret.set(
@@ -36,11 +49,11 @@ function CardCoffret({ coffret }) {
         <div className="priceAndBag-box">
           <p>{coffret.price.toFixed(2)} / les 100 G</p>
           <div className="count-container">
-            <button className="btn-less" onClick={handleClickLess}>
+            <button className="btn-less" onClick={handleDecrement}>
               -
             </button>
             <span className="result">{count}</span>
-            <button className="btn-more" onClick={handleClickMore}>
+            <button className="btn-more" onClick={handleIncrement}>
               +
             </button>
           </div>

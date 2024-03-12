@@ -1,8 +1,22 @@
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
+import { useState } from "react";
 
 const Card = ({ tea }) => {
-  const { count, handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore } = useApi();
+  const [count, setCount] = useState(0);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+    handleClickMore();
+  };
+
+  const handleDecrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+      handleClickLess();
+    }
+  };
   return (
     <div className="card-container">
       <li key={tea.id}>
@@ -12,11 +26,11 @@ const Card = ({ tea }) => {
         <div className="priceAndBag">
           <p>{tea.price.toFixed(2)} / les 100 G</p>
           <div className="count-container">
-            <button className="btn-less" onClick={handleClickLess}>
+            <button className="btn-less" onClick={handleDecrement}>
               -
             </button>
             <span className="result">{count}</span>
-            <button className="btn-more" onClick={handleClickMore}>
+            <button className="btn-more" onClick={handleIncrement}>
               +
             </button>
           </div>
