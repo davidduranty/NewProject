@@ -1,91 +1,76 @@
 import { useState, useEffect } from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 
-function CardSelectionSmallBreafast() {
-  const [rangeValue, setRangeValue] = useState(12);
-
-  const {
-    count,
-    handleClickLess,
-    handleClickMore,
-    favorites,
-    toogleFavorite,
-    getDej,
-  } = useApi();
+function CardSelectionSmallBreafast({ dej }) {
+  const { handleClickLess, handleClickMore, favorites, toogleFavorite } =
+    useApi();
 
   const [reload, setReload] = useState(false);
-
+  const [count, setCount] = useState(0);
   useEffect(() => {}, [reload]);
   function onLike(name) {
     toogleFavorite(name);
     setReload(!reload);
   }
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+    handleClickMore();
+  };
+
+  const handleDecrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+      handleClickLess();
+    }
+  };
   return (
     // <ul >
     <>
-      {getDej.slice(0, rangeValue).map((dej) => (
-        <div className="ul-settings-select" key={dej}>
-          <img src={dej.img} alt={"Thé" + dej.name} />
-          <h1>{dej.name}</h1>
-          <h2>{dej.content}</h2>
-          <div className="breakfast-add">
-            <p>{dej.price.toFixed(2)} / Les 100g</p>
-            <div className="count-container-small-break">
-              <button
-                className="btn-less-small-break"
-                onClick={handleClickLess}
-              >
-                -
-              </button>
-              <span className="result">{count}</span>
-              <button
-                className="btn-more-small-break"
-                onClick={handleClickMore}
-              >
-                +
-              </button>
-            </div>
-            <div>
-              <button
-                className="btn-like"
-                type="button"
-                onClick={() => onLike(dej.name)}
-              >
-                {favorites.get(dej.name) ? "❤️" : "🤍"}
-              </button>
-              <p>{dej.icon}</p>
-              <p>{dej.view}</p>
-            </div>
+      <div className="ul-settings-select">
+        <img src={dej.img} alt={"Thé" + dej.name} />
+        <h1>{dej.name}</h1>
+        <h2>{dej.content}</h2>
+        <div className="breakfast-add">
+          <p>{dej.price.toFixed(2)} / Les 100g</p>
+          <div className="count-container-small-break">
+            <button className="btn-less-small-break" onClick={handleDecrement}>
+              -
+            </button>
+            <span className="result">{count}</span>
+            <button className="btn-more-small-break" onClick={handleIncrement}>
+              +
+            </button>
+          </div>
+          <div>
+            <button
+              className="btn-like"
+              type="button"
+              onClick={() => onLike(dej.name)}
+            >
+              {favorites.get(dej.name) ? "❤️" : "🤍"}
+            </button>
+            <p>{dej.icon}</p>
+            <p>{dej.view}</p>
           </div>
         </div>
-      ))}
-      <div className="input-range">
-        <label htmlFor="">{rangeValue}</label>
-        <input
-          id="input"
-          type="range"
-          min="0"
-          max="12"
-          defaultValue={rangeValue}
-          onChange={(e) => setRangeValue(e.target.value)}
-        />
       </div>
     </>
     // </ul>
   );
 }
 
-// CardSelectionSmallBreafast.propTypes = {
-//   dej: PropTypes.shape({
-//     img: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//     content: PropTypes.string.isRequired,
-//     price: PropTypes.number.isRequired,
-//     icon: PropTypes.string.isRequired,
-//     view: PropTypes.string.isRequired,
-//     id: PropTypes.number.isRequired,
-//   }).isRequired,
-// };
+CardSelectionSmallBreafast.propTypes = {
+  dej: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    icon: PropTypes.string.isRequired,
+    view: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default CardSelectionSmallBreafast;

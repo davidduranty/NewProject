@@ -1,10 +1,16 @@
+import { useState } from "react";
 import { useApi } from "../../data/Context";
-// import { useState } from "react";
 import CardSelectionSmallBreafast from "../cards/CardSelectionSmallBreafast";
 
 function SwiperSelectionSmallBreakfast() {
-  const { getClear, getFromSmallToBig, getFromBigToSmall, getSearchCardDej } =
-    useApi();
+  const {
+    getClear,
+    getFromSmallToBig,
+    getFromBigToSmall,
+    getSearchCardDej,
+    getDej,
+  } = useApi();
+  const [rangeValue, setRangeValue] = useState(12);
 
   return (
     <>
@@ -38,7 +44,20 @@ function SwiperSelectionSmallBreakfast() {
         </div>
       </div>
       <div className="selection-map">
-        <CardSelectionSmallBreafast />
+        {getDej.slice(0, rangeValue).map((dej) => (
+          <CardSelectionSmallBreafast dej={dej} key={dej} />
+        ))}
+      </div>
+      <div className="input-range">
+        <label htmlFor="">{rangeValue}</label>
+        <input
+          id="input"
+          type="range"
+          min="0"
+          max="12"
+          defaultValue={rangeValue}
+          onChange={(e) => setRangeValue(e.target.value)}
+        />
       </div>
     </>
   );
