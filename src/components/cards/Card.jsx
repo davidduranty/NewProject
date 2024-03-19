@@ -19,7 +19,7 @@ const Card = ({ tea }) => {
   };
   return (
     <div className="card-container">
-      <li key={tea.id}>
+      <li>
         <img src={tea.img} alt={"image" + tea.name} />
         <h1>{tea.name}</h1>
         <h2>{tea.content}</h2>

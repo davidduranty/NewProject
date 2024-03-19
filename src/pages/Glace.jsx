@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import TitleImgTextIce from "../components/pictureContainer/TitleImgTextIce";
-import CardSmallDej from "../components/cards/CardSmallDej";
+
 import SwiperSelectionSmallBreakfast from "../components/swiper/swiperSelectionSmallBreakfast";
 import SwiperBreakfast from "../components/swiper/SwiperBreakfast";
+import SwiperTasse from "../components/swiper/SwiperTasse";
 
 function Glace() {
   useEffect(() => {
@@ -17,7 +18,7 @@ function Glace() {
   return (
     <>
       <TitleImgTextIce />
-      <CardSmallDej />
+      <SwiperTasse />
       <SwiperSelectionSmallBreakfast />
       <SwiperBreakfast />
     </>
