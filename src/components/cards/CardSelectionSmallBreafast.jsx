@@ -5,7 +5,6 @@ import { useApi } from "../../data/Context";
 function CardSelectionSmallBreafast({ dej }) {
   const { handleClickLess, handleClickMore, favorites, toogleFavorite } =
     useApi();
-
   const [reload, setReload] = useState(false);
   const [count, setCount] = useState(0);
   useEffect(() => {}, [reload]);
