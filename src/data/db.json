@@ -177,6 +177,8 @@
       "name": "MUG EN PORCELAINE BONE CHINA, DOMAN FRÈRES",
       "content": "Bols/Tasses/Autres | Autres",
       "price": 13.5,
+      "icon": "👜",
+      "view": "👁️‍🗨️",
       "id": 1
     },
     {
@@ -184,6 +186,8 @@
       "name": "MUG DOMAN FRÈRES HÔTEL, PORCELAINE BLANCHE",
       "content": "Bols/Tasses/Autres | Autres",
       "price": 8.0,
+      "icon": "👜",
+      "view": "👁️‍🗨️",
       "id": 2
     }
   ],
