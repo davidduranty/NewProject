@@ -5,7 +5,7 @@ import { useApi } from "../../data/Context";
 const CardSmallDej = ({ tasse }) => {
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
-  const [showImage, setShowImage] = useState(false);
+  const [showImage, setShowImage] = useState(true);
 
   const handleIncrement = () => {
     setCount(count + 1);

@@ -47,17 +47,17 @@ function SwiperSelectionSmallBreakfast() {
         {getDej.slice(0, rangeValue).map((dej) => (
           <CardSelectionSmallBreafast dej={dej} key={dej} />
         ))}
-      </div>
-      <div className="input-range">
-        <label htmlFor="">{rangeValue}</label>
-        <input
-          id="input"
-          type="range"
-          min="0"
-          max="12"
-          defaultValue={rangeValue}
-          onChange={(e) => setRangeValue(e.target.value)}
-        />
+        <div className="input-range">
+          <label htmlFor="">{rangeValue}</label>
+          <input
+            id="input"
+            type="range"
+            min="0"
+            max="12"
+            defaultValue={rangeValue}
+            onChange={(e) => setRangeValue(e.target.value)}
+          />
+        </div>
       </div>
     </>
   );
