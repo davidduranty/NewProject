@@ -5,6 +5,7 @@ import { useApi } from "../../data/Context";
 const CardSmallDej = ({ tasse }) => {
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
+  const [showImage, setShowImage] = useState(false);
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -17,10 +18,13 @@ const CardSmallDej = ({ tasse }) => {
       handleClickLess();
     }
   };
+  const toggleImage = () => {
+    setShowImage(!showImage);
+  };
 
   return (
     <ul className="ul-settings">
-      <img src={tasse.img} alt="Tasse Doman" />
+      {showImage && <img src={tasse.img} alt="Tasse Doman" />}
       <h1>{tasse.name}</h1>
       <h2>{tasse.content}</h2>
       <div className="tasse-container-price">
@@ -37,7 +41,7 @@ const CardSmallDej = ({ tasse }) => {
           </button>
         </div>
         <p>{tasse.icon}</p>
-        <p>{tasse.view}</p>
+        <p onClick={toggleImage}>{tasse.view}</p>
       </div>
     </ul>
   );
