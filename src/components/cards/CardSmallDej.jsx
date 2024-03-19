@@ -36,6 +36,8 @@ const CardSmallDej = ({ tasse }) => {
             +
           </button>
         </div>
+        <p>{tasse.icon}</p>
+        <p>{tasse.view}</p>
       </div>
     </ul>
   );
@@ -48,7 +50,7 @@ CardSmallDej.propTypes = {
     content: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     id: PropTypes.number.isRequired,
-    bag: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
     view: PropTypes.string.isRequired,
   }).isRequired,
 };
