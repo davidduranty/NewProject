@@ -5,12 +5,16 @@ import { useState } from "react";
 const Card = ({ tea }) => {
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
+  const [showImg, setShowImg] = useState(false);
 
   const handleIncrement = () => {
     setCount(count + 1);
     handleClickMore();
   };
 
+  const viewImage = () => {
+    setShowImg(true);
+  };
   const handleDecrement = () => {
     if (count > 0) {
       setCount(count - 1);
@@ -36,10 +40,20 @@ const Card = ({ tea }) => {
           </div>
           <div className="container-icon">
             <span>{tea.bag}</span>
-            <span className="iconEye">{tea.view}</span>
+            <span className="iconEye" onClick={viewImage}>
+              {tea.view}
+            </span>
           </div>
         </div>
       </li>
+      {showImg && (
+        <div className="image-frame">
+          <img className="img-box" src={tea.img} alt={"image" + tea.name} />
+          <button className="btn-img" onClick={() => setShowImg(false)}>
+            Fermer
+          </button>{" "}
+        </div>
+      )}
     </div>
   );
 };
