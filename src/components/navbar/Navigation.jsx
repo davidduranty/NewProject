@@ -7,8 +7,10 @@ import CoffretKdo from "../liens-navbar/CoffretKdo";
 import Accessoires from "../liens-navbar/Accessoires";
 import FamillyTeas from "../liens-navbar/FamillyTeas";
 import Language from "./Language";
+import { useTranslation } from "react-i18next";
 
 function Navigation() {
+  const { t } = useTranslation();
   const [showInfusion, setShowInfusion] = useState(false);
   const [showBox, setShowBox] = useState(false);
   const [showPresent, setShowPresent] = useState(false);
@@ -36,23 +38,23 @@ function Navigation() {
       <Logo />
       <ul className="ul" ref={menuRef}>
         <li className="li" onClick={() => setShowInfusion(!showInfusion)}>
-          THÉS & INFUSIONS
+          {t("navbar.Teas & infusions")}
         </li>
         <li className="li" onClick={() => setShowBox(!showBox)}>
-          BOITES & SACHETS
+          {t("navbar.boxes and bags")}
         </li>
         <li className="li" onClick={() => setShowPresent(!showPresent)}>
-          COFFRETS & CADEAUX
+          {t("navbar.gift & boxes")}
         </li>
         <li
           className="li"
           onClick={() => setShowAccessoiries(!showAccessoiries)}
         >
-          ACCESSOIRES
+          {t("navbar.accessories")}
         </li>
-        <li className="li">GOURMANDISES</li>
+        <li className="li">{t("navbar.delicacies")}</li>
         <li className="li" onClick={() => setShowFamily(!showFamily)}>
-          DOMAN
+          {t("navbar.doman")}
         </li>
         {showInfusion && <TeaInfusion />}
         {showBox && <BoiteSachets />}
