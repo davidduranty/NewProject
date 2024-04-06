@@ -1,16 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 function TitleImgTextIce() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="smallBreakfast">
-        <h1>L ETE GLACE</h1>
+        <h1>{t("title.title")}</h1>
         <img src="petit-dej.webp" alt="petit dej" />
       </div>
       <div className="textContainer">
-        <p>
-          Faîtes de votre petit-déjeuner le meilleur moment de la journée.
-          Découvrez notre sélection de thés au caractère corsé, qui peuvent être
-          dégustés nature ou avec du lait pour une tasse plus onctueuse.
-        </p>
+        <p>{t("title.text")}</p>
       </div>
     </>
   );
