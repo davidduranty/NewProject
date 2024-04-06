@@ -6,6 +6,7 @@ import BoiteSachets from "../liens-navbar/BoiteSachets";
 import CoffretKdo from "../liens-navbar/CoffretKdo";
 import Accessoires from "../liens-navbar/Accessoires";
 import FamillyTeas from "../liens-navbar/FamillyTeas";
+import Language from "./Language";
 
 function Navigation() {
   const [showInfusion, setShowInfusion] = useState(false);
@@ -59,6 +60,7 @@ function Navigation() {
         {showAccessoiries && <Accessoires />}
         {showFamily && <FamillyTeas />}
       </ul>
+      <Language />
       <Icons />
     </div>
   );
