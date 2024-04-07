@@ -10,6 +10,16 @@
 
   "title": {
     "title": "FROZEN SUMMER",
-    "text": "Make your breakfast the best part of the day. Discover our selection of full-bodied teas, which can be enjoyed plain or with milk for a smoother cup."
+    "text": "Make your breakfast the best part of the day. Discover our selection of full-bodied teas, which can be enjoyed plain or with milk for a smoother cup.",
+    "small": "BREAKFAST SELECTION"
+  },
+
+  "footer": {
+    "T1": "FREE SHIPPING",
+    "ST1": "From 40€ of purchases in mainland France",
+    "T2": "SECURE PAYMENT",
+    "ST2": "Visa, Mastercard, CB, Amex, Paypal",
+    "T3": "QUALITY after-sales service",
+    "ST3": "02 37 65 60 00"
   }
 }

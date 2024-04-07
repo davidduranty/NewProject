@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const MainFooter = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer-container">
       {/* Footer Haut */}
@@ -11,10 +14,10 @@ const MainFooter = () => {
             <img src="frame.svg" alt="" />
           </div>
           <div className="h2">
-            <h2>FRAIS DE PORT OFFERTS</h2>
+            <h2>{t("footer.T1")}</h2>
           </div>
           <div className="h4">
-            <h4>Dès 40€ d’achats en France métropolitaine</h4>
+            <h4>{t("footer.ST1")}</h4>
           </div>
         </div>
         <div className="paiement-securise">
@@ -22,10 +25,10 @@ const MainFooter = () => {
             <img src="fdf.svg" alt="" />
           </div>
           <div className="h2">
-            <h2>PAIEMENT SÉCURISÉ</h2>
+            <h2>{t("footer.T2")}</h2>
           </div>
           <div className="h4">
-            <h4>Visa, Mastercard, CB, Amex, Paypal</h4>
+            <h4>{t("footer.ST2")}</h4>
           </div>
         </div>
         <div className="sav-qualite">
@@ -33,10 +36,10 @@ const MainFooter = () => {
             <img src="sav.svg" alt="" />
           </div>
           <div className="h2">
-            <h2>SAV DE QUALITÉ</h2>
+            <h2>{t("footer.T3")}</h2>
           </div>
           <div className="h4">
-            <h4>02 37 65 60 00</h4>
+            <h4>{t("footer.ST3")}</h4>
           </div>
         </div>
       </div>
