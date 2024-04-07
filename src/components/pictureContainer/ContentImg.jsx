@@ -2,16 +2,20 @@ import { Link } from "react-router-dom";
 import imageone from "../../styles/img/img1.png";
 import imagetwo from "../../styles/img/img2.png";
 import imagethree from "../../styles/img/img3.png";
+import { useTranslation } from "react-i18next";
+
 const ContentImg = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="content-container">
       <div className="img1">
         <img src={imageone} alt="photo été glacé" />
         <div className="grid-1">
-          <h1>L &#201;T&#201; GLAC&#201;</h1>
+          <h1>{t("title.title")}</h1>
           <Link to="/glace">
             <button className="btn-grid" type="submit">
-              D&#201;COUVRIR
+              {t("title.discover")}
             </button>
           </Link>
         </div>
@@ -19,10 +23,10 @@ const ContentImg = () => {
       <div className="img1">
         <img src={imagetwo} alt="" />
         <div className="grid-2">
-          <h1>GRANDS CRUS</h1>
+          <h1>{t("title.high")}</h1>
           <Link to="/decouverte">
             <button className="btn-grid" type="submit">
-              NOUVELLES R&#201;COLTES
+              {t("title.new")}
             </button>
           </Link>
         </div>
@@ -30,9 +34,9 @@ const ContentImg = () => {
       <div className="img1">
         <img src={imagethree} alt="" />
         <div className="grid-3">
-          <h1>FLEURS BLANCHES</h1>
+          <h1>{t("title.flower")}</h1>
           <button className="btn-grid" type="submit">
-            D&#201;COUVRIR
+            {t("title.discover")}
           </button>
         </div>
       </div>

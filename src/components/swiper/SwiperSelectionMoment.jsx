@@ -1,22 +1,24 @@
 import CardMoment from "../cards/CardMoment";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
 
 import { useApi } from "../../data/Context";
 
 const SwiperSelectionMoment = () => {
   const { getMoment, getDataFilterMoment } = useApi();
+  const { t } = useTranslation();
 
   return (
     <>
       <div className="title-best-container">
         <div className="title-best">
-          <h1>S&#201;LECTION DU MOMENT</h1>
+          <h1>{t("title.moment")}</h1>
           <div className="container-moment-search">
             <img className="search-moment" src="search.png" alt="" />
             <input
               className="input-moment"
               type="text"
-              placeholder="Recherche"
+              placeholder={t("title.input")}
               onChange={(e) => getDataFilterMoment(e.target.value)}
             />
           </div>

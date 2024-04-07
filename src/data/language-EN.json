@@ -11,7 +11,21 @@
   "title": {
     "title": "FROZEN SUMMER",
     "text": "Make your breakfast the best part of the day. Discover our selection of full-bodied teas, which can be enjoyed plain or with milk for a smoother cup.",
-    "small": "BREAKFAST SELECTION"
+    "small": "BREAKFAST SELECTION",
+    "discover": "DISCOVER",
+    "high": "GRANDS CRUS",
+    "new": "NEW CROPS",
+    "flower": "WHITE FLOWERS",
+    "best": "BEST SALES OF THE MONTH",
+    "input": "Search",
+    "moment": "TIME SELECTION",
+    "home": "Home",
+    "discovery": "DISCOVERY",
+    "infusion": "CHRISTMAS TEAS AND INFUSIONS",
+    "coffret": "CHRISTMAS BOXES",
+    "boxes": "CHRISTMAS BOXES",
+    "text-long": "4 delicate boxes of 6 sachets in beautiful iridescent colors to offer, to adorn your holiday tables or for your own pleasure...",
+    "bag": "CHRISTMAS BAGS"
   },
 
   "footer": {
@@ -45,5 +59,16 @@
     "T8-4": "Crédits",
     "T8-5": "Privacy Policy",
     "T8-6": "DOMANN Frères, elected brand of the year 2023"
+  },
+  "circle": {
+    "T1": "BLACK TEAS",
+    "T2": "GREEN TEAS",
+    "T3": "WHITE TEAS",
+    "T4": "YELLOW TEAS",
+    "T5": "BLACK TEAS",
+    "T6": "OOLONG TEAS",
+    "T7": "TISANE",
+    "T8": "ROOIBOS",
+    "T9": "CARCADET"
   }
 }
