@@ -15,7 +15,10 @@
     "discover": "DECOUVRIR",
     "high": "GRANDS CRUS",
     "new": "NOUVELLES RECOLTES",
-    "flower": "FLEURS BLANCHES"
+    "flower": "FLEURS BLANCHES",
+    "best": "MEILLEURES VENTES DU MOIS",
+    "input": "Recherche",
+    "moment": "SELECTION DU MOMENT"
   },
 
   "footer": {
