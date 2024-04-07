@@ -67,22 +67,22 @@ const MainFooter = () => {
 
         <div className="nous-trouver-container">
           <div className="title-container-footer">
-            <h1>Nous Trouver</h1>
+            <h1>{t("footer.T5")}</h1>
           </div>
           <Link to="/boutiques">
-            <li>Nos Boutiques</li>
+            <li>{t("footer.T5-1")}</li>
           </Link>
           <Link to="/revendeurs">
-            <li>Nos revendeurs</li>
+            <li>{t("footer.T5-2")}</li>
           </Link>
           <Link to="/distributeurs">
-            <li>Nos distributeurs</li>
+            <li>{t("footer.T5-3")}</li>
           </Link>
           <Link to="/kdo">
-            <li>Service cadeaux d entreprise</li>
+            <li>{t("footer.T5-4")}</li>
           </Link>
           <Link to="/presse">
-            <li>Espace Presse</li>
+            <li>{t("footer.T5-5")}</li>
           </Link>
         </div>
 
