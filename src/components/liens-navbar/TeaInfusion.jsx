@@ -1,142 +1,145 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const TeaInfusion = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="boxContainer">
       <div className="boxContent contentTea">
         <ul className="content">
-          <h1>Type de thé</h1>
+          <h1>{t("infusion.T1")}</h1>
           <Link>
-            <li>Thé noir</li>
+            <li>{t("infusion.T1-2")}</li>
           </Link>
           <Link>
-            <li>Thé vert</li>
+            <li>{t("infusion.T1-3")}</li>
           </Link>
           <Link>
-            <li>Thé blanc</li>
+            <li>{t("infusion.T1-4")}</li>
           </Link>
           <Link>
-            <li>Thé sombre</li>
+            <li>{t("infusion.T1-5")}</li>
           </Link>
           <Link>
-            <li>Thé jaune</li>
+            <li>{t("infusion.T1-6")}</li>
           </Link>
           <Link>
-            <li className="bold">Tous les thés</li>
-          </Link>
-        </ul>
-        <ul className="content">
-          <h1>Type d infusion</h1>
-          <Link>
-            <li>Maté</li>
-          </Link>
-          <Link>
-            <li>Tisane</li>
-          </Link>
-          <Link>
-            <li>Carcadet</li>
-          </Link>
-          <Link>
-            <li>Cacao</li>
-          </Link>
-          <Link>
-            <li>Curcuma</li>
-          </Link>
-          <Link>
-            <li>Rooibos</li>
-          </Link>
-          <Link>
-            <li className="bold">Toutes les infusions</li>
+            <li className="bold">{t("infusion.T1-7")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Familles aromatiques</h1>
+          <h1>{t("infusion.T2")}</h1>
           <Link>
-            <li>Epicée/Boisée</li>
+            <li>{t("infusion.T2-2")}</li>
           </Link>
           <Link>
-            <li>Fleurie</li>
+            <li>{t("infusion.T2-3")}</li>
           </Link>
           <Link>
-            <li>Fruitée</li>
+            <li>{t("infusion.T2-4")}</li>
           </Link>
           <Link>
-            <li>Fumée</li>
+            <li>{t("infusion.T2-5")}</li>
           </Link>
           <Link>
-            <li>Gourmande</li>
+            <li>{t("infusion.T2-6")}</li>
           </Link>
           <Link>
-            <li>Grillée</li>
+            <li>{t("infusion.T2-7")}</li>
           </Link>
           <Link>
-            <li>Mentholée</li>
-          </Link>
-          <Link>
-            <li>Sous-bois</li>
-          </Link>
-          <Link>
-            <li>Végétale</li>
-          </Link>
-          <Link>
-            <li>Animale</li>
-          </Link>
-          <Link>
-            <li className="bold">Toutes les familles aromatiques</li>
+            <li className="bold">{t("infusion.T2-8")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Origines</h1>
+          <h1>{t("infusion.T3")}</h1>
           <Link>
-            <li>Afrique</li>
+            <li>{t("infusion.T3-2")}</li>
           </Link>
           <Link>
-            <li>Chine</li>
+            <li>{t("infusion.T3-3")}</li>
           </Link>
           <Link>
-            <li>Colombie</li>
+            <li>{t("infusion.T3-4")}</li>
           </Link>
           <Link>
-            <li>Corée</li>
+            <li>{t("infusion.T3-5")}</li>
           </Link>
           <Link>
-            <li>Inde</li>
+            <li>{t("infusion.T3-6")}</li>
           </Link>
           <Link>
-            <li>Japon</li>
+            <li>{t("infusion.T3-7")}</li>
           </Link>
           <Link>
-            <li>Népal</li>
+            <li>{t("infusion.T3-8")}</li>
           </Link>
           <Link>
-            <li>Ceylan</li>
+            <li>{t("infusion.T3-9")}</li>
           </Link>
           <Link>
-            <li>Taïwan</li>
+            <li>{t("infusion.T3-10")}</li>
           </Link>
           <Link>
-            <li className="bold">Tous nos thés d origine</li>
+            <li>{t("infusion.T3-11")}</li>
+          </Link>
+          <Link>
+            <li className="bold">{t("infusion.T3-12")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Séléctions</h1>
+          <h1>{t("infusion.T4")}</h1>
           <Link>
-            <li>Nos Grands crus</li>
+            <li>{t("infusion.T4-2")}</li>
           </Link>
           <Link>
-            <li>Mélanges classiques</li>
+            <li>{t("infusion.T4-3")}</li>
           </Link>
           <Link>
-            <li>Thés et infusions galcés</li>
+            <li>{t("infusion.T4-4")}</li>
           </Link>
           <Link>
-            <li>Thés et infusion nature</li>
+            <li>{t("infusion.T4-5")}</li>
           </Link>
           <Link>
-            <li>Thés et infusions aromatisés</li>
+            <li>{t("infusion.T4-6")}</li>
           </Link>
           <Link>
-            <li>Thés enfleurés</li>
+            <li>{t("infusion.T4-7")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T4-8")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T4-9")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T4-10")}</li>
+          </Link>
+          <Link>
+            <li className="bold">{t("infusion.T4-11")}</li>
+          </Link>
+        </ul>
+        <ul className="content">
+          <h1>{t("infusion.T5")}</h1>
+          <Link>
+            <li>{t("infusion.T5-2")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T5-3")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T5-4")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T5-5")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T5-6")}</li>
+          </Link>
+          <Link>
+            <li>{t("infusion.T5-8")}</li>
           </Link>
         </ul>
       </div>
