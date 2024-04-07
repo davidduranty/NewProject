@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useApi } from "../../data/Context";
 import CardSelectionSmallBreafast from "../cards/CardSelectionSmallBreafast";
+import { useTranslation } from "react-i18next";
 
 function SwiperSelectionSmallBreakfast() {
+  const { t } = useTranslation();
+
   const {
     getClear,
     getFromSmallToBig,
@@ -16,7 +19,7 @@ function SwiperSelectionSmallBreakfast() {
     <>
       <div className="title-breakfast-container">
         <div className="title-breakfast-content">
-          <h1>SÉLECTION PETIT-DÉJEUNER</h1>
+          <h1>{t("title.small")}</h1>
         </div>
         <div className="filter-container-small-breakfast">
           <img src="search.png" alt="" />
