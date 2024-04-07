@@ -50,16 +50,16 @@ const MainFooter = () => {
         {/* Premier container */}
 
         <div className="doman-freres-container">
-          <h1>DOMAN Frères</h1>
+          <h1>{t("footer.T4")}</h1>
 
           <Link to="/contacter">
-            <li>Nous contacter</li>
+            <li>{t("footer.ST4-1")}</li>
           </Link>
           <Link to="/delais">
-            <li>Délais de livraison</li>
+            <li>{t("footer.ST4-2")}</li>
           </Link>
           <Link to="/offres">
-            <li>Nos offres d emploi</li>
+            <li>{t("footer.ST4-3")}</li>
           </Link>
         </div>
 
