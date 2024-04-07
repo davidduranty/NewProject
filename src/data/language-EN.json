@@ -49,5 +49,16 @@
     "T8-4": "Crédits",
     "T8-5": "Privacy Policy",
     "T8-6": "DOMANN Frères, elected brand of the year 2023"
+  },
+  "circle": {
+    "T1": "BLACK TEAS",
+    "T2": "GREEN TEAS",
+    "T3": "WHITE TEAS",
+    "T4": "YELLOW TEAS",
+    "T5": "BLACK TEAS",
+    "T6": "OOLONG TEAS",
+    "T7": "TISANE",
+    "T8": "ROOIBOS",
+    "T9": "CARCADET"
   }
 }

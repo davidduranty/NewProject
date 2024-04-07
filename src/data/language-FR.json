@@ -49,5 +49,17 @@
     "T8-4": "Crédits",
     "T8-5": "Politique de confidentialité",
     "T8-6": "DOMANN Frères, élue enseigne de l’année 2023"
+  },
+
+  "circle": {
+    "T1": "THES NOIRS",
+    "T2": "THES VERTS",
+    "T3": "THES BLANCS",
+    "T4": "THES JAUNES",
+    "T5": "THES SOMBRE",
+    "T6": "THES OOLONGS",
+    "T7": "TISANE",
+    "T8": "ROOIBOS",
+    "T9": "CARCADET"
   }
 }
