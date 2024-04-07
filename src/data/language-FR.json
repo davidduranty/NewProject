@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "Teas & infusions": "THES & INFUSIONS",
+    "Teas & infusions": "THÉS & INFUSIONS",
     "boxes and bags": "BOITES & SACHETS",
     "gift & boxes": "COFFRETS & CADEAUX",
     "accessories": "ACCESSOIRES",
@@ -9,16 +9,23 @@
   },
 
   "title": {
-    "title": "L ETE GLACE",
+    "title": "L ÉTÉ GLACÉ",
     "text": "Faîtes de votre petit-déjeuner le meilleur moment de la journée.Découvrez notre sélection de thés au caractère corsé, qui peuvent être dégustés nature ou avec du lait pour une tasse plus onctueuse.",
     "small": "SÉLECTION PETIT-DÉJEUNER",
-    "discover": "DECOUVRIR",
+    "discover": "DÉCOUVRIR",
     "high": "GRANDS CRUS",
-    "new": "NOUVELLES RECOLTES",
+    "new": "NOUVELLES RÉCOLTES",
     "flower": "FLEURS BLANCHES",
     "best": "MEILLEURES VENTES DU MOIS",
     "input": "Recherche",
-    "moment": "SELECTION DU MOMENT"
+    "moment": "SÉLECTION DU MOMENT",
+    "home": "Accueil",
+    "discovery": "DÉCOUVERTE",
+    "infusion": "THÉS ET INFUSIONS DE NOËL",
+    "coffret": "COFFRETS DE NOËL",
+    "boxes": "BOÎTES DE NOËL",
+    "text-long": "4 délicates boîtes de 6 sachets aux belles couleurs irisées à offrir,pour orner vos tables de fêtes ou encore pour son propre plaisir...",
+    "bag": "SACHETS DE NOËL"
   },
 
   "footer": {
@@ -55,12 +62,12 @@
   },
 
   "circle": {
-    "T1": "THES NOIRS",
-    "T2": "THES VERTS",
-    "T3": "THES BLANCS",
-    "T4": "THES JAUNES",
-    "T5": "THES SOMBRE",
-    "T6": "THES OOLONGS",
+    "T1": "THÉS NOIRS",
+    "T2": "THÉS VERTS",
+    "T3": "THÉS BLANCS",
+    "T4": "THÉS JAUNES",
+    "T5": "THÉS SOMBRE",
+    "T6": "THÉS OOLONGS",
     "T7": "TISANE",
     "T8": "ROOIBOS",
     "T9": "CARCADET"
