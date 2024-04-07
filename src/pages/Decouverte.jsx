@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 import imagefour from "../../src/styles/img/img4.png";
 import { Link } from "react-router-dom";
@@ -9,6 +10,8 @@ import SwiperBoxesXFour from "../components/swiper/SwiperBoxesXFour";
 import SwiperSachets from "../components/swiper/SwiperSachets";
 
 function Decouverte() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 200) {
@@ -22,9 +25,9 @@ function Decouverte() {
     <>
       <div className="smallBreakfast">
         <Link to="/home">
-          <p>Accueil</p>
+          <p>{t("title.home")}</p>
         </Link>
-        <h1>DECOUVERTE</h1>
+        <h1>{t("title.discovery")}</h1>
         <img src={imagefour} alt="petit dej" />
       </div>
       <div className="textContainer">
@@ -36,25 +39,22 @@ function Decouverte() {
           cum qui?
         </p>
       </div>
-      <h1 className="title-infusion">THÉS ET INFUSIONS DE NOËL</h1>
+      <h1 className="title-infusion">{t("title.infusion")}</h1>
       <SwiperInfusion />
       <div className="coffret-title">
-        <h2>COFFRETS DE NOËL</h2>
+        <h2>{t("title.coffret")}</h2>
       </div>
       <SwiperCoffret />
       <div className="coffret-title">
-        <h1>BOÎTES DE NOËL</h1>
+        <h1>{t("title.boxes")}</h1>
       </div>
       <SwiperBoxesChristmas />
       <div className="text-decouverte">
-        <p>
-          4 délicates boîtes de 6 sachets aux belles couleurs irisées à offrir,
-          pour orner vos tables de fêtes ou encore pour son propre plaisir...
-        </p>
+        <p>{t("title.text-long")}</p>
       </div>
       <SwiperBoxesXFour />
       <div className="coffret-title">
-        <h1>SACHETS DE NOËL</h1>
+        <h1>{t("title.bag")}</h1>
       </div>
       <SwiperSachets />
     </>
