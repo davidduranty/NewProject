@@ -10,6 +10,16 @@
 
   "title": {
     "title": "L ETE GLACE",
-    "text": "Faîtes de votre petit-déjeuner le meilleur moment de la journée.Découvrez notre sélection de thés au caractère corsé, qui peuvent être dégustés nature ou avec du lait pour une tasse plus onctueuse."
+    "text": "Faîtes de votre petit-déjeuner le meilleur moment de la journée.Découvrez notre sélection de thés au caractère corsé, qui peuvent être dégustés nature ou avec du lait pour une tasse plus onctueuse.",
+    "small": "SÉLECTION PETIT-DÉJEUNER"
+  },
+
+  "footer": {
+    "T1": "FRAIS DE PORT OFFERTS",
+    "ST1": "Dès 40€ d’achats en France métropolitaine",
+    "T2": "PAIEMENT SÉCURISÉ",
+    "ST2": "Visa, Mastercard, CB, Amex, Paypal",
+    "T3": "SAV DE QUALITÉ",
+    "ST3": "02 37 65 60 00"
   }
 }
