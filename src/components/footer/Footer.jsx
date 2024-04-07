@@ -90,34 +90,31 @@ const MainFooter = () => {
 
         <div className="pro-container">
           <div className="title-container-footer">
-            <h1>Professionnel</h1>
+            <h1>{t("footer.T6")}</h1>
           </div>
           <div className="text">
-            <p>Vous êtes un professionnel ? Connectez-vous :</p>
+            <p>{t("footer.T6-1")}</p>
           </div>
-          <a href="*">SE CONNECTER</a>
+          <a href="*">{t("footer.T6-2")}</a>
         </div>
 
         {/* Quatrième container */}
 
         <div className="suivez-container">
           <div className="title-container-footer">
-            <h1>Suivez-nous</h1>
+            <h1>{t("footer.T7")}</h1>
           </div>
           <div className="text">
-            <p>
-              Inscrivez-vous à notre newsletter pour recevoir conseils,
-              actualités et dernières créations
-            </p>
+            <p>{t("footer.T7-1")}</p>
           </div>
           <div className="input">
             <input
               type="email"
-              placeholder="Entrez votre adresse mail *"
+              placeholder={t("footer.T7-2")}
               autoComplete="off"
             />
           </div>
-          <button className="btn">JE M INSCRIS</button>
+          <button className="btn">{t("footer.T7-3")}</button>
           <div className="icons-container-footer">
             <img className="face" src="facebook.png" alt="Lien Facebook" />
             <img src="instagram.png" alt="Lien Instagram" />
