@@ -11,7 +11,11 @@
   "title": {
     "title": "FROZEN SUMMER",
     "text": "Make your breakfast the best part of the day. Discover our selection of full-bodied teas, which can be enjoyed plain or with milk for a smoother cup.",
-    "small": "BREAKFAST SELECTION"
+    "small": "BREAKFAST SELECTION",
+    "discover": "DISCOVER",
+    "high": "GRANDS CRUS",
+    "new": "NEW CROPS",
+    "flower": "WHITE FLOWERS"
   },
 
   "footer": {
