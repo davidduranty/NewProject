@@ -15,7 +15,10 @@
     "discover": "DISCOVER",
     "high": "GRANDS CRUS",
     "new": "NEW CROPS",
-    "flower": "WHITE FLOWERS"
+    "flower": "WHITE FLOWERS",
+    "best": "BEST SALES OF THE MONTH",
+    "input": "Search",
+    "moment": "TIME SELECTION"
   },
 
   "footer": {

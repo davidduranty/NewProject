@@ -1,20 +1,22 @@
 import Card from "../cards/Card";
 import { useApi } from "../../data/Context";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
 
 const SwiperBest = () => {
   const { tea, getDataFilter } = useApi();
+  const { t } = useTranslation();
 
   return (
     <div>
       <div className="title-best-container">
         <div className="title-best">
-          <h1>MEILLEURES VENTES DU MOIS</h1>
+          <h1>{t("title.best")}</h1>
           <div className="container-search-icon">
             <img src="search.png" alt="icon search" />
             <input
               type="text"
-              placeholder="Recherche"
+              placeholder={t("title.input")}
               onChange={(e) => getDataFilter(e.target.value)}
             />
           </div>
