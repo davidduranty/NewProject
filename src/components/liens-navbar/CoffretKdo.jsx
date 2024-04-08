@@ -1,40 +1,43 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const CoffretKdo = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="boxContainer">
       <div className="boxContent contentCoffret">
         <ul className="content">
-          <h1>Coffrets & cadeaux</h1>
+          <h1>{t("navbar.gift & boxes")}</h1>
           <Link>
-            <li>Coffrets cadeaux thés en boîtes</li>
+            <li>{t("kdo.T1-1")}</li>
           </Link>
           <Link>
-            <li>Coffrets cadeaux thés en sachets</li>
+            <li>{t("kdo.T1-2")}</li>
           </Link>
           <Link>
-            <li>Coffrets vides</li>
+            <li>{t("kdo.T1-3")}</li>
           </Link>
           <Link>
-            <li>Petites attentions</li>
+            <li>{t("kdo.T1-4")}</li>
           </Link>
           <Link>
-            <li className="bold">Tous les coffrets et cadeaux</li>
+            <li className="bold">{t("kdo.T1-5")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Séléctions</h1>
+          <h1>{t("kdo.T2")}</h1>
           <Link>
-            <li>Cadeaux pour un amateur</li>
+            <li>{t("kdo.T2-1")}</li>
           </Link>
           <Link>
-            <li>Cadeaux pour un connaisseur</li>
+            <li>{t("kdo.T2-2")}</li>
           </Link>
           <Link>
-            <li>Cadeaux coup de coeur...</li>
+            <li>{t("kdo.T2-3")}</li>
           </Link>
           <Link>
-            <li>Cadeaux incontournables</li>
+            <li>{t("kdo.T2-4")}</li>
           </Link>
         </ul>
       </div>
