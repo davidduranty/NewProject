@@ -163,5 +163,29 @@
     "T4-3": "Préparation du thé",
     "T4-4": "Collection maison",
     "T4-5": "Autres accessoires de préparation"
+  },
+  "doman": {
+    "T1": "DOMAN Frères",
+    "T1-2": "Notre histoire",
+    "T1-3": "Nos métiers",
+    "T1-4": "Notre savoir faire",
+    "T1-5": "Art de la dégustation",
+    "T2": "Nos engagements sociétaux",
+    "T2-2": "Notre raison d être et société à mission",
+    "T2-3": "Notre charte éthique",
+    "T2-4": "Nos engagements",
+    "T2-5": "Notre sourcing",
+    "T3": "Carrières",
+    "T3-2": "Travailler chez Doman Frères",
+    "T3-3": "Nos offres",
+    "T3-4": "Devenir franchisé",
+    "T4": "Éditos",
+    "T4-2": "A la une",
+    "T4-3": "Dernières infos produits",
+    "T4-4": "Cultivons nos liens",
+    "T4-5": "L’essentiel sur nos thés...",
+    "T4-6": "... et sur nos infusions",
+    "T4-7": "Doman Frères en cuisine",
+    "T4-8": "Tous nos articles"
   }
 }
