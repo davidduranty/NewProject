@@ -118,6 +118,27 @@
     "T5-4": "Thés et infusions galcés",
     "T5-5": "Thés et infusion nature",
     "T5-6": "Thés et infusions aromatisés",
-    "T5-7": "Thés enfleurés"
+    "T5-7": "Thés enfleurés",
+    "T5-8": "Thé Oolong"
+  },
+  "bag": {
+    "T1": "Boîtes métal",
+    "T1-2": "Toutes nos boîtes de thés et infusions",
+    "T1-3": "Boîtes sachets",
+    "T1-4": "Tous les thés et infusions en sachets",
+    "T1-5": "Boîtes sachets enveloppés",
+    "T1-6": "Tous les thés et infusions en sachets enveloppés"
+  },
+  "kdo": {
+    "T1-1": "Coffrets cadeaux thés en boîtes",
+    "T1-2": "Coffrets cadeaux thés en sachets",
+    "T1-3": "Coffrets vides",
+    "T1-4": "Petites attentions",
+    "T1-5": "Tous les coffrets et cadeaux",
+    "T2": "Séléctions",
+    "T2-1": "Cadeaux pour un amateur",
+    "T2-2": "Cadeaux pour un connaisseur",
+    "T2-3": "Cadeaux coup de coeur...",
+    "T2-4": "Cadeaux incontournables"
   }
 }

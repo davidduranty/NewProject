@@ -1,28 +1,31 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const BoiteSachets = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="boxContainer">
       <div className="boxContent contentBoite">
         <ul className="content">
-          <h1>Boîtes métal</h1>
+          <h1>{t("bag.T1")}</h1>
           <Link>
-            <li>Thé noir</li>
+            <li>{t("infusion.T1-2")}</li>
           </Link>
           <Link>
-            <li>Thé vert</li>
+            <li>{t("infusion.T1-3")}</li>
           </Link>
           <Link>
-            <li>Thé blanc</li>
+            <li>{t("infusion.T1-4")}</li>
           </Link>
           <Link>
-            <li>Thé Oolong</li>
+            <li>{t("infusion.T5-8")}</li>
           </Link>
           <Link>
-            <li>Thé sombre</li>
+            <li>{t("infusion.T1-5")}</li>
           </Link>
           <Link>
-            <li>Thé jaune</li>
+            <li>{t("infusion.T1-6")}</li>
           </Link>
           <Link>
             <li>Tisane</li>
@@ -34,25 +37,25 @@ const BoiteSachets = () => {
             <li>Carcadet</li>
           </Link>
           <Link>
-            <li>Maté</li>
+            <li>{t("infusion.T2-2")}</li>
           </Link>
           <Link>
-            <li className="bold">Toutes nos boîtes de thés et infusions</li>
+            <li className="bold">{t("bag.T1-2")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Boîtes sachets</h1>
+          <h1>{t("bag.T1-3")}</h1>
           <Link>
-            <li>Thé noir</li>
+            <li>{t("infusion.T1-2")}</li>
           </Link>
           <Link>
-            <li>Thé vert</li>
+            <li>{t("infusion.T1-3")}</li>
           </Link>
           <Link>
-            <li>Thé blanc</li>
+            <li>{t("infusion.T1-4")}</li>
           </Link>
           <Link>
-            <li>Thé Oolong</li>
+            <li>{t("infusion.T5-8")}</li>
           </Link>
           <Link>
             <li>Tisane</li>
@@ -64,25 +67,25 @@ const BoiteSachets = () => {
             <li>Carcadet</li>
           </Link>
           <Link>
-            <li className="bold">Tous les thés et infusions en sachets</li>
+            <li className="bold">{t("bag.T1-4")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Boîtes sachets enveloppés</h1>
+          <h1>{t("bag.T1-5")}</h1>
           <Link>
-            <li>Thé noir</li>
+            <li>{t("infusion.T1-2")}</li>
           </Link>
           <Link>
-            <li>Thé vert</li>
+            <li>{t("infusion.T1-3")}</li>
           </Link>
           <Link>
-            <li>Thé blanc</li>
+            <li>{t("infusion.T1-4")}</li>
           </Link>
           <Link>
-            <li>Thé Oolong</li>
+            <li>{t("infusion.T5-8")}</li>
           </Link>
           <Link>
-            <li>Thé sombre</li>
+            <li>{t("infusion.T1-5")}</li>
           </Link>
           <Link>
             <li>Tisane</li>
@@ -94,9 +97,7 @@ const BoiteSachets = () => {
             <li>Carcadet</li>
           </Link>
           <Link>
-            <li className="bold">
-              Tous les thés et infusions en sachets enveloppés
-            </li>
+            <li className="bold">{t("bag.T1-6")}</li>
           </Link>
         </ul>
       </div>
