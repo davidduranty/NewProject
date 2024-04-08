@@ -1,73 +1,76 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Accessoires = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="boxContainer">
       <div className="boxContent contentAccessoires">
         <ul className="content">
-          <h1>Théières</h1>
+          <h1>{t("access.T1")}</h1>
           <Link>
-            <li>Fonte de Chine</li>
+            <li>{t("access.T1-2")}</li>
           </Link>
           <Link>
-            <li>Fonte du Japon</li>
+            <li>{t("access.T1-3")}</li>
           </Link>
           <Link>
-            <li>Porcelaine</li>
+            <li>{t("access.T1-4")}</li>
           </Link>
           <Link>
-            <li>Verre</li>
+            <li>{t("access.T1-5")}</li>
           </Link>
           <Link>
-            <li className="bold">Toutes nos théières</li>
+            <li className="bold">{t("access.T1-6")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Bols, tasses, autres</h1>
+          <h1>{t("access.T2")}</h1>
           <Link>
-            <li>Bols</li>
+            <li>{t("access.T2-2")}</li>
           </Link>
           <Link>
-            <li>Tisanières</li>
+            <li>{t("access.T2-3")}</li>
           </Link>
           <Link>
-            <li>Tasses</li>
+            <li>{t("access.T2-4")}</li>
           </Link>
           <Link>
             <li>Mugs</li>
           </Link>
           <Link>
-            <li>Bouteilles isothermes</li>
+            <li>{t("access.T2-5")}</li>
           </Link>
           <Link>
-            <li className="bold">Tous les accessoires pour la dégustation</li>
-          </Link>
-        </ul>
-        <ul className="content">
-          <h1>Boîtes à thé</h1>
-          <Link>
-            <li>Boîtes vides décorées</li>
-          </Link>
-          <Link>
-            <li>Boîtes Dammann Frères</li>
-          </Link>
-          <Link>
-            <li className="bold">Toutes nos boîtes à thé</li>
+            <li className="bold">{t("access.T2-6")}</li>
           </Link>
         </ul>
         <ul className="content">
-          <h1>Accessoires de préparation</h1>
+          <h1>B{t("access.T3")}</h1>
           <Link>
-            <li>Cuillères et boules à thé</li>
+            <li>{t("access.T3-2")}</li>
           </Link>
           <Link>
-            <li>Préparation du thé</li>
+            <li>{t("access.T3-3")}</li>
           </Link>
           <Link>
-            <li>Collection maison</li>
+            <li className="bold">{t("access.T3-4")}</li>
+          </Link>
+        </ul>
+        <ul className="content">
+          <h1>{t("access.T4")}</h1>
+          <Link>
+            <li>{t("access.T4-2")}</li>
           </Link>
           <Link>
-            <li>Autres accessoires de préparation</li>
+            <li>{t("access.T4-3")}</li>
+          </Link>
+          <Link>
+            <li>{t("access.T4-4")}</li>
+          </Link>
+          <Link>
+            <li>{t("access.T4-5")}</li>
           </Link>
         </ul>
       </div>

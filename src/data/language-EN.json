@@ -139,5 +139,28 @@
     "T2-2": "Gifts for a connoisseur",
     "T2-3": "Favorite gifts...",
     "T2-4": "Must-have gifts"
+  },
+  "access": {
+    "T1": "Teapots",
+    "T1-2": "Chinese cast iron",
+    "T1-3": "Japanese cast iron",
+    "T1-4": "Porcelain",
+    "T1-5": "Glass",
+    "T1-6": "All our teapots",
+    "T2": "Bowls, cups, others",
+    "T2-2": "Bowls",
+    "T2-3": "Herbal tea pots",
+    "T2-4": "Cups",
+    "T2-5": "Insulated bottles",
+    "T2-6": "All accessories for tasting",
+    "T3": "Tea boxes",
+    "T3-2": "Decorated empty boxes",
+    "T3-3": "Doman Frères boxes",
+    "T3-4": "All our tea boxes",
+    "T4": "Preparation accessories",
+    "T4-2": "Tea spoons and infusers",
+    "T4-3": "Preparing tea",
+    "T4-4": "Home collection",
+    "T4-5": "Other preparation accessories"
   }
 }

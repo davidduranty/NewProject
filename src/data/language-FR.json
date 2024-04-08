@@ -140,5 +140,28 @@
     "T2-2": "Cadeaux pour un connaisseur",
     "T2-3": "Cadeaux coup de coeur...",
     "T2-4": "Cadeaux incontournables"
+  },
+  "access": {
+    "T1": "Théières",
+    "T1-2": "Fonte de Chine",
+    "T1-3": "Fonte du Japon",
+    "T1-4": "Porcelaine",
+    "T1-5": "Verre",
+    "T1-6": "Toutes nos théières",
+    "T2": "Bols, tasses, autres",
+    "T2-2": "Bols",
+    "T2-3": "Tisanières",
+    "T2-4": "Tasses",
+    "T2-5": "Bouteilles isothermes",
+    "T2-6": "Tous les accessoires pour la dégustation",
+    "T3": "Boîtes à thé",
+    "T3-2": "Boîtes vides décorées",
+    "T3-3": "Boîtes Doman Frères",
+    "T3-4": "Toutes nos boîtes à thé",
+    "T4": "Accessoires de préparation",
+    "T4-2": "Cuillères et boules à thé",
+    "T4-3": "Préparation du thé",
+    "T4-4": "Collection maison",
+    "T4-5": "Autres accessoires de préparation"
   }
 }
