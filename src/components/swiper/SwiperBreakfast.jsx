@@ -1,12 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/scss";
 
 import CardBreakfast from "../cards/CardBreakfast";
 const SwiperBreakfast = () => {
+  const { t } = useTranslation();
+
   const [shop, setShop] = useState([]);
 
   useEffect(() => {
@@ -16,7 +18,7 @@ const SwiperBreakfast = () => {
   }, []);
   return (
     <>
-      <h1 className="breakfast-title">BreakFast</h1>
+      <h1 className="breakfast-title">{t("title.break")}</h1>
       <div className="caroussel-container">
         <ul className="caroussel">
           <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
