@@ -2,8 +2,11 @@
   "thes": [
     {
       "img": "jardinBleu.webp",
-      "name": "JARDIN BLEU",
-      "content": "Thé noir | Rhubarbe, Fraise",
+      "name": ["JARDIN BLEU", "BLUE GARDEN"],
+      "content": [
+        "Thé noir | Rhubarbe, Fraise",
+        "Black tea | Rhubarb, Strawberry"
+      ],
       "price": 6.5,
       "id": 1,
       "bag": "👜",
@@ -11,8 +14,11 @@
     },
     {
       "img": "missDoman.webp",
-      "name": "MISS DOMAN",
-      "content": "Thé vert | Gingembre, Citron, Fruit de la passion",
+      "name": ["MISS DOMAN", "MISS DOMAN"],
+      "content": [
+        "Thé vert | Gingembre, Citron, Fruit de la passion",
+        "Green tea | Ginger, Lemon, Passion fruit"
+      ],
       "price": 8.5,
       "id": 2,
       "bag": "👜",
@@ -20,8 +26,11 @@
     },
     {
       "img": "paulVirginie.webp",
-      "name": "PAUL & VIRGINIE",
-      "content": "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
+      "name": ["PAUL & VIRGINIE", "PAUL & VIRGINIA"],
+      "content": [
+        "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
+        "Black tea | Cherry, Strawberry, Raspberry, Caramel, Vanilla"
+      ],
       "price": 7.0,
       "id": 3,
       "bag": "👜",
@@ -29,8 +38,11 @@
     },
     {
       "img": "bali.webp",
-      "name": "BALI",
-      "content": "Thé vert | Litchi, Pamplemousse, Pêche, Rose, Jasmin",
+      "name": ["BALI", "BALI"],
+      "content": [
+        "Thé vert | Litchi, Pamplemousse, Pêche, Rose, Jasmin",
+        "Green tea | Lychee, Grapefruit, Peach, Rose, Jasmine"
+      ],
       "price": 8.0,
       "id": 4,
       "bag": "👜",
@@ -38,8 +50,11 @@
     },
     {
       "img": "coquelicot.webp",
-      "name": "COQUELICOT GOURMAND",
-      "content": "Thé noir | Framboise, Cerise, Violette, Vanille, Amande, Biscuit",
+      "name": ["COQUELICOT GOURMAND", "GOURMET POPPY"],
+      "content": [
+        "Thé noir | Framboise, Cerise, Violette, Vanille, Amande, Biscuit",
+        "Black tea | Raspberry, Cherry, Violet, Vanilla, Almond, Biscuit"
+      ],
       "price": 8.5,
       "id": 5,
       "bag": "👜",
@@ -47,8 +62,11 @@
     },
     {
       "img": "baliSachets.webp",
-      "name": "BALI",
-      "content": "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
+      "name": ["BALI", "BALI"],
+      "content": [
+        "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
+        "Black tea | Cherry, Strawberry, Raspberry, Caramel, Vanilla"
+      ],
       "price": 12.5,
       "id": 6,
       "bag": "👜",
@@ -56,8 +74,11 @@
     },
     {
       "img": "nuitVersailles.webp",
-      "name": "NUIT A VERSAILLES",
-      "content": "Thé vert | Kiwi, Bergamote, Fleur d'oranger, Violette, Pêche",
+      "name": ["NUIT A VERSAILLES", "NIGHT IN VERSAILLES"],
+      "content": [
+        "Thé vert | Kiwi, Bergamote, Fleur d'oranger, Violette, Pêche",
+        "Green tea | Kiwi, Bergamot, Orange Blossom, Violet, Peach"
+      ],
       "price": 7.0,
       "id": 7,
       "bag": "👜",
@@ -65,8 +86,11 @@
     },
     {
       "img": "menthe.webp",
-      "name": "THE VERT A LA MENTHE AROMATISE",
-      "content": "Thé vert | Menthe",
+      "name": [
+        "THE VERT A LA MENTHE AROMATISE",
+        "GREEN TEA WITH FLAVORED MINT"
+      ],
+      "content": ["Thé vert | Menthe", "Green tea | Mint"],
       "price": 7.5,
       "id": 8,
       "bag": "👜",
@@ -76,70 +100,91 @@
   "moment": [
     {
       "img": "breakfast.webp",
-      "name": "BREAKFAST, 24 SACHETS CRISTAL ENVELOPPES",
-      "content": "Thé noir",
+      "name": [
+        "PETIT-DEJEUNER, 24 SACHETS CRISTAL ENVELOPPES",
+        "BREAKFAST, 24 ENVELOPED CRYSTAL BAGS"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 14.0,
-      "contenance": "/ Les 24 Sachets enveloppés",
+      "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
       "id": 0,
       "bag": "👜",
       "view": "👁️‍🗨️"
     },
     {
       "img": "earl.webp",
-      "name": "EARL GREY YIN ZHEN 24 SACHETS CRISTAL ENVELOPPES",
-      "content": "Thé noir | Bergamote",
+      "name": [
+        "EARL GREY YIN ZHEN 24 SACHETS CRISTAL ENVELOPPES",
+        "EARL GRAY YIN ZHEN 24 ENVELOPED CRYSTAL BAGS"
+      ],
+      "content": ["Thé noir | Bergamote", "Black tea | Bergamot"],
       "price": 15.5,
-      "contenance": "/ Les 24 Sachets enveloppés",
+      "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
       "id": 1,
       "bag": "👜",
       "view": "👁️‍🗨️"
     },
     {
       "img": "darjeeling.webp",
-      "name": "DARJEELING 24 SACHETS CRISTAL ENVEVOPPES",
-      "content": "Thé noir",
+      "name": [
+        "DARJEELING 24 SACHETS CRISTAL ENVEVOPPES",
+        "DARJEELING 24 ENVELOPED CRYSTAL BAGS"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 16.0,
-      "contenance": "/ Les 24 Sachets enveloppés",
+      "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
       "id": 2,
       "bag": "👜",
       "view": "👁️‍🗨️"
     },
     {
       "img": "oolong.webp",
-      "name": "THE OOLONG - MAISON DE FAMILLE",
-      "content": "Oolong | Caramel, Vanille, Sarrazin, Clémentine",
+      "name": ["THE OOLONG - MAISON DE FAMILLE", "THE OOLONG - FAMILY HOUSE"],
+      "content": [
+        "Oolong | Caramel, Vanille, Sarrazin, Clémentine",
+        "Oolong | Caramel, Vanilla, Buckwheat, Clementine"
+      ],
       "price": 11.0,
-      "contenance": "/ Les 100 g",
+      "contenance": ["/ Les 100 g", "The 100g"],
       "id": 3,
       "bag": "👜",
       "view": "👁️‍🗨️"
     },
     {
       "img": "theNoir.webp",
-      "name": "THE NOIR - EARL GREY DES SEIGNEURS",
-      "content": "Thé noir | Bergamote",
+      "name": [
+        "THE NOIR - EARL GREY DES SEIGNEURS",
+        "BLACK TEA - EARL GRAY OF THE LORDS"
+      ],
+      "content": ["Thé noir | Bergamote", "Black tea | Bergamot"],
       "price": 13.5,
-      "contenance": "/ Les 100 g",
+      "contenance": ["/ Les 100 g", "The 100g"],
       "id": 4,
       "bag": "👜",
       "view": "👁️‍🗨️"
     },
     {
       "img": "theInde.webp",
-      "name": "THE D'INDE - ASSAM MOKALBARI T.G.F.O.P. 2ND FLUSH",
-      "content": "Thé noir",
+      "name": [
+        "THE D'INDE - ASSAM MOKALBARI T.G.F.O.P. 2ND FLUSH",
+        "INDIAN TEA - ASSAM MOKALBARI T.G.F.O.P. 2ND FLUSH"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 22.0,
-      "contenance": "/ Les 100 g",
+      "contenance": ["/ Les 100 g", "The 100g"],
       "id": 5,
       "bag": "👜",
       "view": "👁️‍🗨️"
     },
     {
       "img": "theInde2.webp",
-      "name": "THE D'INDE - DARJEELING OKAYTI T.G.F.O.P. 2ND FLUSH",
-      "content": "Thé noir",
+      "name": [
+        "THE D'INDE - DARJEELING OKAYTI T.G.F.O.P. 2ND FLUSH",
+        "TEA OF INDIA - DARJEELING OKAYTI T.G.F.O.P. 2ND FLUSH"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 30.0,
-      "contenance": "/ Les 100 g",
+      "contenance": ["/ Les 100 g", "The 100g"],
       "id": 6,
       "bag": "👜",
       "view": "👁️‍🗨️"

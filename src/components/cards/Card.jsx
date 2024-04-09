@@ -1,8 +1,11 @@
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
+import i18n from "../../I18n";
 
 const Card = ({ tea }) => {
+  const isFrench = i18n.language === "fr";
+
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
   const [showImg, setShowImg] = useState(false);
@@ -25,10 +28,13 @@ const Card = ({ tea }) => {
     <div className="card-container">
       <li>
         <img src={tea.img} alt={"image" + tea.name} />
-        <h1>{tea.name}</h1>
-        <h2>{tea.content}</h2>
+        <h1>{isFrench ? tea.name[0] : tea.name[1]}</h1>
+        <h2>{isFrench ? tea.content[0] : tea.content[1]}</h2>
         <div className="priceAndBag">
-          <p>{tea.price.toFixed(2)} / les 100 G</p>
+          <p>
+            {tea.price.toFixed(2)}
+            {isFrench ? "/ Les 100 G" : "/ The 100 G"}
+          </p>
           <div className="count-container">
             <button className="btn-less" onClick={handleDecrement}>
               -
