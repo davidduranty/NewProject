@@ -1,7 +1,11 @@
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
+import i18n from "../../I18n";
+
 const CardBreakfast = ({ breakfast }) => {
+  const isFrench = i18n.language === "fr";
+
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
 
@@ -20,8 +24,8 @@ const CardBreakfast = ({ breakfast }) => {
     <div className="card-container">
       <li>
         <img src={breakfast.img} alt={"Photo" + breakfast.name} />
-        <h1>{breakfast.name}</h1>
-        <h2>{breakfast.content}</h2>
+        <h1>{isFrench ? breakfast.name[0] : breakfast.name[1]}</h1>
+        <h2>{isFrench ? breakfast.content[0] : breakfast.content[1]}</h2>
         <div className="breakfast-add">
           <p>{breakfast.price.toFixed(2)} £</p>
           <div className="count-container-break">
