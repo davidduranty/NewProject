@@ -200,8 +200,11 @@
   "selection-small-dej": [
     {
       "img": "1.webp",
-      "name": "THÉ D'INDE - ASSAM HALMARI 2ND FLUSH T.G.F.O.P.",
-      "content": "Thé noir",
+      "name": [
+        "THÉ D'INDE - ASSAM HALMARI 2ND FLUSH T.G.F.O.P.",
+        "TEA FROM INDIA - ASSAM HALMARI 2ND FLUSH T.G.F.O.P."
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 25.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -209,8 +212,11 @@
     },
     {
       "img": "2.webp",
-      "name": "THÉ D'INDE - ASSAM SUPÉRIEUR G.F.O.P.",
-      "content": "Thé noir",
+      "name": [
+        "THÉ D'INDE - ASSAM SUPÉRIEUR G.F.O.P.",
+        "TEA FROM INDIA - HIGHER ASSAM G.F.O.P."
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 8.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -218,8 +224,11 @@
     },
     {
       "img": "3.webp",
-      "name": "THÉ D'INDE - ASSAM SUPÉRIEUR G.B.O.P.",
-      "content": "Thé noir",
+      "name": [
+        "THÉ D'INDE - ASSAM SUPÉRIEUR G.B.O.P.",
+        "TEA FROM INDIA – UPPER ASSAM G.B.O.P."
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 8.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -227,8 +236,11 @@
     },
     {
       "img": "4.webp",
-      "name": "THÉ D'INDE - DARJEELING G.F.O.P. SUPÉRIEUR 2ND FLUSH",
-      "content": "Thé noir",
+      "name": [
+        "THÉ D'INDE - DARJEELING G.F.O.P. SUPÉRIEUR 2ND FLUSH",
+        "TEA FROM INDIA - DARJEELING G.F.O.P. SUPERIOR 2ND FLUSH"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 10.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -236,8 +248,11 @@
     },
     {
       "img": "5.webp",
-      "name": "THÉ DE CEYLAN - CEYLAN F.O.P. SUPÉRIEUR",
-      "content": "Thé noir",
+      "name": [
+        "THÉ DE CEYLAN - CEYLAN F.O.P. SUPÉRIEUR",
+        "CEYLAN TEA - CEYLAN F.O.P. SUPERIOR"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 7.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -245,8 +260,11 @@
     },
     {
       "img": "6.webp",
-      "name": "THÉ D'AFRIQUE - KENYA MILIMA G.B.O.P.",
-      "content": "Thé noir",
+      "name": [
+        "THÉ D'AFRIQUE - KENYA MILIMA G.B.O.P.",
+        "AFRICAN TEA – KENYA MILIMA G.B.O.P."
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 8.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -254,8 +272,11 @@
     },
     {
       "img": "7.webp",
-      "name": "BLEND - AFRICAN BREAKFAST",
-      "content": "Thé noir",
+      "name": [
+        "MÉLANGE - PETIT DÉJEUNER AFRICAIN",
+        "BLEND - AFRICAN BREAKFAST"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -263,8 +284,8 @@
     },
     {
       "img": "8.webp",
-      "name": "THÉ NOIR - BRUNCH TEA",
-      "content": "Thé noir",
+      "name": ["THÉ NOIR - THÉ BRUNCH", "BLACK TEA - BRUNCH TEA"],
+      "content": ["Thé noir", "Black tea"],
       "price": 9.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -272,8 +293,11 @@
     },
     {
       "img": "9.webp",
-      "name": "THÉ NOIR - HIGHLANDS BREAKFAST",
-      "content": "Thé noir",
+      "name": [
+        "THÉ NOIR - PETIT DÉJEUNER HAUTES",
+        "BLACK TEA - HIGHLANDS BREAKFAST"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 6.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -281,8 +305,8 @@
     },
     {
       "img": "10.webp",
-      "name": "BLEND - TEA FOR TWO",
-      "content": "Thé noir",
+      "name": ["MÉLANGE - THÉ POUR DEUX", "BLEND - TEA FOR TWO"],
+      "content": ["Thé noir", "Black tea"],
       "price": 8.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -290,8 +314,11 @@
     },
     {
       "img": "11.webp",
-      "name": "THÉ NOIR - ROYAL BREAKFAST",
-      "content": "Thé noir",
+      "name": [
+        "THÉ NOIR - PETIT DÉJEUNER ROYAL",
+        "BLACK TEA - ROYAL BREAKFAST"
+      ],
+      "content": ["Thé noir", "Black tea"],
       "price": 6.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -299,8 +326,8 @@
     },
     {
       "img": "12.webp",
-      "name": "BLEND - STRONG BREAKFAST",
-      "content": "Thé noir",
+      "name": ["MÉLANGE - PETIT DÉJEUNER FORT", "BLEND - STRONG BREAKFAST"],
+      "content": ["Thé noir", "Black tea"],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
