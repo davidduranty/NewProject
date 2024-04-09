@@ -337,8 +337,14 @@
   "shopping": [
     {
       "img": "boite.webp",
-      "name": "COFFRET BOIS NOIR - 48 SACHETS CRISTAL DE THÉS",
-      "content": "Coffrets cadeaux | Coffrets thés Sachets",
+      "name": [
+        "COFFRET BOIS NOIR - 48 SACHETS CRISTAL DE THÉS",
+        "BLACK WOODEN BOX - 48 CRYSTAL TEA BAGS"
+      ],
+      "content": [
+        "Coffrets cadeaux | Coffrets thés Sachets",
+        "Gift boxes | Tea boxes Sachets"
+      ],
       "price": 86.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -346,8 +352,11 @@
     },
     {
       "img": "theiere.webp",
-      "name": "THÉIERE PARCELAINE - THÉIERE DOMAN FRERES 0.6L",
-      "content": "Théières | Porcelaine",
+      "name": [
+        "THÉIERE PARCELAINE - THÉIERE DOMAN FRERES 0.6L",
+        "PARCELAIN TEAPOT - DOMAN FRERES TEAPOT 0.6L"
+      ],
+      "content": ["Théières | Porcelaine", "Teapots | Porcelain"],
       "price": 21.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -355,8 +364,11 @@
     },
     {
       "img": "tasse.webp",
-      "name": "TASSE A THÉ ET SOUS-TASSE DOMAN FRERES",
-      "content": "Bols/Tasses/Autres | Tasses",
+      "name": [
+        "TASSE A THÉ ET SOUS-TASSE DOMAN FRERES",
+        "DOMAN BROTHERS TEA CUP AND SAUCER"
+      ],
+      "content": ["Bols/Tasses/Autres | Tasses", "Bowls/Cups/Others | Cups"],
       "price": 11.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -364,8 +376,8 @@
     },
     {
       "img": "supportSachet.webp",
-      "name": "COUPELLE REPOSE-SACHET",
-      "content": "ACCESSOIRES",
+      "name": ["COUPELLE REPOSE-SACHET", "BAG REST CUP"],
+      "content": ["ACCESSOIRES", "ACCESSORIES"],
       "price": 5.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -373,8 +385,11 @@
     },
     {
       "img": "boule.webp",
-      "name": "BOULE A THÉ INOX PERFORÉ - DIAM 4 CM",
-      "content": "Pour préparer votre thé",
+      "name": [
+        "BOULE A THÉ INOX PERFORÉ - DIAM 4 CM",
+        "PERFORATED STAINLESS STEEL TEA BALL - DIAM 4 CM"
+      ],
+      "content": ["Pour préparer votre thé", "To prepare your tea"],
       "price": 5.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -382,8 +397,8 @@
     },
     {
       "img": "cuillere.webp",
-      "name": "CUILLERE-MESURE INOX",
-      "content": "Pour préparer votre thé",
+      "name": ["CUILLERE-MESURE INOX", " STAINLESS STEEL MEASURING SPOON"],
+      "content": ["Pour préparer votre thé", "To prepare your tea"],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",

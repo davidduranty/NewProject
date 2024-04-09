@@ -35,7 +35,9 @@ function CardSelectionSmallBreafast({ dej }) {
         <h1>{isFrench ? dej.name[0] : dej.name[1]}</h1>
         <h2>{isFrench ? dej.content[0] : dej.content[1]}</h2>
         <div className="breakfast-add">
-          <p>{dej.price.toFixed(2)} / Les 100g</p>
+          <p>
+            {dej.price.toFixed(2)} /{isFrench ? "Les 100g" : "The 100g"}
+          </p>
           <div className="count-container-small-break">
             <button className="btn-less-small-break" onClick={handleDecrement}>
               -
