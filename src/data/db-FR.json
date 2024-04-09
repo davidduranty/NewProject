@@ -171,14 +171,11 @@
       "id": 4
     }
   ],
-  "tasse": [
+  "dej": [
     {
       "img": "tasse1.webp",
-      "name": [
-        "TASSE EN PORCELAINE BONE CHINA, DOMAN FRÈRES",
-        "CUP CHINA PORCELAIN MUG, DOMAN BROTHERS"
-      ],
-      "content": ["Bols/Tasses/Autres | Autres", "Bowls/Cups/Others | Others"],
+      "name": "MUG EN PORCELAINE BONE CHINA, DOMAN FRÈRES",
+      "content": "Bols/Tasses/Autres | Autres",
       "price": 13.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -186,11 +183,8 @@
     },
     {
       "img": "tasse2.webp",
-      "name": [
-        "MUG DOMAN BROTHERS HÔTEL, PORCELAINE BLANCHE",
-        "DOMAN BROTHERS HOTEL MUG, WHITE PORCELAIN"
-      ],
-      "content": ["Bols/Tasses/Autres | Autres", "Bowls/Cups/Others | Others"],
+      "name": "MUG DOMAN FRÈRES HÔTEL, PORCELAINE BLANCHE",
+      "content": "Bols/Tasses/Autres | Autres",
       "price": 8.0,
       "icon": "👜",
       "view": "👁️‍🗨️",

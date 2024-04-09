@@ -55,7 +55,7 @@ const FamillyTeas = () => {
             <li>{t("doman.T4-2")}</li>
           </Link>
           <Link>
-            <li>D{t("doman.T4-3")}</li>
+            <li>{t("doman.T4-3")}</li>
           </Link>
           <Link>
             <li>{t("doman.T4-4")}</li>
