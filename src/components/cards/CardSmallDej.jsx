@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { useApi } from "../../data/Context";
-// import { useTranslation } from "react-i18next";
+import i18n from "../../I18n";
 
 const CardSmallDej = ({ tasse }) => {
-  // const { t } = useTranslation();
+  const isFrench = i18n.language === "fr";
 
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
@@ -28,8 +28,8 @@ const CardSmallDej = ({ tasse }) => {
   return (
     <ul className="ul-settings">
       {showImage && <img src={tasse.img} alt="Tasse Doman" />}
-      <h1>{tasse.name}</h1>
-      <h2>{tasse.content}</h2>
+      <h1>{isFrench ? tasse.name[0] : tasse.name[1]}</h1>
+      <h2>{isFrench ? tasse.content[0] : tasse.content[1]}</h2>
       <div className="tasse-container-price">
         <div className="tasse-price-box">
           <p>{tasse.price.toFixed(2)} £</p>
