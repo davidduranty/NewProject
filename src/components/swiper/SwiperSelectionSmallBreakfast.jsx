@@ -26,7 +26,7 @@ function SwiperSelectionSmallBreakfast() {
           <input
             id="my-input"
             type="text"
-            placeholder="Recherche"
+            placeholder={t("title.input")}
             onChange={(e) => getSearchCardDej(e.target.value)}
           />
           <button

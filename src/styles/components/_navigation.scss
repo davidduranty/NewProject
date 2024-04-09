@@ -3,6 +3,9 @@
   z-index: 10000;
   background: $color2;
   min-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   .ul {
     width: 70%;

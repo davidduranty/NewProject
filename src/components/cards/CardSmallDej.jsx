@@ -1,8 +1,11 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { useApi } from "../../data/Context";
+// import { useTranslation } from "react-i18next";
 
 const CardSmallDej = ({ tasse }) => {
+  // const { t } = useTranslation();
+
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
   const [showImage, setShowImage] = useState(true);
