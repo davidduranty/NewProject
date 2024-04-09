@@ -5,11 +5,13 @@ import axios from "axios";
 function SwiperTasse() {
   const [getTasse, setGetTasse] = useState([]);
   const getDataTasse = () => {
-    axios.get("http://localhost:5172/dej").then((res) => setGetTasse(res.data));
+    axios
+      .get("http://localhost:5172/tasse")
+      .then((res) => setGetTasse(res.data));
   };
   useEffect(() => {
     getDataTasse();
-  }, []);
+  }, [getTasse]);
   return (
     <div className="container-breakfast">
       <img src="photo-dej.webp" alt="petit dej" />
