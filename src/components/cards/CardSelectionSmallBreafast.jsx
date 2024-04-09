@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
+import i18n from "../../I18n";
 
 function CardSelectionSmallBreafast({ dej }) {
   const { handleClickLess, handleClickMore, favorites, toogleFavorite } =
     useApi();
+  const isFrench = i18n.language === "fr";
+
   const [reload, setReload] = useState(false);
   const [count, setCount] = useState(0);
   useEffect(() => {}, [reload]);
@@ -29,8 +32,8 @@ function CardSelectionSmallBreafast({ dej }) {
     <>
       <div className="ul-settings-select">
         <img src={dej.img} alt={"Thé" + dej.name} />
-        <h1>{dej.name}</h1>
-        <h2>{dej.content}</h2>
+        <h1>{isFrench ? dej.name[0] : dej.name[1]}</h1>
+        <h2>{isFrench ? dej.content[0] : dej.content[1]}</h2>
         <div className="breakfast-add">
           <p>{dej.price.toFixed(2)} / Les 100g</p>
           <div className="count-container-small-break">
