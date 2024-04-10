@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
+import i18n from "../../I18n";
 
 function CardSachet({ sachet }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
+  const isFrench = i18n.language === "fr";
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -38,10 +40,14 @@ function CardSachet({ sachet }) {
     <div className="card-container-box">
       <li className="li-box">
         <img className="img-box" src={sachet.img} alt={"image" + sachet.name} />
-        <h1 className="h1-box">{sachet.name}</h1>
-        <h2 className="h2-box">{sachet.content}</h2>
+        <h1 className="h1-box">{isFrench ? sachet.name[0] : sachet.name[1]}</h1>
+        <h2 className="h2-box">
+          {isFrench ? sachet.content[0] : sachet.content[1]}
+        </h2>
         <div className="priceAndBag-box">
-          <p>{sachet.price.toFixed(2)} / Boîte</p>
+          <p>
+            {sachet.price.toFixed(2)} {isFrench ? "/ Boîte" : "/ Box"}
+          </p>
           <div className="count-container">
             <button className="btn-less" onClick={handleDecrement}>
               -
