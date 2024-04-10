@@ -136,7 +136,10 @@
         "PETIT-DEJEUNER, 24 SACHETS CRISTAL ENVELOPPES",
         "BREAKFAST, 24 ENVELOPED CRYSTAL BAGS"
       ],
-      "text": "Un thé noir d'Afrique issu de l'agriculture biologique produit à partir de théiers cultivés sur les pentes verdoyantes de la région de Rukéri au Rwanda; le thé favori des amateurs de petit-déjeuner corsé. La combinaison du terroir, de son ensoleillement de son hygrométrie procure à ce thé, une tasse à la liqueur puissante, développant de belles notes aromatiques boisées sans trop d'amertume.",
+      "text": [
+        "Un thé noir d'Afrique issu de l'agriculture biologique produit à partir de théiers cultivés sur les pentes verdoyantes de la région de Rukéri au Rwanda; le thé favori des amateurs de petit-déjeuner corsé. La combinaison du terroir, de son ensoleillement de son hygrométrie procure à ce thé, une tasse à la liqueur puissante, développant de belles notes aromatiques boisées sans trop d'amertume.",
+        "An African black tea from organic farming produced from tea plants grown on the green slopes of the Rukéri region in Rwanda; the favorite tea of lovers of full-bodied breakfasts. The combination of the terroir, its sunshine and its humidity gives this tea a cup of powerful liquor, developing beautiful woody aromatic notes without too much bitterness."
+      ],
       "content": ["Thé noir", "Black tea"],
       "price": 14.0,
       "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
@@ -150,7 +153,10 @@
         "EARL GREY YIN ZHEN 24 SACHETS CRISTAL ENVELOPPES",
         "EARL GRAY YIN ZHEN 24 ENVELOPED CRYSTAL BAGS"
       ],
-      "text": "Une sélection de fins thés noirs enrichie de pointes blanches, de pétales de fleur et aromatisée à la bergamote de Calabre. L'équilibre idéal de cet Earl Grey supérieur saura satisfaire les plus exigeants.Recharge pour coffret DAMMANN Frères contenant 24 sachets Cristal emballés individuellement. La texture, proche de la soie, permet d'obtenir une infusion identique à celle que procurent des thés en vrac de qualité égale.Temps d'infusion recommandé : 4/5 minutes.Poids net: 48g",
+      "text": [
+        "Une sélection de fins thés noirs enrichie de pointes blanches, de pétales de fleur et aromatisée à la bergamote de Calabre. L'équilibre idéal de cet Earl Grey supérieur saura satisfaire les plus exigeants.Recharge pour coffret DAMMANN Frères contenant 24 sachets Cristal emballés individuellement. La texture, proche de la soie, permet d'obtenir une infusion identique à celle que procurent des thés en vrac de qualité égale.Temps d'infusion recommandé : 4/5 minutes.Poids net: 48g",
+        "A selection of fine black teas enriched with white tips, flower petals and flavored with Calabrian bergamot. The ideal balance of this superior Earl Gray will satisfy the most demanding. Refill for DAMMANN Frères box containing 24 individually wrapped Cristal sachets. The texture, close to silk, allows you to obtain an infusion identical to that provided by loose teas of equal quality. Recommended infusion time: 4/5 minutes. Net weight: 48g"
+      ],
       "content": ["Thé noir | Bergamote", "Black tea | Bergamot"],
       "price": 15.5,
       "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
@@ -164,7 +170,10 @@
         "DARJEELING 24 SACHETS CRISTAL ENVEVOPPES",
         "DARJEELING 24 ENVELOPED CRYSTAL BAGS"
       ],
-      "text": "Thé d'été de Darjeeling, il mêle des feuilles en provenance de différents jardins. Son infusion libère une liqueur bien équilibrée à la saveur délicate d’amande et de pêche mûre. Boîte de 24 sachets Cristal® enveloppés. Poids net : 48 g.",
+      "text": [
+        "Thé d'été de Darjeeling, il mêle des feuilles en provenance de différents jardins. Son infusion libère une liqueur bien équilibrée à la saveur délicate d’amande et de pêche mûre. Boîte de 24 sachets Cristal® enveloppés. Poids net : 48 g.",
+        "Darjeeling summer tea, it mixes leaves from different gardens. Its infusion releases a well-balanced liqueur with a delicate flavor of almond and ripe peach. Box of 24 wrapped Cristal® sachets. Net weight: 48g."
+      ],
       "content": ["Thé noir", "Black tea"],
       "price": 16.0,
       "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
@@ -179,6 +188,10 @@
         "Oolong | Caramel, Vanille, Sarrazin, Clémentine",
         "Oolong | Caramel, Vanilla, Buckwheat, Clementine"
       ],
+      "text": [
+        "Un thé d’atmosphère dans lequel, la fraîcheur fruitée d’une huile essentielle de clémentine se conjugue aux notes de céréale du sarrasin et à celles gourmandes du caramel et de la vanille.",
+        "An atmospheric tea in which the fruity freshness of clementine essential oil combines with the cereal notes of buckwheat and the delicious notes of caramel and vanilla."
+      ],
       "price": 11.0,
       "contenance": ["/ Les 100 g", "The 100g"],
       "id": 3,
@@ -192,6 +205,10 @@
         "BLACK TEA - EARL GRAY OF THE LORDS"
       ],
       "content": ["Thé noir | Bergamote", "Black tea | Bergamot"],
+      "text": [
+        "Retrouvez deux grandes origines du thé réunies dans ce somptueux mélange. Juste équilibre entre le thé d’Assam au caractère boisé et le thé du Yunnan à l’arôme suave de noix, ici associés à la délicieuse saveur fraîche et fruitée de la bergamote de Calabre.",
+        "Find two great origins of tea brought together in this sumptuous blend. Just the right balance between Assam tea with its woody character and Yunnan tea with its sweet nutty aroma, here combined with the delicious fresh and fruity flavor of Calabrian bergamot."
+      ],
       "price": 13.5,
       "contenance": ["/ Les 100 g", "The 100g"],
       "id": 4,
@@ -205,6 +222,10 @@
         "INDIAN TEA - ASSAM MOKALBARI T.G.F.O.P. 2ND FLUSH"
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Ce jardin est situé sur les rives sud du majestueux fleuve Brahmapoutre. Il tire son origine des mots 'MOKAL', qui désigne une variété de bambous et 'BARI' un endroit ou jardin spécifique. Lot manufacturé selon la méthode orthodoxe destiné aux meilleurs grades. Bourgeons dorés avec une feuille régulière. Le lot produit donne une tasse aux arômes caractéristiques des thés haut de gamme. Envoûtant.",
+        "This garden is located on the southern banks of the majestic Brahmaputra River. It originates from the words 'MOKAL', which designates a variety of bamboo and 'BARI' a specific place or garden. Lot manufactured according to the orthodox method intended for the best grades. Golden buds with a regular leaf. The batch produced gives a cup with the characteristic aromas of high-end teas. Bewitching."
+      ],
       "price": 22.0,
       "contenance": ["/ Les 100 g", "The 100g"],
       "id": 5,
@@ -218,6 +239,10 @@
         "TEA OF INDIA - DARJEELING OKAYTI T.G.F.O.P. 2ND FLUSH"
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Plantation située à l'ouest de Darjeeling entre les plantations Thurbo et Gopaldhara. Flore et faune uniques, beaucoup de forêts et traversée par la rivière Mecchi, les conditions sont parfaites pour un lot unique. Qualité étonnante avec un ensemble complet et complexe de muscat et de notes fruitées sous-jacentes",
+        "Plantation located west of Darjeeling between the Thurbo and Gopaldhara plantations. Unique flora and fauna, lots of forests and crossed by the Mecchi River, the conditions are perfect for a unique lot. Amazing quality with a full and complex set of muscat and underlying fruity notes"
+      ],
       "price": 30.0,
       "contenance": ["/ Les 100 g", "The 100g"],
       "id": 6,
