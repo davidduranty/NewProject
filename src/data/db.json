@@ -7,6 +7,10 @@
         "Thé noir | Rhubarbe, Fraise",
         "Black tea | Rhubarb, Strawberry"
       ],
+      "text": [
+        "Apprécié pour son bel équilibre et son savoureux parfum, il délivre une liqueur veloutée à la saveur de fruits du jardin mêlant avec gourmandise, rhubarbe, fraise et fraise des bois. Dégusté chaud ou encore glacé à la belle saison, on ne sait quelle préparation préférer pour ce thé tout simplement délicieux !",
+        "Appreciated for its beautiful balance and its delicious aroma, it delivers a velvety liqueur with the flavor of garden fruits, deliciously mixing rhubarb, strawberries and wild strawberries. Enjoyed hot or iced in summer, we don't know which preparation to prefer for this simply delicious tea!"
+      ],
       "price": 6.5,
       "id": 1,
       "bag": "👜",
@@ -18,6 +22,10 @@
       "content": [
         "Thé vert | Gingembre, Citron, Fruit de la passion",
         "Green tea | Ginger, Lemon, Passion fruit"
+      ],
+      "text": [
+        "Sémillante et piquante comme la parisienne, 'Miss Doman' est une création mêlant thé vert et gingembre aux arômes fruités et acidulés du citron et du fruit de la passion. Un mélange tout en fraîcheur et en vivacité.",
+        "Sparkling and spicy like the Parisian, 'Miss Doman' is a creation combining green tea and ginger with fruity and tangy aromas of lemon and passion fruit. A blend full of freshness and liveliness."
       ],
       "price": 8.5,
       "id": 2,
@@ -31,6 +39,10 @@
         "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
         "Black tea | Cherry, Strawberry, Raspberry, Caramel, Vanilla"
       ],
+      "text": [
+        "Bouquet de saveurs résolument fruitées et gourmandes pour ce mélange aux délicieux arômes  framboise, groseille, fraise des bois, cerise, vanille et toffee. Un désormais «classique» parmi les mélanges signés Dammann Frères.",
+        "Bouquet of decidedly fruity and delicious flavors for this blend with delicious raspberry, redcurrant, wild strawberry, cherry, vanilla and toffee aromas. A now “classic” among the blends signed Dammann Frères."
+      ],
       "price": 7.0,
       "id": 3,
       "bag": "👜",
@@ -42,6 +54,10 @@
       "content": [
         "Thé vert | Litchi, Pamplemousse, Pêche, Rose, Jasmin",
         "Green tea | Lychee, Grapefruit, Peach, Rose, Jasmine"
+      ],
+      "text": [
+        "Subtil équilibre de notes fraîches, fleuries et fruitées pour ce mélange délicatement parfumé à apprécier tout au long de l’année préparé tant chaud que glacé. Ingrédients : thé vert et thé vert au jasmin, pétales de fleurs, arômes litchi, pamplemousse, pêche de vigne et huile essentielle de rose.",
+        "Subtle balance of fresh, floral and fruity notes for this delicately scented blend to be enjoyed all year round, prepared both hot and iced. Ingredients: green tea and jasmine green tea, flower petals, lychee, grapefruit, vine peach and rose essential oil flavors."
       ],
       "price": 8.0,
       "id": 4,
@@ -55,6 +71,10 @@
         "Thé noir | Framboise, Cerise, Violette, Vanille, Amande, Biscuit",
         "Black tea | Raspberry, Cherry, Violet, Vanilla, Almond, Biscuit"
       ],
+      "text": [
+        "Thés noirs mêlés de pétales de fleur, aux arômes coquelicot, biscuit et pâte d'amande. Tantôt bonbon de sucre cuit, tantôt gâteaux de nos grand-mères, difficile de choisir parmi ses saveurs, peu importe ce thé est un délice !",
+        "Black teas mixed with flower petals, with poppy, biscuit and almond paste aromas. Sometimes cooked sugar candy, sometimes our grandmothers' cakes, difficult to choose among its flavors, no matter this tea is a delight!"
+      ],
       "price": 8.5,
       "id": 5,
       "bag": "👜",
@@ -66,6 +86,10 @@
       "content": [
         "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
         "Black tea | Cherry, Strawberry, Raspberry, Caramel, Vanilla"
+      ],
+      "text": [
+        "Subtil équilibre de notes fraîches, fleuries et fruitées pour ce mélange délicatement parfumé à apprécier tout au long de l'année, tant chaud que glacé : thé vert et thé vert au jasmin, pétales de fleurs, arômes litchi, pamplemousse et rose.",
+        "Subtle balance of fresh, flowery and fruity notes for this delicately scented blend to be enjoyed all year round, both hot and iced: green tea and jasmine green tea, flower petals, lychee, grapefruit and rose aromas."
       ],
       "price": 12.5,
       "id": 6,
@@ -79,6 +103,10 @@
         "Thé vert | Kiwi, Bergamote, Fleur d'oranger, Violette, Pêche",
         "Green tea | Kiwi, Bergamot, Orange Blossom, Violet, Peach"
       ],
+      "text": [
+        "Bergamote, kiwi, pêche jaune, fleur d'oranger, fleur de violette, toutes ces senteurs et saveurs cultivées avec soin et gourmandise  depuis le XVIIe siècle dans les jardins de Versailles, sont associées à un thé vert pour nous offrir un mélange hautement parfumé où, notes végétales, fleuries et fruitées se mêlent dans une royale infusion.",
+        "Bergamot, kiwi, yellow peach, orange blossom, violet flower, all these scents and flavors cultivated with care and indulgence since the 17th century in the gardens of Versailles, are combined with a green tea to offer us a highly fragrant blend where , vegetal, floral and fruity notes mingle in a royal infusion."
+      ],
       "price": 7.0,
       "id": 7,
       "bag": "👜",
@@ -89,6 +117,10 @@
       "name": [
         "THE VERT A LA MENTHE AROMATISE",
         "GREEN TEA WITH FLAVORED MINT"
+      ],
+      "text": [
+        "Inspiré de l’incontournable thé à la menthe marocain, notre thé vert à la menthe aromatisé allie en belles proportions, le thé vert Gunpowder à deux variétés de feuilles de menthe afin de créer une parfaite synergie. La communion entre la délicate menthe douce et la subtile fraîcheur de la menthe poivrée, toutes deux portées par le thé, vous offrira une infusion puissante et rafraîchissante. Selon la tradition, un thé à boire très chaud et sucré.",
+        "Inspired by the essential Moroccan mint tea, our flavored mint green tea combines Gunpowder green tea in beautiful proportions with two varieties of mint leaves to create a perfect synergy. The communion between the delicate sweet mint and the subtle freshness of peppermint, both carried by the tea, will offer you a powerful and refreshing infusion. According to tradition, a tea to drink very hot and sweet."
       ],
       "content": ["Thé vert | Menthe", "Green tea | Mint"],
       "price": 7.5,
@@ -104,6 +136,7 @@
         "PETIT-DEJEUNER, 24 SACHETS CRISTAL ENVELOPPES",
         "BREAKFAST, 24 ENVELOPED CRYSTAL BAGS"
       ],
+      "text": "Un thé noir d'Afrique issu de l'agriculture biologique produit à partir de théiers cultivés sur les pentes verdoyantes de la région de Rukéri au Rwanda; le thé favori des amateurs de petit-déjeuner corsé. La combinaison du terroir, de son ensoleillement de son hygrométrie procure à ce thé, une tasse à la liqueur puissante, développant de belles notes aromatiques boisées sans trop d'amertume.",
       "content": ["Thé noir", "Black tea"],
       "price": 14.0,
       "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
@@ -117,6 +150,7 @@
         "EARL GREY YIN ZHEN 24 SACHETS CRISTAL ENVELOPPES",
         "EARL GRAY YIN ZHEN 24 ENVELOPED CRYSTAL BAGS"
       ],
+      "text": "Une sélection de fins thés noirs enrichie de pointes blanches, de pétales de fleur et aromatisée à la bergamote de Calabre. L'équilibre idéal de cet Earl Grey supérieur saura satisfaire les plus exigeants.Recharge pour coffret DAMMANN Frères contenant 24 sachets Cristal emballés individuellement. La texture, proche de la soie, permet d'obtenir une infusion identique à celle que procurent des thés en vrac de qualité égale.Temps d'infusion recommandé : 4/5 minutes.Poids net: 48g",
       "content": ["Thé noir | Bergamote", "Black tea | Bergamot"],
       "price": 15.5,
       "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
@@ -130,6 +164,7 @@
         "DARJEELING 24 SACHETS CRISTAL ENVEVOPPES",
         "DARJEELING 24 ENVELOPED CRYSTAL BAGS"
       ],
+      "text": "Thé d'été de Darjeeling, il mêle des feuilles en provenance de différents jardins. Son infusion libère une liqueur bien équilibrée à la saveur délicate d’amande et de pêche mûre. Boîte de 24 sachets Cristal® enveloppés. Poids net : 48 g.",
       "content": ["Thé noir", "Black tea"],
       "price": 16.0,
       "contenance": ["/ Les 24 Sachets enveloppés", "/ The 24 wrapped bags"],
