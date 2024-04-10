@@ -2,11 +2,13 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
 import ModalInfusion from "../../modal/ModalInfusionImg";
+import i18n from "../../I18n";
 
 const CardInfusion = ({ infusion }) => {
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
+  const isFrench = i18n.language === "fr";
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -35,10 +37,13 @@ const CardInfusion = ({ infusion }) => {
           alt={"image" + infusion.name}
           onClick={handleModalToggle}
         />
-        <h1>{infusion.name}</h1>
-        <h2>{infusion.content}</h2>
+        <h1>{isFrench ? infusion.name[0] : infusion.name[1]}</h1>
+        <h2>{isFrench ? infusion.content[0] : infusion.content[1]}</h2>
         <div className="priceAndBag">
-          <p>{infusion.price.toFixed(2)} / les 100 G</p>
+          <p>
+            {infusion.price.toFixed(2)}{" "}
+            {isFrench ? "/ les 100 G" : "/ the 100 G"}
+          </p>
           <div className="count-container">
             <button className="btn-less" onClick={handleDecrement}>
               -

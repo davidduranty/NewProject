@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { useApi } from "../../data/Context";
+import i18n from "../../I18n";
+
 function CardCoffret({ coffret }) {
   const [apiCoffret, setApiCoffret] = useState([]);
   const [likeCoffret, setLikeCoffret] = useState(new Map());
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
+  const isFrench = i18n.language === "fr";
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -44,10 +47,17 @@ function CardCoffret({ coffret }) {
           src={coffret.img}
           alt={"image" + coffret.name}
         />
-        <h1 className="h1-box">{coffret.name}</h1>
-        <h2 className="h2-box">{coffret.content}</h2>
+        <h1 className="h1-box">
+          {isFrench ? coffret.name[0] : coffret.name[1]}
+        </h1>
+        <h2 className="h2-box">
+          {isFrench ? coffret.content[0] : coffret.content[1]}
+        </h2>
         <div className="priceAndBag-box">
-          <p>{coffret.price.toFixed(2)} / les 100 G</p>
+          <p>
+            {coffret.price.toFixed(2)}{" "}
+            {isFrench ? "/ les 100 G" : "/ the 100 G"}
+          </p>
           <div className="count-container">
             <button className="btn-less" onClick={handleDecrement}>
               -
