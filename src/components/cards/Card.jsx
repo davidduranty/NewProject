@@ -54,7 +54,15 @@ const Card = ({ tea }) => {
       </li>
       {showImg && (
         <div className="image-frame">
+          <div className="title-iframe-container">
+            <h1 className="h1-iframe">
+              {isFrench ? tea.name[0] : tea.name[1]}
+            </h1>
+          </div>
           <img className="img-box" src={tea.img} alt={"image" + tea.name} />
+          <div className="text-frame">
+            <p>{isFrench ? tea.text[0] : tea.text[1]}</p>
+          </div>
           <button className="btn-img" onClick={() => setShowImg(false)}>
             Fermer
           </button>{" "}

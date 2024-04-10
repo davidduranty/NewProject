@@ -219,19 +219,36 @@
         }
       }
       .image-frame {
+        border-radius: 5px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-54%, -50%);
-        width: 100%;
+        width: 80%;
         height: 600px;
         @include center;
         flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        .title-iframe-container {
+          border: 1px solid white;
+          position: absolute;
+          top: 40%;
+          .h1-iframe {
+            color: white;
+          }
+        }
 
         .img-box {
-          height: 500px;
-          min-width: 450px;
+          height: 400px;
+          min-width: 350px;
           border-radius: 20px;
+        }
+        .text-frame {
+          text-align: center;
+          margin: 15px;
+          color: #fff;
+          font-size: 0.8rem;
+          height: 115px;
         }
         .btn-img {
           margin: 10px 0 0 0;
