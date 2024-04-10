@@ -8,12 +8,16 @@ const CardMoment = ({ moment }) => {
 
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
+  const [showImg, setShowImg] = useState(false);
 
   const handleIncrement = () => {
     setCount(count + 1);
     handleClickMore();
   };
 
+  const viewImage = () => {
+    setShowImg(true);
+  };
   const handleDecrement = () => {
     if (count > 0) {
       setCount(count - 1);
@@ -42,10 +46,32 @@ const CardMoment = ({ moment }) => {
           </div>
           <div className="contenance-container-icon">
             <span>{moment.bag}</span>
-            <span className="iconEye">{moment.view}</span>
+            <span className="iconEye" onClick={viewImage}>
+              {moment.view}
+            </span>
           </div>
         </div>
       </li>
+      {showImg && (
+        <div className="image-frame">
+          <div className="title-iframe-container">
+            <h1 className="h1-iframe">
+              {isFrench ? moment.name[0] : moment.name[1]}
+            </h1>
+          </div>
+          <img
+            className="img-box"
+            src={moment.img}
+            alt={"image" + moment.name}
+          />
+          <div className="text-frame">
+            <p>{isFrench ? moment.text[0] : moment.text[1]}</p>
+          </div>
+          <button className="btn-img" onClick={() => setShowImg(false)}>
+            Fermer
+          </button>{" "}
+        </div>
+      )}
     </div>
   );
 };

@@ -230,11 +230,15 @@
         flex-direction: column;
         background: rgba(0, 0, 0, 0.9);
         .title-iframe-container {
-          border: 1px solid white;
+          background: black;
           position: absolute;
           top: 40%;
+
           .h1-iframe {
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         }
 
