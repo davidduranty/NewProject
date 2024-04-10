@@ -453,8 +453,11 @@
   "infusions": [
     {
       "img": "noel_a_paris.webp",
-      "name": "THÉ NOIR - NOËL A PARIS",
-      "content": "THÉ NOIR | PAIN D'ÉPICES, AMANDE, CERISE",
+      "name": ["THÉ NOIR - NOËL A PARIS", "BLACK TEA - CHRISTMAS IN PARIS"],
+      "content": [
+        "THÉ NOIR | PAIN D'ÉPICES, AMANDE, CERISE",
+        "BLACK TEA | GINGERBREAD, ALMOND, CHERRY"
+      ],
       "price": 7.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -462,8 +465,11 @@
     },
     {
       "img": "christmas_tea.webp",
-      "name": "THÉ NOIR - CHRISTMAS TEA",
-      "content": "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+      "name": ["THÉ NOIR - THÉ DE NOËL", "BLACK TEA - CHRISTMAS TEA"],
+      "content": [
+        "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+        "BLACK TEA | ORANGE, CARAMEL, PINEAPPLE, MARASQUIN"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -471,8 +477,14 @@
     },
     {
       "img": "mannathan.webp",
-      "name": "THÉ VERT - NOËL À MANHATTAN",
-      "content": "THÉ VERT | CHÂTAIGNE, SIROP D'ÉRABLE, CHOCOLAT, POMME, CLÉMENTINE",
+      "name": [
+        "THÉ VERT - NOËL À MANHATTAN",
+        "GREEN TEA - CHRISTMAS IN MANHATTAN"
+      ],
+      "content": [
+        "THÉ VERT | CHÂTAIGNE, SIROP D'ÉRABLE, CHOCOLAT, POMME, CLÉMENTINE",
+        "GREEN TEA | CHESTNUT, MAPLE SYRUP, CHOCOLATE, APPLE, CLEMENTINE"
+      ],
       "price": 11.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -480,8 +492,11 @@
     },
     {
       "img": "flocons.webp",
-      "name": "THÉ NOIR - FLOCONS D'ÉPICES",
-      "content": "THÉ NOIR | ORANGE, PAIN D'ÉPICES",
+      "name": ["THÉ NOIR - FLOCONS D'ÉPICES", "BLACK TEA - SPICE FLAKES"],
+      "content": [
+        "THÉ NOIR | ORANGE, PAIN D'ÉPICES",
+        "BLACK TEA | ORANGE, GINGERBREAD"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -489,8 +504,11 @@
     },
     {
       "img": "london.webp",
-      "name": "THÉ NOIR - NOËL À LONDRES",
-      "content": "THÉ NOIR | GINGEMBRE, CANNELLE, VANILLE, POMME, AMANDE",
+      "name": ["THÉ NOIR - NOËL À LONDRES", "BLACK TEA - CHRISTMAS IN LONDON"],
+      "content": [
+        "THÉ NOIR | GINGEMBRE, CANNELLE, VANILLE, POMME, AMANDE",
+        "BLACK TEA | GINGER, CINNAMON, VANILLA, APPLE, ALMOND"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -498,8 +516,14 @@
     },
     {
       "img": "prague.webp",
-      "name": "THÉ NOIR - ROYAL BREAKFAST",
-      "content": "THÉ NOIR | CARAMEL, CHOCOLAT, CLÉMENTINE",
+      "name": [
+        "THÉ NOIR - PETIT-DÉJEUNER ROYAL",
+        "BLACK TEA - ROYAL BREAKFAST"
+      ],
+      "content": [
+        "THÉ NOIR | CARAMEL, CHOCOLAT, CLÉMENTINE",
+        "BLACK TEA | CARAMEL, CHOCOLATE, CLEMENTINE"
+      ],
       "price": 7.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -507,8 +531,8 @@
     },
     {
       "img": "venise.webp",
-      "name": "THÉ NOIR - NOËL À VENISE",
-      "content": "THÉ NOIR | CARAMEL, CITRON",
+      "name": ["THÉ NOIR - NOËL À VENISE", "BLACK TEA - CHRISTMAS IN VENICE"],
+      "content": ["THÉ NOIR | CARAMEL, CITRON", "BLACK TEA | CARAMEL, LEMON"],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -516,8 +540,14 @@
     },
     {
       "img": "st_petersbourg.webp",
-      "name": "THÉ NOIR - NOËL À SAINT-PETERSBOURGT",
-      "content": "THÉ NOIR | POMME, POIRE, MIRABELLE, PÊCHE, NOISETTE, CHÂTAIGNE",
+      "name": [
+        "THÉ NOIR - NOËL À SAINT-PETERSBOURGT",
+        "BLACK TEA - CHRISTMAS IN SAINT-PETERSBURG"
+      ],
+      "content": [
+        "THÉ NOIR | POMME, POIRE, MIRABELLE, PÊCHE, NOISETTE, CHÂTAIGNE",
+        "BLACK TEA | APPLE, PEAR, MIRABELLE, PEACH, HAZELNUT, CHESTNUT"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -525,8 +555,11 @@
     },
     {
       "img": "vienne.webp",
-      "name": "THÉ NOIR - NOËL À VIENNE",
-      "content": "THÉ NOIR | CHOCOLAT, ABRICOT, VANILLE",
+      "name": ["THÉ NOIR - NOËL À VIENNE", "BLACK TEA - CHRISTMAS IN VIENNA"],
+      "content": [
+        "THÉ NOIR | CHOCOLAT, ABRICOT, VANILLE",
+        "BLACK TEA | CHOCOLATE, APRICOT, VANILLA"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -534,8 +567,14 @@
     },
     {
       "img": "provence.webp",
-      "name": "THÉ NOIR - NOËL EN PROVENCE",
-      "content": "",
+      "name": [
+        "THÉ NOIR - NOËL EN PROVENCE",
+        "BLACK TEA - CHRISTMAS IN PROVENCE"
+      ],
+      "content": [
+        "THÉ NOIR | MIEL, FIGUE, FRAISE",
+        "BLACK TEA | HONEY, FIG, STRAWBERRY"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -543,8 +582,14 @@
     },
     {
       "img": "tea_blanc.webp",
-      "name": "THÉ BLANC - CHRISTMAS TEA BLANC",
-      "content": "THÉ BLANC | GINGEMBRE, PAIN D'ÉPICES, AMANDE, CERISE",
+      "name": [
+        "THÉ BLANC - THÉ BLANC DE NOËL",
+        "WHITE TEA - CHRISTMAS WHITE TEA"
+      ],
+      "content": [
+        "THÉ BLANC | GINGEMBRE, PAIN D'ÉPICES, AMANDE, CERISE",
+        "WHITE TEA | GINGER, GINGERBREAD, ALMOND, CHERRY"
+      ],
       "price": 19.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -552,8 +597,14 @@
     },
     {
       "img": "tea_vert.webp",
-      "name": "THÉ VERT - CHRISTMAS TEA VERT",
-      "content": "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+      "name": [
+        "THÉ VERT - THÉ VERT DE NOËL",
+        "GREEN TEA - CHRISTMAS GREEN TEA"
+      ],
+      "content": [
+        "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+        "GREEN TEA | CINNAMON, VANILLA, GINGER, ALMOND, ORANGE"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -561,8 +612,11 @@
     },
     {
       "img": "ginger.webp",
-      "name": "THÉ NOIR - MY GINGERBREAD",
-      "content": "THÉ NOIR | GINGEMBRE, AMANDE, ORANGE, RAISIN",
+      "name": ["THÉ NOIR - MY GINGERBREAD", "BLACK TEA - MY GINGERBREAD"],
+      "content": [
+        "THÉ NOIR | GINGEMBRE, AMANDE, ORANGE, RAISIN",
+        "BLACK TEA | GINGER, ALMOND, ORANGE, GRAPE"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -570,8 +624,11 @@
     },
     {
       "img": "panetone.webp",
-      "name": "THÉ NOIR - MY PANETTONE",
-      "content": "THÉ NOIR | AMANDE, ORANGE, BISCUIT",
+      "name": ["THÉ NOIR - MON PANETTONE", "BLACK TEA - MY PANETTONE"],
+      "content": [
+        "THÉ NOIR | AMANDE, ORANGE, BISCUIT",
+        "BLACK TEA | ALMOND, ORANGE, COOKIE"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -579,8 +636,11 @@
     },
     {
       "img": "carcadet.webp",
-      "name": "CARCADET - NOËL À PARIS",
-      "content": "CARCADET | HIBISCUS, CERISE, PAIN D'ÉPICES, AMANDE",
+      "name": ["CARCADET - NOËL À PARIS", "CARCADET - CHRISTMAS IN PARIS"],
+      "content": [
+        "CARCADET | HIBISCUS, CERISE, PAIN D'ÉPICES, AMANDE",
+        "CARCADET | HIBISCUS, CHERRY, GINGERBREAD, ALMOND"
+      ],
       "price": 8.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -588,8 +648,11 @@
     },
     {
       "img": "tisane.webp",
-      "name": "TISANE DE NOËL",
-      "content": "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, CANNELLE, GINGEMBRE, GIROFLE, POIVRE, BAIE ROSE",
+      "name": ["TISANE DE NOËL", "CHRISTMAS HERBAL TEA"],
+      "content": [
+        "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, CANNELLE, GINGEMBRE, GIROFLE, POIVRE, BAIE ROSE",
+        "TISANE | CHOCOLATE, LICORICE, CARDAMOM, CINNAMON, GINGER, CLOVE, PEPPER, PINK BERRY"
+      ],
       "price": 13.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -597,8 +660,11 @@
     },
     {
       "img": "rooibos.webp",
-      "name": "ROOIBOS DE NOËL",
-      "content": "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE, BAIE ROSE, GINGEMBRE, GIROFLE",
+      "name": ["ROOIBOS DE NOËL", "CHRISTMAS ROOIBOS"],
+      "content": [
+        "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE, BAIE ROSE, GINGEMBRE, GIROFLE",
+        "ROOIBOS | GINGERBREAD, ORANGE, CHERRY, PINK BERRY, GINGER, CLOVE"
+      ],
       "price": 9.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -606,8 +672,11 @@
     },
     {
       "img": "cheminee.webp",
-      "name": "CARCADET - FEU DE CHEMINÉE",
-      "content": "CARCADET | HIBISCUS, CANNELLE",
+      "name": ["CARCADET - FEU DE CHEMINÉE", "CARCADET - FIREPLACE"],
+      "content": [
+        "CARCADET | HIBISCUS, CANNELLE",
+        "CARCADET | HIBISCUS, CINNAMON"
+      ],
       "price": 5.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -615,8 +684,8 @@
     },
     {
       "img": "cacao_menthe.webp",
-      "name": "CACAO MENTHE",
-      "content": "TISANE | CACAO, MENTHE",
+      "name": ["CACAO MENTHE", "COCOA MINT"],
+      "content": ["TISANE | CACAO, MENTHE", "TISANE | COCOA, MINT"],
       "price": 10.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -624,8 +693,8 @@
     },
     {
       "img": "cacao_orange.webp",
-      "name": "CACAO ORANGE",
-      "content": "TISANE | CACAO, ORANGE",
+      "name": ["CACAO ORANGE", "COCOA ORANGE"],
+      "content": ["TISANE | CACAO, ORANGE", "TISANE | COCOA, ORANGE"],
       "price": 10.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -633,8 +702,11 @@
     },
     {
       "img": "cacao_epices.webp",
-      "name": "CACAO ÉPICES",
-      "content": "TISANE | CACAO, CANNELLE, BADIANE",
+      "name": ["CACAO ÉPICES", "COCOA SPICES"],
+      "content": [
+        "TISANE | CACAO, CANNELLE, BADIANE",
+        "TISANE | COCOA, CINNAMON, BADIANE"
+      ],
       "price": 10.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -644,32 +716,56 @@
   "coffret": [
     {
       "img": "box-1.jpg",
-      "name": "CALENDRIER DE L'AVENT 2023, LE JARDIN ENCHANTE",
-      "content": "COFFRETS CADEAUX | COFFRETS THÉS SACHETS",
+      "name": [
+        "CALENDRIER DE L'AVENT 2023, LE JARDIN ENCHANTE",
+        "ADVENT CALENDAR 2023, THE ENCHANTED GARDEN"
+      ],
+      "content": [
+        "COFFRETS CADEAUX | COFFRETS THÉS SACHETS",
+        "GIFT BOXES | TEA BAGS BOXES"
+      ],
       "price": 26.5,
       "icon": "👜",
       "id": 1
     },
     {
       "img": "box-2.jpg",
-      "name": "COFFRET JOYEUX NOEL - COFFRET 2 BOÎTES DE THES ASSORTIS ",
-      "content": "COFFRETS CADEAUX | COFFRETS THÉS BOÎTES",
+      "name": [
+        "COFFRET JOYEUX NOEL - COFFRET 2 BOÎTES DE THES ASSORTIS ",
+        "MERRY CHRISTMAS BOX - BOX OF 2 BOXES OF ASSORTED TEAS"
+      ],
+      "content": [
+        "COFFRETS CADEAUX | COFFRETS THÉS BOÎTES",
+        "GIFT BOXES | TEA BOXES"
+      ],
       "price": 26.5,
       "icon": "👜",
       "id": 2
     },
     {
       "img": "box-3.jpg",
-      "name": "COFFRET NOËLS DU MONDE - COFFRET 3 THES ASSORTIS",
-      "content": "COFFRETS CADEAUX | COFFRETS THÉS BOÎTES",
+      "name": [
+        "COFFRET NOËLS DU MONDE - COFFRET 3 THES ASSORTIS",
+        "WORLD CHRISTMAS BOX - BOX OF 3 ASSORTED TEAS"
+      ],
+      "content": [
+        "COFFRETS CADEAUX | COFFRETS THÉS BOÎTES",
+        "GIFT BOXES | TEA BOXES"
+      ],
       "price": 35.5,
       "icon": "👜",
       "id": 3
     },
     {
       "img": "box-4.jpg",
-      "name": "COFFRET IL ETAIT UNE FOIS NOËL - COFFRET 4 BOÎTES",
-      "content": "COFFRETS CADEAUX | COFFRETS THÉS SACHETS",
+      "name": [
+        "COFFRET IL ETAIT UNE FOIS NOËL - COFFRET 4 BOÎTES",
+        "ONCE UPON A CHRISTMAS BOX - 4 BOXES BOX"
+      ],
+      "content": [
+        "COFFRETS CADEAUX | COFFRETS THÉS SACHETS",
+        "GIFT BOXES | TEA BOXES"
+      ],
       "price": 45.0,
       "icon": "👜",
       "id": 4
@@ -678,32 +774,56 @@
   "boites": [
     {
       "img": "box_christmas.webp",
-      "name": "CHRISTMAS TEA VERT - BOÎTE 100 G",
-      "content": "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+      "name": [
+        "THÉ DE NOËL VERT - BOÎTE 100 G",
+        "CHRISTMAS GREEN TEA - 100 G BOX"
+      ],
+      "content": [
+        "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+        "GREEN TEA | CINNAMON, VANILLA, GINGER, ALMOND, ORANGE"
+      ],
       "price": 14.0,
       "icon": "👜",
       "id": 1
     },
     {
       "img": "box_rooibos.webp",
-      "name": "CHRISTMAS TEA - BOÎTE 100 G",
-      "content": "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+      "name": [
+        "THÉ VERT DE NOËL - BOÎTE 100 G",
+        "CHRISTMAS GREEN TEA - 100 G BOX"
+      ],
+      "content": [
+        "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+        "BLACK TEA | ORANGE, CARAMEL, PINEAPPLE, MARASQUIN"
+      ],
       "price": 14.0,
       "icon": "👜",
       "id": 2
     },
     {
       "img": "box_teaGreen.webp",
-      "name": "ROOIBOS DE NOËL - BOÎTE 100 G",
-      "content": "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE",
+      "name": [
+        "ROOIBOS DE NOËL - BOÎTE 100 G",
+        "CHRISTMAS ROOIBOS - 100 G BOX"
+      ],
+      "content": [
+        "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE",
+        "ROOIBOS | GINGERBREAD, ORANGE, CHERRY"
+      ],
       "price": 16.0,
       "icon": "👜",
       "id": 3
     },
     {
       "img": "box_vert.webp",
-      "name": "TISANE DE NOËL - BOÎTE 100 G",
-      "content": "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, CANNELLE, GINGEMBRE",
+      "name": [
+        "TISANE DE NOËL - BOÎTE 100 G",
+        "CHRISTMAS HERBAL TEA - 100 G BOX"
+      ],
+      "content": [
+        "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, CANNELLE, GINGEMBRE",
+        "TISANE | CHOCOLATE, LICORICE, CARDAMOM, CINNAMON, GINGER"
+      ],
       "price": 18.0,
       "icon": "👜",
       "id": 4
@@ -712,32 +832,56 @@
   "boites_suites": [
     {
       "img": "boite1.webp",
-      "name": "BOÎTE 6 SACHETS CRISTAL - NOËL À MANHATTAN",
-      "content": "THÉ VERT | CHÂTAIGNE, SIROP D'ÉRABLE, CHOCOLAT, POMME, CLÉMENTINE",
+      "name": [
+        "BOÎTE 6 SACHETS CRISTAL - NOËL À MANHATTAN",
+        "BOX OF 6 CRYSTAL BAGS - CHRISTMAS IN MANHATTAN"
+      ],
+      "content": [
+        "THÉ VERT | CHÂTAIGNE, SIROP D'ÉRABLE, CHOCOLAT, POMME, CLÉMENTINE",
+        "GREEN TEA | CHESTNUT, MAPLE SYRUP, CHOCOLATE, APPLE, CLEMENTINE"
+      ],
       "price": 6.5,
       "icon": "👜",
       "id": 1
     },
     {
       "img": "boite2.webp",
-      "name": "BOÎTE 6 SACHETS CRISTAL - NOËL À PARIS",
-      "content": "THÉ NOIR | PAIN D'ÉPICES, AMANDE, CERISE",
+      "name": [
+        "BOÎTE 6 SACHETS CRISTAL - NOËL À PARIS",
+        "BOX OF 6 CRYSTAL BAGS - CHRISTMAS IN PARIS"
+      ],
+      "content": [
+        "THÉ NOIR | PAIN D'ÉPICES, AMANDE, CERISE",
+        "BLACK TEA | GINGERBREAD, ALMOND, CHERRY"
+      ],
       "price": 6.5,
       "icon": "👜",
       "id": 2
     },
     {
       "img": "boite3.webp",
-      "name": "BOÎTE 6 SACHETS CRISTAL - FLOCONS D'ÉPICES",
-      "content": "THÉ NOIR | ORANGE, PAIN D'ÉPICES",
+      "name": [
+        "BOÎTE 6 SACHETS CRISTAL - FLOCONS D'ÉPICES",
+        "BOX OF 6 CRYSTAL BAGS - SPICE FLAKES"
+      ],
+      "content": [
+        "THÉ NOIR | ORANGE, PAIN D'ÉPICES",
+        "BLACK TEA | ORANGE, GINGERBREAD"
+      ],
       "price": 7.5,
       "icon": "👜",
       "id": 3
     },
     {
       "img": "boite4.webp",
-      "name": "BOÎTE 6 SACHETS CRISTAL - NOËL À PÉKIN",
-      "content": "THÉ NOIR | FRUIT DE LA PASSION, ANANAS, BERGAMOTE",
+      "name": [
+        "BOÎTE 6 SACHETS CRISTAL - NOËL À PÉKIN",
+        "BOX OF 6 CRYSTAL BAGS - CHRISTMAS IN BEIJING"
+      ],
+      "content": [
+        "THÉ NOIR | FRUIT DE LA PASSION, ANANAS, BERGAMOTE",
+        "BLACK TEA | PASSION FRUIT, PINEAPPLE, BERGAMOT"
+      ],
       "price": 9.5,
       "icon": "👜",
       "id": 4
@@ -746,48 +890,84 @@
   "sachet": [
     {
       "img": "sachet1.webp",
-      "name": "CHRISTMAS TEA VERT - 25 SACHETS CRISTAL",
-      "content": "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+      "name": [
+        "THÉ VERT DE NOËL - 25 SACHETS CRISTAL",
+        "CHRISTMAS GREEN TEA - 25 CRYSTAL BAGS"
+      ],
+      "content": [
+        "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
+        "GREEN TEA | CINNAMON, VANILLA, GINGER, ALMOND, ORANGE"
+      ],
       "price": 12.0,
       "icon": "👜",
       "id": 1
     },
     {
       "img": "sachet2.webp",
-      "name": "CHRISTMAS TEA - 25 SACHETS CRISTAL",
-      "content": "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+      "name": [
+        "THÉ DE NOËL - 25 SACHETS CRISTAL",
+        "CHRISTMAS TEA - 25 CRYSTAL BAGS"
+      ],
+      "content": [
+        "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+        "BLACK TEA | ORANGE, CARAMEL, PINEAPPLE, MARASQUIN"
+      ],
       "price": 11.5,
       "icon": "👜",
       "id": 2
     },
     {
       "img": "sachet3.webp",
-      "name": "ROOIBOS DE NOËL - 25 SACHETS CRISTAL",
-      "content": "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE",
+      "name": [
+        "ROOIBOS DE NOËL - 25 SACHETS CRISTAL",
+        "CHRISTMAS ROOIBOS - 25 CRYSTAL BAGS"
+      ],
+      "content": [
+        "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE",
+        "ROOIBOS | GINGERBREAD, ORANGE, CHERRY"
+      ],
       "price": 13.0,
       "icon": "👜",
       "id": 3
     },
     {
       "img": "sachet4.webp",
-      "name": "TISANE DE NOËL - 25 SACHETS CRISTAL",
-      "content": "TISANE | CHOCOLAT, CARDAMOME, CANNELLE, GINGEMBRE",
+      "name": [
+        "TISANE DE NOËL - 25 SACHETS CRISTAL",
+        "CHRISTMAS HERBAL TEA - 25 CRYSTAL BAGS"
+      ],
+      "content": [
+        "TISANE | CHOCOLAT, CARDAMOME, CANNELLE, GINGEMBRE",
+        "TISANE | CHOCOLATE, CARDAMOM, CINNAMON, GINGER"
+      ],
       "price": 14.0,
       "icon": "👜",
       "id": 4
     },
     {
       "img": "sachet5.webp",
-      "name": "CHRISTMAS TEA - 24 SACHETS CRISTAL ENVELOPPES",
-      "content": "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+      "name": [
+        "THÉ DE NOËL - 24 SACHETS CRISTAL ENVELOPPÉS",
+        "CHRISTMAS TEA - 24 WRAPPED CRYSTAL BAG"
+      ],
+      "content": [
+        "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
+        "BLACK TEA | ORANGE, CARAMEL, PINEAPPLE, MARASQUIN"
+      ],
       "price": 13.5,
       "icon": "👜",
       "id": 5
     },
     {
       "img": "sachet6.webp",
-      "name": "TISANE DE NOËL - 24 SACHETS CRISTAL ENVELOPPES",
-      "content": "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, GINGEMBRE, GIROFLE, POIVRE, BAIE ROSE",
+      "name": [
+        "TISANE DE NOËL - 24 SACHETS CRISTAL ENVELOPPÉS",
+        "CHRISTMAS HERBAL TEA - 24 WRAPPED CRYSTAL BAGS"
+      ],
+      "content": [
+        "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, GINGEMBRE, GIROFLE, POIVRE, BAIE ROSE",
+        "TISANE | CHOCOLATE, LICORICE, CARDAMOM, GINGER, CLOVE, PEPPER, PINK BERRY"
+      ],
       "price": 17.5,
       "icon": "👜",
       "id": 6
