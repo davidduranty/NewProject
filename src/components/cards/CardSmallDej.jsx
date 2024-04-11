@@ -8,7 +8,8 @@ const CardSmallDej = ({ tasse }) => {
 
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
-  const [showImage, setShowImage] = useState(true);
+  // const [showImage, setShowImage] = useState(true);
+  const [showImg, setShowImg] = useState(false);
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -21,32 +22,54 @@ const CardSmallDej = ({ tasse }) => {
       handleClickLess();
     }
   };
-  const toggleImage = () => {
-    setShowImage(!showImage);
+  const viewImage = () => {
+    setShowImg(true);
   };
 
   return (
-    <ul className="ul-settings">
-      {showImage && <img src={tasse.img} alt="Tasse Doman" />}
-      <h1>{isFrench ? tasse.name[0] : tasse.name[1]}</h1>
-      <h2>{isFrench ? tasse.content[0] : tasse.content[1]}</h2>
-      <div className="tasse-container-price">
-        <div className="tasse-price-box">
-          <p>{tasse.price.toFixed(2)} £</p>
+    <>
+      <ul className="ul-settings">
+        <img src={tasse.img} alt="Tasse Doman" />
+        <h1>{isFrench ? tasse.name[0] : tasse.name[1]}</h1>
+        <h2>{isFrench ? tasse.content[0] : tasse.content[1]}</h2>
+        <div className="tasse-container-price">
+          <div className="tasse-price-box">
+            <p>{tasse.price.toFixed(2)} £</p>
+          </div>
+          <div className="count-container-tasse">
+            <button className="btn-less" onClick={handleDecrement}>
+              -
+            </button>
+            <span className="result">{count}</span>
+            <button className="btn-more" onClick={handleIncrement}>
+              +
+            </button>
+          </div>
+          <p>{tasse.icon}</p>
+          <p onClick={viewImage}>{tasse.view}</p>
         </div>
-        <div className="count-container-tasse">
-          <button className="btn-less" onClick={handleDecrement}>
-            -
-          </button>
-          <span className="result">{count}</span>
-          <button className="btn-more" onClick={handleIncrement}>
-            +
-          </button>
-        </div>
-        <p>{tasse.icon}</p>
-        <p onClick={toggleImage}>{tasse.view}</p>
-      </div>
-    </ul>
+        {showImg && (
+          <div className="image-tasse-frame">
+            <div className="title-tasse-iframe-container">
+              <h1 className="h1-tasse-iframe">
+                {isFrench ? tasse.name[0] : tasse.name[1]}
+              </h1>
+            </div>
+            <img
+              className="img-tasse-box"
+              src={tasse.img}
+              alt={"image" + tasse.name}
+            />
+            <div className="text-tasse-frame">
+              <p>{isFrench ? tasse.text[0] : tasse.text[1]}</p>
+            </div>
+            <button className="btn-tasse-img" onClick={() => setShowImg(false)}>
+              Fermer
+            </button>
+          </div>
+        )}
+      </ul>
+    </>
   );
 };
 
