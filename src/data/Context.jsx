@@ -46,7 +46,7 @@ export function ApiProvider({ children }) {
     await axios.get("http://localhost:5172/thes/").then((res) => {
       setTea(
         res.data.filter((element) =>
-          element.name.toLowerCase().includes(word.toLowerCase())
+          (el.name[0] || el.name[1]).toLowerCase().includes(word.toLowerCase())
         )
       );
     });
@@ -88,7 +88,9 @@ export function ApiProvider({ children }) {
       .then((res) => {
         setGetDej(
           res.data.filter((el) =>
-            el.name.toLowerCase().includes(search.toLowerCase())
+            (el.name[0] || el.name[1])
+              .toLowerCase()
+              .includes(search.toLowerCase())
           )
         );
       });
