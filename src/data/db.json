@@ -318,6 +318,10 @@
         "TEA FROM INDIA - ASSAM HALMARI 2ND FLUSH T.G.F.O.P."
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Thé d'été de Darjeeling, il mêle des feuilles en provenance de différents jardins. Son infusion libère une liqueur bien équilibrée à la saveur délicate d’amande et de pêche mûre.",
+        "Darjeeling summer tea, it mixes leaves from different gardens. Its infusion releases a well-balanced liqueur with a delicate flavor of almond and ripe peach."
+      ],
       "price": 25.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -330,6 +334,10 @@
         "TEA FROM INDIA - HIGHER ASSAM G.F.O.P."
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Thé aux belles feuilles entières, riches en pointes dorées, cet assemblage de lots sélectionnés par notre tea-blender pour un thé à la belle infusion cuivrée développant des notes boisées et épicées à l’agréable rémanence miellée. A consommer à tout moment de la journée avec ou sans lait !",
+        "Tea with beautiful whole leaves, rich in golden tips, this blend of batches selected by our tea-blender for a tea with a beautiful coppery infusion developing woody and spicy notes with a pleasant honeyed afterglow. Consume at any time of the day with or without milk!"
+      ],
       "price": 8.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -342,6 +350,10 @@
         "TEA FROM INDIA – UPPER ASSAM G.B.O.P."
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Thé aux belles feuilles entières, riches en pointes dorées, cet assemblage de lots sélectionnés par notre tea-blender pour un thé à la belle infusion cuivrée développant des notes boisées et épicées à l’agréable rémanence miellée. A consommer à tout moment de la journée avec ou sans lait !",
+        "Tea with beautiful whole leaves, rich in golden tips, this blend of batches selected by our tea-blender for a tea with a beautiful coppery infusion developing woody and spicy notes with a pleasant honeyed afterglow. Consume at any time of the day with or without milk!"
+      ],
       "price": 8.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -354,6 +366,10 @@
         "TEA FROM INDIA - DARJEELING G.F.O.P. SUPERIOR 2ND FLUSH"
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Thé d'été de Darjeeling, il mêle des feuilles en provenance de différents jardins. Son infusion libère une liqueur bien équilibrée à la saveur délicate d’amande et de pêche mûre.",
+        "Darjeeling summer tea, it mixes leaves from different gardens. Its infusion releases a well-balanced liqueur with a delicate flavor of almond and ripe peach."
+      ],
       "price": 10.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -366,6 +382,10 @@
         "CEYLAN TEA - CEYLAN F.O.P. SUPERIOR"
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Un thé à feuilles entières et à pointes dorées. Il offre une liqueur aux notes plus fleuries que celle des Orange Pekoe. Se consomme volontiers accompagné de lait.",
+        "A whole-leaf, golden-tipped tea. It offers a liqueur with more floral notes than that of Orange Pekoe. Best eaten with milk."
+      ],
       "price": 7.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -378,6 +398,10 @@
         "AFRICAN TEA – KENYA MILIMA G.B.O.P."
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "La seule plantation du Kenya produisant encore du thé selon la méthode orthodoxe. Thé pointé donnant une tasse corsée et aromatique, mais sans amertume. Parfait pour le matin, avec ou sans lait.",
+        "The only plantation in Kenya still producing tea using the orthodox method. Sharp tea giving a full-bodied and aromatic cup, but without bitterness. Perfect for the morning, with or without milk."
+      ],
       "price": 8.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -390,6 +414,10 @@
         "BLEND - AFRICAN BREAKFAST"
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Quelques pétales de fleurs ajoutent une touche de mystère à ce mélange de thés noirs au délicieux bouquet fruité réunissant dans un bel équilibre : orange sanguine, pêche, fraise et cerise.",
+        "A few flower petals add a touch of mystery to this blend of black teas with a delicious fruity bouquet bringing together in a beautiful balance: blood orange, peach, strawberry and cherry."
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -399,6 +427,10 @@
       "img": "8.webp",
       "name": ["THÉ NOIR - THÉ BRUNCH", "BLACK TEA - BRUNCH TEA"],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Composé de thé à grandes feuilles, ce blend est un juste équilibre entre un thé d’Assam au caractère corsé et boisé et un thé de Darjeeling à l’arôme délicat et fruité. Il présente l’avantage d’accompagner parfaitement les différents mets salés ou sucrés proposés au cours d’un brunch qu’il soit dégusté avec ou sans lait.",
+        "Composed of large leaf tea, this blend is a fair balance between an Assam tea with a full-bodied and woody character and a Darjeeling tea with a delicate and fruity aroma. It has the advantage of perfectly accompanying the various savory or sweet dishes offered during a brunch, whether enjoyed with or without milk."
+      ],
       "price": 9.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -411,6 +443,10 @@
         "BLACK TEA - HIGHLANDS BREAKFAST"
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Pour les amoureux de notes chocolat, un thé noir gourmand à la texture soyeuse et à la douceur cacaotée développant des notes évoquant le praliné.",
+        "For lovers of chocolate notes, a gourmet black tea with a silky texture and cocoa sweetness developing notes evoking praline."
+      ],
       "price": 6.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -420,6 +456,10 @@
       "img": "10.webp",
       "name": ["MÉLANGE - THÉ POUR DEUX", "BLEND - TEA FOR TWO"],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Les deux grandes origines du thé, Assam et Yunnan, sont réunies dans ce somptueux mélange en un juste équilibre pour donner un breuvage d’essence divine. À découvrir par curiosité ... afin d’être envoûté. Déguster avec ou sans lait.",
+        "The two great origins of tea, Assam and Yunnan, are brought together in this sumptuous blend in just the right balance to give a beverage of divine essence. To discover out of curiosity... in order to be enchanted. Enjoy with or without milk."
+      ],
       "price": 8.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -432,6 +472,10 @@
         "BLACK TEA - ROYAL BREAKFAST"
       ],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Mélange corsé et puissant des 2 grandes origines du thé. D’un côté le thé du Yunnan apporte du moelleux et des notes animales, tandis que l’Assam apporte la force et le boisé. Parfait équilibre pour un thé chaleureux et long en bouche pour bien commencer la journée. Avec ou sans lait.",
+        "Full-bodied and powerful blend of the 2 great origins of tea. On the one hand, Yunnan tea brings softness and animal notes, while Assam brings strength and woodiness. Perfect balance for a warm, long-lasting tea to start the day off right. With or without milk."
+      ],
       "price": 6.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -441,6 +485,10 @@
       "img": "12.webp",
       "name": ["MÉLANGE - PETIT DÉJEUNER FORT", "BLEND - STRONG BREAKFAST"],
       "content": ["Thé noir", "Black tea"],
+      "text": [
+        "Le corsé/malté de l’Assam allié au boisé du Ceylan et au fruité/épicé du Darjeeling donne un thé au goût franc. Du thé, un nuage de lait : une tasse tonique qui en fait un réveil matin par excellence.",
+        "The full-bodied/malty of Assam combined with the woodiness of Ceylon and the fruity/spicy of Darjeeling gives a tea with a clean taste. Tea, a cloud of milk: an invigorating cup that makes it the perfect morning wake-up call."
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
