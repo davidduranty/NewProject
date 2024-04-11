@@ -65,7 +65,7 @@ const Card = ({ tea }) => {
           </div>
           <button className="btn-img" onClick={() => setShowImg(false)}>
             Fermer
-          </button>{" "}
+          </button>
         </div>
       )}
     </div>

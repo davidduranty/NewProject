@@ -59,9 +59,25 @@ const CardInfusion = ({ infusion }) => {
           </div>
         </div>
       </li>
-      {modalOpen && <ModalInfusion onClick={handleModalClose} />}
-      {modalOpen && (
-        <div className="modal-background" onClick={handleModalToggle}></div>
+      {showImg && (
+        <div className="image-frame">
+          <div className="title-iframe-container">
+            <h1 className="h1-iframe">
+              {isFrench ? infusion.name[0] : infusion.name[1]}
+            </h1>
+          </div>
+          <img
+            className="img-box"
+            src={infusion.img}
+            alt={"image" + infusion.name}
+          />
+          <div className="text-frame">
+            <p>{isFrench ? infusion.text[0] : infusion.text[1]}</p>
+          </div>
+          <button className="btn-img" onClick={() => setShowImg(false)}>
+            Fermer
+          </button>
+        </div>
       )}
     </div>
   );
