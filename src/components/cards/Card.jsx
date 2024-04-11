@@ -25,7 +25,7 @@ const Card = ({ tea }) => {
     }
   };
   return (
-    <div className="card-container">
+    <div className="card-container" key={tea.id}>
       <li>
         <img src={tea.img} alt={"image" + tea.name} />
         <h1>{isFrench ? tea.name[0] : tea.name[1]}</h1>
@@ -75,7 +75,7 @@ const Card = ({ tea }) => {
 Card.propTypes = {
   tea: PropTypes.shape({
     img: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    name: PropTypes.array.isRequired,
     content: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     id: PropTypes.number.isRequired,

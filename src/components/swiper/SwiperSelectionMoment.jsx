@@ -27,9 +27,9 @@ const SwiperSelectionMoment = () => {
       <div className="caroussel-container">
         <ul className="caroussel">
           <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
-            {getMoment.map((moment) => (
-              <SwiperSlide key={moment.id}>
-                <CardMoment moment={moment} />
+            {getMoment.map((moment, index) => (
+              <SwiperSlide>
+                <CardMoment moment={moment} key={index} />
               </SwiperSlide>
             ))}
           </Swiper>
