@@ -48,6 +48,7 @@
     padding-left: 20px;
 
     .ul-settings {
+      position: relative;
       width: 100%;
       max-width: 350px;
       min-height: 400px;
@@ -83,6 +84,45 @@
       p {
         padding-top: 10px;
         font-family: "font2";
+      }
+      .image-tasse-frame {
+        background: black;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        @include center;
+        flex-direction: column;
+
+        .title-tasse-iframe-container {
+          background: black;
+          position: absolute;
+          top: 40%;
+          width: 90%;
+          left: 5%;
+          .h1-tasse-iframe {
+            color: white;
+            text-align: center;
+          }
+        }
+        .text-tasse-frame {
+          text-align: center;
+          margin: 15px;
+          color: #fff;
+          font-size: 0.6rem;
+          height: 115px;
+        }
+        .btn-tasse-img {
+          margin: 12px 0;
+          padding: 10px 30px;
+          transition-delay: 2.5 ease-in-out;
+          &:hover {
+            background: rgb(197, 72, 72);
+            color: #fff;
+            transition-delay: 2.5 ease-in-out;
+          }
+        }
       }
     }
   }
