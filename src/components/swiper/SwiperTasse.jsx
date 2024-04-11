@@ -11,7 +11,7 @@ function SwiperTasse() {
   };
   useEffect(() => {
     getDataTasse();
-  }, [getTasse]);
+  }, []);
   return (
     <div className="container-breakfast">
       <img src="photo-dej.webp" alt="petit dej" />
