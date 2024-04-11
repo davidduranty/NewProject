@@ -247,6 +247,7 @@
   }
 
   .ul-settings-select {
+    position: relative;
     margin: 0 auto;
     max-width: 350px;
     border: 1px solid rgba(221, 217, 217, 0.549);
@@ -321,6 +322,44 @@
           border: none;
           margin-top: 13px;
           font-size: 1.2rem;
+        }
+      }
+    }
+    .image-selection-frame {
+      position: absolute;
+      background: black;
+      border-radius: 10px;
+      @include center;
+      flex-direction: column;
+      .title-selection-iframe-container {
+        background: black;
+        position: absolute;
+        top: 40%;
+        .h1-selection-iframe {
+          color: white;
+          text-align: center;
+        }
+      }
+      .img-selection-box {
+        height: 385px;
+        min-width: 350px;
+        border-radius: 20px;
+      }
+      .text-selection-frame {
+        text-align: center;
+        margin: 15px;
+        color: #fff;
+        font-size: 0.8rem;
+        height: 115px;
+      }
+      .btn-selection-img {
+        margin: 10px 0 0 0;
+        padding: 10px 30px;
+        transition-delay: 2.5 ease-in-out;
+        &:hover {
+          background: rgb(197, 72, 72);
+          color: #fff;
+          transition-delay: 2.5 ease-in-out;
         }
       }
     }
