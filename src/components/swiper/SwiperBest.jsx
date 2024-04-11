@@ -26,8 +26,8 @@ const SwiperBest = () => {
         <ul className="caroussel">
           <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
             {tea.map((tea) => (
-              <SwiperSlide key={tea.id}>
-                <Card tea={tea} />
+              <SwiperSlide>
+                <Card tea={tea} key={tea.id} />
               </SwiperSlide>
             ))}
           </Swiper>

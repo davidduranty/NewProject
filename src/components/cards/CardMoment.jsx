@@ -79,7 +79,10 @@ const CardMoment = ({ moment }) => {
 CardMoment.propTypes = {
   moment: PropTypes.shape({
     img: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    name: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string),
+    ]).isRequired,
     content: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     contenance: PropTypes.string.isRequired,

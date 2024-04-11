@@ -11,9 +11,14 @@ function CardSelectionSmallBreafast({ dej }) {
 
   const [reload, setReload] = useState(false);
   const [count, setCount] = useState(0);
+
   useEffect(() => {}, [reload]);
-  function onLike(name) {
-    toogleFavorite(name);
+  function onLike(name, img, price) {
+    let res = [name, img, price];
+    let result = [];
+    result.push(...res);
+    console.log(result);
+    toogleFavorite(name, img);
     setReload(!reload);
   }
 
@@ -56,7 +61,7 @@ function CardSelectionSmallBreafast({ dej }) {
           <button
             className="btn-like"
             type="button"
-            onClick={() => onLike(dej.name)}
+            onClick={() => onLike(dej.name[0], dej.img, dej.price * count)}
           >
             {favorites.get(dej.name) ? "❤️" : "🤍"}
           </button>
