@@ -9,6 +9,7 @@ const CardInfusion = ({ infusion }) => {
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const isFrench = i18n.language === "fr";
+  const [showImg, setShowImg] = useState(false);
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -28,6 +29,9 @@ const CardInfusion = ({ infusion }) => {
 
   const handleModalClose = () => {
     setModalOpen(false);
+  };
+  const viewImage = () => {
+    setShowImg(true);
   };
   return (
     <div className="card-container">
@@ -55,7 +59,9 @@ const CardInfusion = ({ infusion }) => {
           </div>
           <div className="container-icon">
             <span>{infusion.icon}</span>
-            <span className="iconEye">{infusion.view}</span>
+            <span className="iconEye" onClick={viewImage}>
+              {infusion.view}
+            </span>
           </div>
         </div>
       </li>
