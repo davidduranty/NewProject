@@ -574,6 +574,10 @@
         "THÉ NOIR | PAIN D'ÉPICES, AMANDE, CERISE",
         "BLACK TEA | GINGERBREAD, ALMOND, CHERRY"
       ],
+      "text": [
+        "« Paris est une fête », et pour la plus belle d’entre toutes, il existe un thé savoureux et parfumé qui mêle avec gourmandise à un mélange de thés noirs, les saveurs fruitées de la cerise et de l’amande et celles délicieusement épicées du pain d’épices et du gingembre.",
+        "“Paris is a party”, and for the most beautiful of all, there is a tasty and fragrant tea which greedily combines with a mixture of black teas, the fruity flavors of cherry and almond and those deliciously spicy gingerbread and ginger."
+      ],
       "price": 7.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -582,9 +586,10 @@
     {
       "img": "christmas_tea.webp",
       "name": ["THÉ NOIR - THÉ DE NOËL", "BLACK TEA - CHRISTMAS TEA"],
-      "content": [
-        "THÉ NOIR | ORANGE, CARAMEL, ANANAS, MARASQUIN",
-        "BLACK TEA | ORANGE, CARAMEL, PINEAPPLE, MARASQUIN"
+      "content": ["THÉ NOIR - THÉ DE NOËL", "BLACK TEA - CHRISTMAS IN PARIS"],
+      "text": [
+        "Délicieusement fruité, un thé noir mêlant les saveurs de l’orange et de l’ananas à un soupçon de marasquin à celle gourmande du caramel. Doux, subtil, tout en nuances un merveilleux thé de fête !",
+        "Deliciously fruity, a black tea mixing the flavors of orange and pineapple with a hint of maraschino and the delicious taste of caramel. Soft, subtle, full of nuances, a wonderful party tea!"
       ],
       "price": 6.5,
       "icon": "👜",
@@ -601,6 +606,10 @@
         "THÉ VERT | CHÂTAIGNE, SIROP D'ÉRABLE, CHOCOLAT, POMME, CLÉMENTINE",
         "GREEN TEA | CHESTNUT, MAPLE SYRUP, CHOCOLATE, APPLE, CLEMENTINE"
       ],
+      "text": [
+        "Ce thé vert frais à la légère astringence nous offre une dégustation où s’entremêlent des notes de châtaigne, de sirop d’érable, de cacao pour offrir une tasse à la saveur ronde et gourmande évoquant un biscuit chocolaté et au fini fruité et frais où se distinguent des notes de clémentine et la badiane.",
+        "This fresh green tea with a slight astringency offers us a tasting where notes of chestnut, maple syrup and cocoa intertwine to offer a cup with a round and gourmet flavor reminiscent of a chocolate biscuit and with a fruity and fresh finish where Notes of clementine and star anise stand out."
+      ],
       "price": 11.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -613,6 +622,10 @@
         "THÉ NOIR | ORANGE, PAIN D'ÉPICES",
         "BLACK TEA | ORANGE, GINGERBREAD"
       ],
+      "text": [
+        "Mélange de thés noirs, arômes agrumes et épices de Noël (Cannelle, muscade, girofle), agrémenté d'écorces d'orange à servir sans conteste accompagné de petits gâteaux sablés.",
+        "Blend of black teas, citrus flavors and Christmas spices (Cinnamon, nutmeg, cloves), garnished with orange peel, best served with small shortbread cakes."
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -624,6 +637,10 @@
       "content": [
         "THÉ NOIR | GINGEMBRE, CANNELLE, VANILLE, POMME, AMANDE",
         "BLACK TEA | GINGER, CINNAMON, VANILLA, APPLE, ALMOND"
+      ],
+      "text": [
+        "Mélange de thés noirs aux arômes de cannelle, de vanille, de pomme, d'amande et de gingembre. Un thé aux doux parfums de Noël.",
+        "Blend of black teas with aromas of cinnamon, vanilla, apple, almond and ginger. A tea with sweet Christmas scents."
       ],
       "price": 6.5,
       "icon": "👜",
@@ -640,6 +657,10 @@
         "THÉ NOIR | CARAMEL, CHOCOLAT, CLÉMENTINE",
         "BLACK TEA | CARAMEL, CHOCOLATE, CLEMENTINE"
       ],
+      "text": [
+        "Mélange corsé et puissant des 2 grandes origines du thé. D’un côté le thé du Yunnan apporte du moelleux et des notes animales, tandis que l’Assam apporte la force et le boisé. Parfait équilibre pour un thé chaleureux et long en bouche pour bien commencer la journée. Avec ou sans lait.",
+        "Full-bodied and powerful blend of the 2 great origins of tea. On the one hand, Yunnan tea brings softness and animal notes, while Assam brings strength and woodiness. Perfect balance for a warm, long-lasting tea to start the day off right. With or without milk."
+      ],
       "price": 7.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -649,6 +670,10 @@
       "img": "venise.webp",
       "name": ["THÉ NOIR - NOËL À VENISE", "BLACK TEA - CHRISTMAS IN VENICE"],
       "content": ["THÉ NOIR | CARAMEL, CITRON", "BLACK TEA | CARAMEL, LEMON"],
+      "text": [
+        "Un thé noir qui développe à l'infusion la délicieuse saveur d'une tarte au citron meringué. Une tasse gourmande et fruitée à souhait !",
+        "A black tea which develops the delicious flavor of a lemon meringue pie when infused. A delicious and fruity cup!"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -664,6 +689,10 @@
         "THÉ NOIR | POMME, POIRE, MIRABELLE, PÊCHE, NOISETTE, CHÂTAIGNE",
         "BLACK TEA | APPLE, PEAR, MIRABELLE, PEACH, HAZELNUT, CHESTNUT"
       ],
+      "text": [
+        "Un mélange de thés noirs associé à un bouquet fruité mêlent dans une tasse gourmande et équilibrée les saveurs de pomme, de poire, de mirabelle et de pêche.",
+        "A blend of black teas combined with a fruity bouquet combines the flavors of apple, pear, Mirabelle plum and peach in a delicious and balanced cup."
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -675,6 +704,10 @@
       "content": [
         "THÉ NOIR | CHOCOLAT, ABRICOT, VANILLE",
         "BLACK TEA | CHOCOLATE, APRICOT, VANILLA"
+      ],
+      "text": [
+        "Inspiré par le célébrissime gâteau Sacher de l'hôtel viennois éponyme, un thé noir qui se mêle subtilement à des notes de chocolat, d'abricot et de vanille dans une tasse gourmande et veloutée.",
+        "Inspired by the famous Sacher cake from the eponymous Viennese hotel, a black tea that subtly blends with notes of chocolate, apricot and vanilla in a gourmet and velvety cup."
       ],
       "price": 6.5,
       "icon": "👜",
@@ -691,6 +724,10 @@
         "THÉ NOIR | MIEL, FIGUE, FRAISE",
         "BLACK TEA | HONEY, FIG, STRAWBERRY"
       ],
+      "text": [
+        "Un thé noir aux saveurs gourmandes d’un Noël en Provence mêlant dans une infusion parfumée les notes fruitées de la figue et de la fraise associées à une pointe de miel.",
+        "A black tea with the gourmet flavors of a Christmas in Provence mixing in a fragrant infusion the fruity notes of fig and strawberry combined with a hint of honey."
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -705,6 +742,10 @@
       "content": [
         "THÉ BLANC | GINGEMBRE, PAIN D'ÉPICES, AMANDE, CERISE",
         "WHITE TEA | GINGER, GINGERBREAD, ALMOND, CHERRY"
+      ],
+      "text": [
+        "Délicatesse du thé blanc mêlé à des pétales de fleurs que des notes fruitées d'amande et de cerise relevées d'une pointe d'épices et de gingembre embellissent pour offrir un mélange aromatisé éclatant.",
+        "Delicacy of white tea mixed with flower petals that fruity notes of almond and cherry enhanced with a hint of spices and ginger embellish to offer a vibrant flavored mixture."
       ],
       "price": 19.5,
       "icon": "👜",
@@ -721,6 +762,10 @@
         "THÉ VERT | CANNELLE, VANILLE, GINGEMBRE, AMANDE, ORANGE",
         "GREEN TEA | CINNAMON, VANILLA, GINGER, ALMOND, ORANGE"
       ],
+      "text": [
+        "Un thé vert Sencha parfumé aux notes fruitées et épicées, offrant dans une tasse aux saveurs d’orange, de vanille et d’épices un délicieux thé de fête !",
+        "A fragrant Sencha green tea with fruity and spicy notes, offering a delicious party tea in a cup with flavors of orange, vanilla and spices!"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -728,10 +773,14 @@
     },
     {
       "img": "ginger.webp",
-      "name": ["THÉ NOIR - MY GINGERBREAD", "BLACK TEA - MY GINGERBREAD"],
+      "name": ["THÉ NOIR - MON GINGERBREAD", "BLACK TEA - MY GINGERBREAD"],
       "content": [
         "THÉ NOIR | GINGEMBRE, AMANDE, ORANGE, RAISIN",
         "BLACK TEA | GINGER, ALMOND, ORANGE, GRAPE"
+      ],
+      "text": [
+        "Un mélange de thés noirs de Chine associé à du gingembre composent la base de ce thé gourmand qui développe à l’infusion des notes d’amande, de raisin et d’orange douce. Une tasse à la fois ronde et fraîche qui rappelle immanquablement la saveur du gâteau au gingembre.",
+        "A blend of black teas from China combined with ginger make up the base of this gourmet tea which develops notes of almond, grape and sweet orange when infused. A cup that is both round and fresh and unmistakably reminiscent of the flavor of ginger cake."
       ],
       "price": 6.5,
       "icon": "👜",
@@ -745,6 +794,10 @@
         "THÉ NOIR | AMANDE, ORANGE, BISCUIT",
         "BLACK TEA | ALMOND, ORANGE, COOKIE"
       ],
+      "text": [
+        "Savoureuse alliance d’un mélange de thés noirs à une note gourmande et légèrement briochée, à celle fruitée de l’orange douce et celle discrète de l’amande. Véritable évocation de la célèbre brioche lombarde, un thé rond, velouté et gourmand à déguster comme une friandise !",
+        "Tasty combination of a blend of black teas with a gourmet and slightly brioche note, the fruity note of sweet orange and the discreet note of almond. A true evocation of the famous Lombard brioche, a round, velvety and delicious tea to be enjoyed as a treat!"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -756,6 +809,10 @@
       "content": [
         "CARCADET | HIBISCUS, CERISE, PAIN D'ÉPICES, AMANDE",
         "CARCADET | HIBISCUS, CHERRY, GINGERBREAD, ALMOND"
+      ],
+      "text": [
+        "Les saveurs fruitées de la cerise et de l’amande s’entrelacent à la fleur d’hibiscus et au cynorrhodon. Et se parfument de notes de pain d’épices et de gingembre pour une infusion délicieusement acidulée.",
+        "The fruity flavors of cherry and almond intertwine with hibiscus flower and rose hip. And are scented with notes of gingerbread and ginger for a deliciously tangy infusion."
       ],
       "price": 8.0,
       "icon": "👜",
@@ -769,6 +826,10 @@
         "TISANE | CHOCOLAT, RÉGLISSE, CARDAMOME, CANNELLE, GINGEMBRE, GIROFLE, POIVRE, BAIE ROSE",
         "TISANE | CHOCOLATE, LICORICE, CARDAMOM, CINNAMON, GINGER, CLOVE, PEPPER, PINK BERRY"
       ],
+      "text": [
+        "Mélisse, fèves de cacao, cardamome, gingembre… voici quelques-unes seulement des saveurs qui composent cette délicieuse tisane. Pour les amoureux des notes épicées et cacaotées, la Tisane de Noël est la boisson chaude de cette saison à découvrir absolument !",
+        "Lemon balm, cocoa beans, cardamom, ginger… here are just a few of the flavors that make up this delicious herbal tea. For lovers of spicy and cocoa notes, Christmas Herbal Tea is this season’s hot drink that you absolutely must discover!"
+      ],
       "price": 13.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -780,6 +841,10 @@
       "content": [
         "ROOIBOS | PAIN D'ÉPICES, ORANGE, CERISE, BAIE ROSE, GINGEMBRE, GIROFLE",
         "ROOIBOS | GINGERBREAD, ORANGE, CHERRY, PINK BERRY, GINGER, CLOVE"
+      ],
+      "text": [
+        "Un rooibos aux délicieuses saveurs d’orange et de pain d’épices dans lequel se répondent les notes de gingembre, de girofle et de baie rose dans une infusion de fêtes.",
+        "A rooibos with delicious flavors of orange and gingerbread in which notes of ginger, clove and pink pepper combine in a festive infusion."
       ],
       "price": 9.0,
       "icon": "👜",
@@ -793,6 +858,10 @@
         "CARCADET | HIBISCUS, CANNELLE",
         "CARCADET | HIBISCUS, CINNAMON"
       ],
+      "text": [
+        "Des notes chaudes de pomme cuite et d’épices pour un carcadet à savourer dans l’esprit d’un vin chaud confortablement installé au coin du feu. Le Carcadet est produit à partir des calices rouges et charnus de la fleur d’hibiscus dont l’infusion donne une belle couleur rubis.",
+        "Warm notes of cooked apple and spices for a carcadet to savor in the spirit of a mulled wine comfortably seated by the fire. Carcadet is produced from the red, fleshy calyxes of the hibiscus flower, the infusion of which gives a beautiful ruby color."
+      ],
       "price": 5.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -802,6 +871,10 @@
       "img": "cacao_menthe.webp",
       "name": ["CACAO MENTHE", "COCOA MINT"],
       "content": ["TISANE | CACAO, MENTHE", "TISANE | COCOA, MINT"],
+      "text": [
+        "C’est à Madagascar, pays considéré comme l’un des meilleurs producteurs de cacao au monde, que Dammann Frères sélectionne son grué (fèves torréfiées et concassées). Issu de fèves de cacao Trinitario cultivées dans la vallée du Sambirano, il délivre à l’infusion un goût unique, finement acidulé et délicatement fruité. Pour les amateurs de l’accord chocolat–menthe, cette création a tout pour vous séduire.",
+        "It is in Madagascar, a country considered one of the best cocoa producers in the world, that Dammann Frères selects its nibs (roasted and crushed beans). Made from Trinitario cocoa beans grown in the Sambirano valley, it gives the infusion a unique taste, finely tangy and delicately fruity. For fans of the chocolate-mint pairing, this creation has everything to seduce you."
+      ],
       "price": 10.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -811,6 +884,10 @@
       "img": "cacao_orange.webp",
       "name": ["CACAO ORANGE", "COCOA ORANGE"],
       "content": ["TISANE | CACAO, ORANGE", "TISANE | COCOA, ORANGE"],
+      "text": [
+        "C’est à Madagascar, pays considéré comme l’un des meilleurs producteurs de cacao au monde, que Dammann Frères sélectionne son grué (fèves torréfiées et concassées). Issu de fèves de cacao Trinitario cultivées dans la vallée du Sambirano, il délivre à l’infusion un goût unique, finement acidulé et délicatement fruité.",
+        "It is in Madagascar, a country considered one of the best cocoa producers in the world, that Dammann Frères selects its nibs (roasted and crushed beans). Made from Trinitario cocoa beans grown in the Sambirano valley, it gives the infusion a unique taste, finely tangy and delicately fruity."
+      ],
       "price": 10.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -822,6 +899,10 @@
       "content": [
         "TISANE | CACAO, CANNELLE, BADIANE",
         "TISANE | COCOA, CINNAMON, BADIANE"
+      ],
+      "text": [
+        "C’est à Madagascar, pays considéré comme l’un des meilleurs producteurs de cacao au monde, que Dammann Frères sélectionne son grué (fèves torréfiées et concassées). Issu de fèves de cacao Trinitario cultivées dans la vallée du Sambirano, il délivre à l’infusion un goût unique, finement acidulé et délicatement fruité.",
+        "It is in Madagascar, a country considered one of the best cocoa producers in the world, that Dammann Frères selects its nibs (roasted and crushed beans). Made from Trinitario cocoa beans grown in the Sambirano valley, it gives the infusion a unique taste, finely tangy and delicately fruity."
       ],
       "price": 10.0,
       "icon": "👜",

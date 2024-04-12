@@ -10,8 +10,8 @@ function SwiperInfusion() {
         <ul className="caroussel">
           <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
             {getInfusion.map((infusion) => (
-              <SwiperSlide key={infusion.id}>
-                <CardInfusion infusion={infusion} />
+              <SwiperSlide>
+                <CardInfusion infusion={infusion} key={infusion.id} />
               </SwiperSlide>
             ))}
           </Swiper>
