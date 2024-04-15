@@ -6,9 +6,9 @@ function Favorite() {
   const { favorites } = useApi();
 
   return (
-    <div>
-      <h1>My Favorites</h1>
-      <ul>
+    <div className="favorite-container">
+      <h1 className="title-favorite">My Favorites</h1>
+      <ul className="ul-favorite">
         {favorites.map((favorite, index) => (
           <li key={index}>
             <img src={favorite.img} alt={favorite.name} />
