@@ -10,14 +10,23 @@ export function ApiProvider({ children }) {
   const [getDej, setGetDej] = useState([]);
   const [getInfusion, setGetInfusion] = useState([]);
   const [count, setCount] = useState(0);
-  const [favorites, setFavorites] = useState(new Map());
+  // const [favorites, setFavorites] = useState(new Map());
 
-  async function toogleFavorite(name) {
-    favorites.set(name, favorites.has(name) ? !favorites.get(name) : true); // fonction favorite
+  const [favorites, setFavorites] = useState([]);
 
-    setFavorites(favorites);
-    setGetDej(getDej);
-  }
+  // const addToFavorites = (item) => {
+  //   setFavorites((prevFavorites) => [...prevFavorites, item]);
+  // };
+
+  // async function toogleFavorite(name) {
+  //   favorites.set(name, favorites.has(name) ? !favorites.get(name) : true);
+
+  //   setFavorites(favorites);
+  //   setGetDej(getDej);
+  // }
+  const addToFavorites = (item) => {
+    setFavorites([...favorites, item]);
+  };
 
   const getDataInfusion = async () => {
     try {
@@ -147,9 +156,10 @@ export function ApiProvider({ children }) {
         handleClickLess,
         handleClickMore,
         count,
-        toogleFavorite,
+        // toogleFavorite,
         setGetDej,
         favorites,
+        addToFavorites,
       }}
     >
       {children}

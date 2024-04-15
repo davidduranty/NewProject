@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Form from "./login/Form";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 function Icons() {
   const [open, setOpen] = useState(false);
@@ -19,8 +20,9 @@ function Icons() {
   return (
     <div className="icons-container" ref={menuRef}>
       <img src="user.png" alt="" onClick={() => setOpen(!open)} />
-
-      <img src="favorite.png" alt="" />
+      <Link to="/favorite">
+        <img src="favorite.png" alt="" />
+      </Link>
 
       <img src="bag.png" alt="" />
       {open && <Form />}

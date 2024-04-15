@@ -4,22 +4,23 @@ import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
 
 function CardSelectionSmallBreafast({ dej }) {
-  const { handleClickLess, handleClickMore, favorites, toogleFavorite } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    // favorites,
+    // toogleFavorite,
+    addToFavorites,
+  } = useApi();
   const isFrench = i18n.language === "fr";
   const [showImg, setShowImg] = useState(false);
-
+  const [isLiked, setIsLiked] = useState(false);
   const [reload, setReload] = useState(false);
   const [count, setCount] = useState(0);
 
   useEffect(() => {}, [reload]);
+
   function onLike(name, img, price) {
-    let res = [name, img, price];
-    let result = [];
-    result.push(...res);
-    console.log(result);
-    toogleFavorite(name, img);
-    setReload(!reload);
+    addToFavorites({ name, img });
   }
 
   const handleIncrement = () => {
@@ -57,13 +58,14 @@ function CardSelectionSmallBreafast({ dej }) {
             +
           </button>
         </div>
+        {/* "❤️" */}
         <div>
           <button
             className="btn-like"
             type="button"
             onClick={() => onLike(dej.name[0], dej.img, dej.price * count)}
           >
-            {favorites.get(dej.name) ? "❤️" : "🤍"}
+            🤍
           </button>
           <p>{dej.icon}</p>
           <p onClick={viewImage}>{dej.view}</p>
