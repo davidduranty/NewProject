@@ -26,8 +26,8 @@ export function ApiProvider({ children }) {
   //   setFavorites(favorites);
   //   setGetDej(getDej);
   // }
-  const addToFavorites = (favorite) => {
-    const updatedFavorites = [...favorites, favorite];
+  const addToFavorites = (item) => {
+    const updatedFavorites = [...favorites, item];
     setFavorites(updatedFavorites);
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
   };
