@@ -12,7 +12,9 @@ export function ApiProvider({ children }) {
   const [count, setCount] = useState(0);
   // const [favorites, setFavorites] = useState(new Map());
 
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState(
+    JSON.parse(localStorage.getItem("favorites")) || []
+  );
 
   // const addToFavorites = (item) => {
   //   setFavorites((prevFavorites) => [...prevFavorites, item]);
@@ -24,8 +26,10 @@ export function ApiProvider({ children }) {
   //   setFavorites(favorites);
   //   setGetDej(getDej);
   // }
-  const addToFavorites = (item) => {
-    setFavorites([...favorites, item]);
+  const addToFavorites = (favorite) => {
+    const updatedFavorites = [...favorites, favorite];
+    setFavorites(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
   };
 
   const getDataInfusion = async () => {
