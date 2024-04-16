@@ -11,6 +11,9 @@ export function ApiProvider({ children }) {
   const [getInfusion, setGetInfusion] = useState([]);
   const [count, setCount] = useState(0);
   // const [favorites, setFavorites] = useState(new Map());
+  const [getAddBag, setGetAddBag] = useState(
+    JSON.parse(localStorage.getItem("bag")) || []
+  );
 
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || []
@@ -26,6 +29,11 @@ export function ApiProvider({ children }) {
   //   setFavorites(favorites);
   //   setGetDej(getDej);
   // }
+  const addToBag = (item) => {
+    const updateAddToBag = [...getAddBag, item];
+    setGetAddBag(updateAddToBag);
+    localStorage.setItem("bag", JSON.stringify(updateAddToBag));
+  };
   const addToFavorites = (item) => {
     const updatedFavorites = [...favorites, item];
     setFavorites(updatedFavorites);
@@ -58,7 +66,7 @@ export function ApiProvider({ children }) {
   const getDataFilter = async (word) => {
     await axios.get("http://localhost:5172/thes/").then((res) => {
       setTea(
-        res.data.filter((element) =>
+        res.data.filter((el) =>
           (el.name[0] || el.name[1]).toLowerCase().includes(word.toLowerCase())
         )
       );
@@ -164,6 +172,8 @@ export function ApiProvider({ children }) {
         setGetDej,
         favorites,
         addToFavorites,
+        addToBag,
+        getAddBag,
       }}
     >
       {children}

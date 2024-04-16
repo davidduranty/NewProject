@@ -23,8 +23,10 @@ function Icons() {
       <Link to="/favorite">
         <img src="favorite.png" alt="" />
       </Link>
+      <Link to="/bag">
+        <img src="bag.png" alt="" />
+      </Link>
 
-      <img src="bag.png" alt="" />
       {open && <Form />}
     </div>
   );
