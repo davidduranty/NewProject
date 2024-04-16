@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
@@ -14,17 +14,14 @@ function CardSelectionSmallBreafast({ dej }) {
   } = useApi();
   const isFrench = i18n.language === "fr";
   const [showImg, setShowImg] = useState(false);
-  const [isLiked, setIsLiked] = useState(false);
-  const [reload, setReload] = useState(false);
-  const [count, setCount] = useState(0);
 
-  useEffect(() => {}, [reload]);
+  const [count, setCount] = useState(0);
 
   function addBag(name, img, price) {
     addToBag({ name, img, price });
   }
 
-  function onLike(name, img, price) {
+  function onLike(name, img) {
     addToFavorites({ name, img });
   }
 
@@ -68,13 +65,15 @@ function CardSelectionSmallBreafast({ dej }) {
           <button
             className="btn-like"
             type="button"
-            onClick={() => onLike(dej.name[0], dej.img, dej.price * count)}
+            onClick={() => onLike(dej.name[0], dej.img)}
           >
             🤍
           </button>
-          <p onClick={() => addBag(dej.name[0], dej.img, dej.price * count)}>
-            {dej.icon}
-          </p>
+          {count > 0 && (
+            <p onClick={() => addBag(dej.name[0], dej.img, dej.price * count)}>
+              {dej.icon}
+            </p>
+          )}
           <p onClick={viewImage}>{dej.view}</p>
         </div>
       </div>
