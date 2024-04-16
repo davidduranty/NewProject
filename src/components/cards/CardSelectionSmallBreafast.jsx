@@ -9,6 +9,7 @@ function CardSelectionSmallBreafast({ dej }) {
     handleClickMore,
     // favorites,
     // toogleFavorite,
+    addToBag,
     addToFavorites,
   } = useApi();
   const isFrench = i18n.language === "fr";
@@ -18,6 +19,10 @@ function CardSelectionSmallBreafast({ dej }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {}, [reload]);
+
+  function addBag(name, img, price) {
+    addToBag({ name, img, price });
+  }
 
   function onLike(name, img, price) {
     addToFavorites({ name, img });
@@ -67,7 +72,9 @@ function CardSelectionSmallBreafast({ dej }) {
           >
             🤍
           </button>
-          <p>{dej.icon}</p>
+          <p onClick={() => addBag(dej.name[0], dej.img, dej.price * count)}>
+            {dej.icon}
+          </p>
           <p onClick={viewImage}>{dej.view}</p>
         </div>
       </div>

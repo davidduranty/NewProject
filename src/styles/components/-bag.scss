@@ -1,0 +1,51 @@
+.title-bag-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.bag-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  flex-direction: column;
+  margin: 0 20%;
+  table {
+    border: 1px solid black;
+    th {
+      border: 1px solid black;
+      width: 30%;
+    }
+    .array-bag {
+      @include center;
+      border: 1px solid black;
+      .img-bag {
+        width: 50%;
+        height: 100px;
+      }
+    }
+    .name-bag,
+    .name-price {
+      border: 1px solid black;
+    }
+    .name-price {
+      span {
+        display: block;
+
+        text-align: center;
+      }
+    }
+  }
+  .total-container {
+    display: flex;
+    .total {
+      text-align: end;
+      width: 66.5%;
+      padding-right: 5px;
+    }
+    .price {
+      width: 33.5%;
+      text-align: center;
+    }
+  }
+}

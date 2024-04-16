@@ -17,7 +17,7 @@ function SwiperTasse() {
       <img src="photo-dej.webp" alt="petit dej" />
       <div className="tasse-map">
         {getTasse.map((tasse) => (
-          <CardSmallDej key={tasse.id} tasse={tasse} />
+          <CardSmallDej key={tasse} tasse={tasse} />
         ))}
       </div>
     </div>
