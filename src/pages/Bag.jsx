@@ -1,9 +1,18 @@
+import { useEffect, useState } from "react";
 import { useApi } from "../data/Context";
 import { useTranslation } from "react-i18next";
 
 function Bag() {
   const { getAddBag } = useApi();
   const { t } = useTranslation();
+  const [totalPrice, setTotalPrice] = useState(0);
+  useEffect(() => {
+    let total = 0;
+    getAddBag.forEach((item) => {
+      total += parseFloat(item.price);
+    });
+    setTotalPrice(total.toFixed(2));
+  }, [getAddBag]);
 
   return (
     <>
@@ -44,7 +53,7 @@ function Bag() {
             <h2>Total</h2>
           </div>
           <div className="price">
-            <h3>price</h3>
+            <h3>{totalPrice}</h3>
           </div>
         </div>
       </div>
