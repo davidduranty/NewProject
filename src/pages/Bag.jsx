@@ -6,18 +6,49 @@ function Bag() {
   const { t } = useTranslation();
 
   return (
-    <div className="favorite-container">
-      <h1 className="title-favorite">{t("title.panier")}</h1>
-      <ul className="ul-favorite">
-        {getAddBag.map((favorite, index) => (
-          <li key={index}>
-            <img src={favorite.img} alt={favorite.name} />
-            <p>{favorite.name}</p>
-            <span>{favorite.price}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className="title-bag-container">
+        <h1 className="title-bag">{t("title.panier")}</h1>
+      </div>
+      <div className="bag-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Nom</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            {getAddBag.map((favorite, index) => (
+              <tr key={index}>
+                <td className="array-bag">
+                  <img
+                    className="img-bag"
+                    src={favorite.img}
+                    alt={favorite.name}
+                  />
+                </td>
+                <td className="name-bag">
+                  <p>{favorite.name}</p>
+                </td>
+                <td className="name-price">
+                  <span>{favorite.price}</span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="total-container">
+          <div className="total">
+            <h2>Total</h2>
+          </div>
+          <div className="price">
+            <h3>price</h3>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
