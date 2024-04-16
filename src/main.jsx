@@ -7,6 +7,7 @@ import Glace from "./pages/Glace.jsx";
 import OldClient from "./components/navbar/login/OldClient.jsx";
 import Favorite from "./pages/Favorite.jsx";
 import Decouverte from "./pages/Decouverte.jsx";
+import Bag from "./pages/Bag.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/favorite",
         element: <Favorite />,
+      },
+      {
+        path: "/bag",
+        element: <Bag />,
       },
     ],
   },
