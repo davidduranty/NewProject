@@ -53,7 +53,7 @@ function Bag() {
             <h2>Total</h2>
           </div>
           <div className="price">
-            <h3>{totalPrice}</h3>
+            <h3>{totalPrice} Euros</h3>
           </div>
         </div>
       </div>
