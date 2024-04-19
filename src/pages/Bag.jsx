@@ -6,6 +6,7 @@ function Bag() {
   const { getAddBag } = useApi();
   const { t } = useTranslation();
   const [totalPrice, setTotalPrice] = useState(0);
+
   useEffect(() => {
     let total = 0;
     getAddBag.forEach((item) => {
