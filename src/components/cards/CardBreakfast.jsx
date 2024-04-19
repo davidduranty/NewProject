@@ -5,7 +5,11 @@ import i18n from "../../I18n";
 
 const CardBreakfast = ({ breakfast }) => {
   const isFrench = i18n.language === "fr";
+  const { addToBag, incrementBagCount } = useApi();
 
+  function addBag(name, img, price) {
+    addToBag({ name, img, price });
+  }
   const { handleClickLess, handleClickMore } = useApi();
   const [count, setCount] = useState(0);
 
@@ -38,7 +42,20 @@ const CardBreakfast = ({ breakfast }) => {
             </button>
           </div>
           <div className="container-break-icon">
-            <p>{breakfast.icon}</p>
+            {count > 0 && (
+              <p
+                onClick={() => {
+                  addBag(
+                    breakfast.name[0],
+                    breakfast.img,
+                    breakfast.price * count
+                  );
+                  incrementBagCount();
+                }}
+              >
+                {breakfast.icon}
+              </p>
+            )}
             <p>{breakfast.view}</p>
           </div>
         </div>
