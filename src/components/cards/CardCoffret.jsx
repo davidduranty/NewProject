@@ -6,8 +6,14 @@ import i18n from "../../I18n";
 function CardCoffret({ coffret }) {
   const [apiCoffret, setApiCoffret] = useState([]);
   const [likeCoffret, setLikeCoffret] = useState(new Map());
-  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    addToBag,
+    incrementBagCount,
+    incrementFavoriteCount,
+    addToFavorites,
+  } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
 
@@ -40,8 +46,9 @@ function CardCoffret({ coffret }) {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {}, [reload]);
-  function onLike(name) {
-    toogleFavorite(name);
+  function onLike(name, img) {
+    addToFavorites({ name, img });
+    toogleFavorite(name, img);
     setReload(!reload);
   }
   return (
@@ -76,7 +83,10 @@ function CardCoffret({ coffret }) {
             <button
               className="btn-like-box"
               type="button"
-              onClick={() => onLike(coffret.name)}
+              onClick={() => {
+                onLike(coffret.name[0], coffret.img);
+                incrementFavoriteCount();
+              }}
             >
               {likeCoffret.get(coffret.name) ? "❤️" : "🤍"}
             </button>
