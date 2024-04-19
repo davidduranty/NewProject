@@ -8,8 +8,7 @@ function CardSelectionSmallBreafast({ dej }) {
     handleClickLess,
     handleClickMore,
     incrementBagCount,
-    // favorites,
-    // toogleFavorite,
+    incrementFavoriteCount,
     addToBag,
     addToFavorites,
   } = useApi();
@@ -66,7 +65,10 @@ function CardSelectionSmallBreafast({ dej }) {
           <button
             className="btn-like"
             type="button"
-            onClick={() => onLike(dej.name[0], dej.img)}
+            onClick={() => {
+              onLike(dej.name[0], dej.img);
+              incrementFavoriteCount();
+            }}
           >
             🤍
           </button>
