@@ -7,6 +7,7 @@ function CardSelectionSmallBreafast({ dej }) {
   const {
     handleClickLess,
     handleClickMore,
+    incrementBagCount,
     // favorites,
     // toogleFavorite,
     addToBag,
@@ -70,7 +71,12 @@ function CardSelectionSmallBreafast({ dej }) {
             🤍
           </button>
           {count > 0 && (
-            <p onClick={() => addBag(dej.name[0], dej.img, dej.price * count)}>
+            <p
+              onClick={() => {
+                addBag(dej.name[0], dej.img, dej.price * count);
+                incrementBagCount();
+              }}
+            >
               {dej.icon}
             </p>
           )}

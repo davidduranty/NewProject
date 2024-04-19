@@ -6,7 +6,8 @@ import i18n from "../../I18n";
 const CardMoment = ({ moment }) => {
   const isFrench = i18n.language === "fr";
 
-  const { handleClickLess, handleClickMore, addToBag } = useApi();
+  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
+    useApi();
   const [count, setCount] = useState(0);
   const [showImg, setShowImg] = useState(false);
 
@@ -51,9 +52,10 @@ const CardMoment = ({ moment }) => {
           <div className="contenance-container-icon">
             {count > 0 && (
               <span
-                onClick={() =>
-                  addBag(moment.name[0], moment.img, moment.price * count)
-                }
+                onClick={() => {
+                  addBag(moment.name[0], moment.img, moment.price * count);
+                  incrementBagCount();
+                }}
               >
                 {moment.bag}
               </span>

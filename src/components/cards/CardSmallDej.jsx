@@ -6,7 +6,8 @@ import i18n from "../../I18n";
 const CardSmallDej = ({ tasse }) => {
   const isFrench = i18n.language === "fr";
 
-  const { handleClickLess, handleClickMore, addToBag } = useApi();
+  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
+    useApi();
   const [count, setCount] = useState(0);
   // const [showImage, setShowImage] = useState(true);
   const [showImg, setShowImg] = useState(false);
@@ -51,9 +52,10 @@ const CardSmallDej = ({ tasse }) => {
           </div>
           {count > 0 && (
             <p
-              onClick={() =>
-                addBag(tasse.name[0], tasse.img, tasse.price * count)
-              }
+              onClick={() => {
+                addBag(tasse.name[0], tasse.img, tasse.price * count);
+                incrementBagCount();
+              }}
             >
               {tasse.icon}
             </p>
