@@ -6,9 +6,14 @@ import i18n from "../../I18n";
 function CardBoxX({ boxX }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
-  const { handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
+    useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
+
+  function addBag(name, img, price) {
+    addToBag({ name, img, price });
+  }
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -66,7 +71,16 @@ function CardBoxX({ boxX }) {
             >
               {likeBoites.get(boxX.name) ? "❤️" : "🤍"}
             </button>
-            <span>{boxX.icon}</span>
+            {count > 0 && (
+              <span
+                onClick={() => {
+                  addBag(boxX.name[0], boxX.img, boxX.price * count);
+                  incrementBagCount();
+                }}
+              >
+                {boxX.icon}
+              </span>
+            )}
           </div>
         </div>
       </li>

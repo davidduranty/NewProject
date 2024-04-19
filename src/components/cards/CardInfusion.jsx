@@ -5,11 +5,16 @@ import ModalInfusion from "../../modal/ModalInfusionImg";
 import i18n from "../../I18n";
 
 const CardInfusion = ({ infusion }) => {
-  const { handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore, incrementBagCount, addToBag } =
+    useApi();
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const isFrench = i18n.language === "fr";
   const [showImg, setShowImg] = useState(false);
+
+  function addBag(name, img, price) {
+    addToBag({ name, img, price });
+  }
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -58,7 +63,20 @@ const CardInfusion = ({ infusion }) => {
             </button>
           </div>
           <div className="container-icon">
-            <span>{infusion.icon}</span>
+            {count > 0 && (
+              <span
+                onClick={() => {
+                  addBag(
+                    infusion.name[0],
+                    infusion.img,
+                    infusion.price * count
+                  );
+                  incrementBagCount();
+                }}
+              >
+                {infusion.icon}
+              </span>
+            )}
             <span className="iconEye" onClick={viewImage}>
               {infusion.view}
             </span>

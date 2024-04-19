@@ -6,9 +6,14 @@ import i18n from "../../I18n";
 const CardMoment = ({ moment }) => {
   const isFrench = i18n.language === "fr";
 
-  const { handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
+    useApi();
   const [count, setCount] = useState(0);
   const [showImg, setShowImg] = useState(false);
+
+  function addBag(name, img, price) {
+    addToBag({ name, img, price });
+  }
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -45,7 +50,16 @@ const CardMoment = ({ moment }) => {
             </div>
           </div>
           <div className="contenance-container-icon">
-            <span>{moment.bag}</span>
+            {count > 0 && (
+              <span
+                onClick={() => {
+                  addBag(moment.name[0], moment.img, moment.price * count);
+                  incrementBagCount();
+                }}
+              >
+                {moment.bag}
+              </span>
+            )}
             <span className="iconEye" onClick={viewImage}>
               {moment.view}
             </span>
