@@ -10,6 +10,8 @@ export function ApiProvider({ children }) {
   const [getDej, setGetDej] = useState([]);
   const [getInfusion, setGetInfusion] = useState([]);
   const [count, setCount] = useState(0);
+  const [counter, setCounter] = useState(0);
+
   // const [favorites, setFavorites] = useState(new Map());
   const [getAddBag, setGetAddBag] = useState(
     JSON.parse(localStorage.getItem("bag")) || []
@@ -19,6 +21,9 @@ export function ApiProvider({ children }) {
     JSON.parse(localStorage.getItem("favorites")) || []
   );
 
+  const incrementBagCount = () => {
+    setCounter(counter + 1);
+  };
   // const addToFavorites = (item) => {
   //   setFavorites((prevFavorites) => [...prevFavorites, item]);
   // };
@@ -174,6 +179,8 @@ export function ApiProvider({ children }) {
         addToFavorites,
         addToBag,
         getAddBag,
+        counter,
+        incrementBagCount,
       }}
     >
       {children}
