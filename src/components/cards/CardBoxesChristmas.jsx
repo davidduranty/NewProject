@@ -6,9 +6,15 @@ import i18n from "../../I18n";
 function CardBoxesChristmas({ box }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
-  const { handleClickLess, handleClickMore } = useApi();
+
+  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
+    useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
+
+  function addBag(name, img, price) {
+    addToBag({ name, img, price });
+  }
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -63,7 +69,16 @@ function CardBoxesChristmas({ box }) {
             >
               {likeBoites.get(box.name) ? "❤️" : "🤍"}
             </button>
-            <span>{box.icon}</span>
+            {count > 0 && (
+              <span
+                onClick={() => {
+                  addBag(box.name[0], box.img, box.price * count);
+                  incrementBagCount();
+                }}
+              >
+                {box.icon}
+              </span>
+            )}
           </div>
         </div>
       </li>

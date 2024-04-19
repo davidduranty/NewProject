@@ -6,9 +6,14 @@ import i18n from "../../I18n";
 function CardCoffret({ coffret }) {
   const [apiCoffret, setApiCoffret] = useState([]);
   const [likeCoffret, setLikeCoffret] = useState(new Map());
-  const { handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
+    useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
+
+  function addBag(name, img, price) {
+    addToBag({ name, img, price });
+  }
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -75,7 +80,16 @@ function CardCoffret({ coffret }) {
             >
               {likeCoffret.get(coffret.name) ? "❤️" : "🤍"}
             </button>
-            <span>{coffret.icon}</span>
+            {count > 0 && (
+              <span
+                onClick={() => {
+                  addBag(coffret.name[0], coffret.img, coffret.price * count);
+                  incrementBagCount();
+                }}
+              >
+                {coffret.icon}
+              </span>
+            )}
           </div>
         </div>
       </li>
