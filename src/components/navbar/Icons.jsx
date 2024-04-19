@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useApi } from "../../data/Context";
 // import { Link } from "react-router-dom";
 function Icons() {
-  const { counter } = useApi();
+  const { counterBag, favoriteCount } = useApi();
   const [open, setOpen] = useState(false);
   let menuRef = useRef();
 
@@ -26,13 +26,13 @@ function Icons() {
         <Link to="/favorite">
           <img src="favorite.png" alt="favorite img" />
         </Link>
-        <span>0</span>
+        <span>{favoriteCount}</span>
       </div>
       <div className="icons-container-count">
         <Link to="/bag">
           <img src="bag.png" alt="bag img" />
         </Link>
-        <span>{counter}</span>
+        <span>{counterBag}</span>
       </div>
 
       {open && <Form />}

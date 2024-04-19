@@ -6,8 +6,14 @@ import i18n from "../../I18n";
 function CardBoxX({ boxX }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
-  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    addToBag,
+    incrementBagCount,
+    addToFavorites,
+    incrementFavoriteCount,
+  } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
 
@@ -37,7 +43,8 @@ function CardBoxX({ boxX }) {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {}, [reload]);
-  function onLike(name) {
+  function onLike(name, img) {
+    addToFavorites({ name, img });
     toogleFavorite(name);
     setReload(!reload);
   }
@@ -67,7 +74,10 @@ function CardBoxX({ boxX }) {
             <button
               className="btn-like-box"
               type="button"
-              onClick={() => onLike(boxX.name)}
+              onClick={() => {
+                onLike(boxX.name[0], boxX.img);
+                incrementFavoriteCount();
+              }}
             >
               {likeBoites.get(boxX.name) ? "❤️" : "🤍"}
             </button>

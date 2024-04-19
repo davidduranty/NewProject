@@ -6,8 +6,14 @@ import i18n from "../../I18n";
 function CardSachet({ sachet }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
-  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    addToBag,
+    incrementBagCount,
+    addToFavorites,
+    incrementFavoriteCount,
+  } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
 
@@ -37,7 +43,8 @@ function CardSachet({ sachet }) {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {}, [reload]);
-  function onLike(name) {
+  function onLike(name, img) {
+    addToFavorites({ name, img });
     toogleFavorite(name);
     setReload(!reload);
   }
@@ -66,14 +73,21 @@ function CardSachet({ sachet }) {
             <button
               className="btn-like-box"
               type="button"
-              onClick={() => onLike(sachet.name)}
+              onClick={() => {
+                onLike(sachet.name[0], sachet.img);
+                incrementFavoriteCount();
+              }}
             >
               {likeBoites.get(sachet.name) ? "❤️" : "🤍"}
             </button>
             {count > 0 && (
               <span
                 onClick={() => {
-                  addBag(sachet.name[0], sachet.img, sachet.price * count);
+                  addBag(
+                    isFrench ? sachet.name[0] : sachet.name[1],
+                    sachet.img,
+                    sachet.price * count
+                  );
                   incrementBagCount();
                 }}
               >

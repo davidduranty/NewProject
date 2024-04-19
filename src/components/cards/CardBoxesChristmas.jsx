@@ -7,8 +7,14 @@ function CardBoxesChristmas({ box }) {
   const [apiBoites, setApiBoites] = useState([]);
   const [likeBoites, setLikeBoites] = useState(new Map());
 
-  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    addToBag,
+    incrementBagCount,
+    addToFavorites,
+    incrementFavoriteCount,
+  } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
 
@@ -38,7 +44,8 @@ function CardBoxesChristmas({ box }) {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {}, [reload]);
-  function onLike(name) {
+  function onLike(name, img) {
+    addToFavorites({ name, img });
     toogleFavorite(name);
     setReload(!reload);
   }
@@ -65,7 +72,10 @@ function CardBoxesChristmas({ box }) {
             <button
               className="btn-like-box"
               type="button"
-              onClick={() => onLike(box.name)}
+              onClick={() => {
+                onLike(box.name[0], box.img);
+                incrementFavoriteCount();
+              }}
             >
               {likeBoites.get(box.name) ? "❤️" : "🤍"}
             </button>
