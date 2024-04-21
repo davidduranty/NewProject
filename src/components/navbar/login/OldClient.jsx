@@ -1,5 +1,4 @@
 import Home from "../../../pages/Home";
-import Navigation from "../Navigation";
 import { Link } from "react-router-dom";
 import Form from "./Form";
 import { useState } from "react";
@@ -18,7 +17,6 @@ export default function OldClient() {
   }
   return (
     <div>
-      <Navigation />
       <div className=" logined">
         <div className="lien-home">
           <a href={<Home />}>Accueil</a>

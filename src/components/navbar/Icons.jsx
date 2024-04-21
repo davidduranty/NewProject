@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { useApi } from "../../data/Context";
 // import { Link } from "react-router-dom";
 function Icons() {
-  const { counterBag, favoriteCount } = useApi();
-  const [open, setOpen] = useState(false);
+  const { counterBag, favoriteCount, open, setOpen } = useApi();
+
   let menuRef = useRef();
 
   useEffect(() => {

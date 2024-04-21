@@ -12,6 +12,7 @@ export function ApiProvider({ children }) {
   const [count, setCount] = useState(0);
   const [counterBag, setCounterBag] = useState(0);
   const [favoriteCount, setFavoriteCount] = useState(0);
+  const [open, setOpen] = useState(false);
 
   // const [favorites, setFavorites] = useState(new Map());
   const [getAddBag, setGetAddBag] = useState(
@@ -186,6 +187,8 @@ export function ApiProvider({ children }) {
         incrementBagCount,
         favoriteCount,
         incrementFavoriteCount,
+        open,
+        setOpen,
       }}
     >
       {children}
