@@ -12,11 +12,6 @@ const Form = () => {
     setShowOldClient(false);
   };
 
-  const openOldClientPopup = () => {
-    setShowNewClient(false);
-    setShowOldClient(true);
-  };
-
   const closePopup = () => {
     setShowPopup(false);
   };
@@ -29,46 +24,65 @@ const Form = () => {
         <p>| Connexion</p>
       </div>
       <h1>CONNEXION</h1>
-      <div className="container-client">
-        <nav>
-          <li onClick={openNewClientPopup}>Nouveau Client</li>
-          <li onClick={openOldClientPopup}>Déjà Client</li>
-        </nav>
+      <div className="new-old">
+        <div className="container-client">
+          <nav>
+            <li>Nouveau Client</li>
+          </nav>
+        </div>
+        <div className="container-client">
+          <nav>
+            <li>Déjà Client</li>
+          </nav>
+        </div>
       </div>
-      <div className="form">
-        <div className="mrs-mr">
-          <p>Madame</p>
-          <p>Monsieur</p>
+      <div className="main">
+        <div className="form" id="form">
+          <div className="mrs-mr">
+            <p>Madame</p>
+            <p>Monsieur</p>
+          </div>
+          <div className="form-input">
+            <input type="text" placeholder="Prénom *" />
+            <span></span>
+            <input type="text" placeholder="Nom *" />
+            <span></span>
+            <input type="email" placeholder="Email *" autoComplete="none" />
+            <span></span>
+            <input type="password" placeholder="Mot de passe *" />
+            <span></span>
+          </div>
+          <div className="check-1">
+            <input type="checkbox" />
+            <p>
+              Si vous souhaitez être tenu(e) informé(e) par e-mail, merci de
+              cocher la case ci-contre.
+            </p>
+          </div>
+          <div className="check-2">
+            <input type="checkbox" />
+            <p>
+              J accepte les conditions générales de ventes et la politique de
+              confidentialité Doman Frères. Je certifie avoir 15 ans révolus.
+            </p>
+          </div>
+          <button className="btn" type="submit">
+            CREER MON COMPTE
+          </button>
+          <p>Les champs marqués d une * sont obligatoires.</p>
         </div>
-        <div className="form-input">
-          <input type="text" placeholder="Prénom *" />
-          <span></span>
-          <input type="text" placeholder="Nom *" />
-          <span></span>
-          <input type="email" placeholder="Email *" autoComplete="none" />
-          <span></span>
-          <input type="password" placeholder="Mot de passe *" />
-          <span></span>
+
+        <div className="form" id="formulaire">
+          <div className="form-input" id="form-input">
+            <input type="email" placeholder="Email *" autoComplete="none" />
+            <span></span>
+            <input id="pass" type="password" placeholder="Mot de passe *" />
+          </div>
+
+          <button className="btn" id="btn" type="submit">
+            CONNECTER
+          </button>
         </div>
-        <div className="check-1">
-          <input type="checkbox" />
-          <p>
-            Si vous souhaitez être tenu(e) informé(e) par e-mail, merci de
-            cocher la case ci-contre.
-          </p>
-        </div>
-        <div className="check-2">
-          <input type="checkbox" />
-          <p>
-            J accepte les <a href="*">conditions générales de ventes</a> et la
-            <a href="*"> politique de confidentialité</a> Doman Frères. Je
-            certifie avoir 15 ans révolus.
-          </p>
-        </div>
-        <button className="btn" type="submit">
-          CREER MON COMPTE
-        </button>
-        <p>Les champs marqués d une * sont obligatoires.</p>
       </div>
       {showNewClient && <Form />}
       {showOldClient && <OldClient />}
