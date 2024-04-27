@@ -8,7 +8,7 @@
   width: 100%;
 
   .ul {
-    width: 70%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -70,33 +70,40 @@
   }
 
   .icons-container {
-    width: 10%;
+    width: 20%;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
-
-    img {
-      margin-right: 30px;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      border-radius: 50%;
-
-      &:hover {
-        scale: 1.1;
+    .user-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
         transition: 0.5s ease-in-out;
-        // background-color: $color6;
         border-radius: 50%;
+
+        &:hover {
+          scale: 1.1;
+          transition: 0.5s ease-in-out;
+          // background-color: $color6;
+          border-radius: 50%;
+        }
       }
     }
     .icons-container-count {
       position: relative;
-
+      img {
+        width: 40px;
+        height: 40px;
+      }
       span {
         position: absolute;
         top: 0;
-        left: 50%;
+        left: 80%;
         background: red;
         width: 20px;
         text-align: center;
