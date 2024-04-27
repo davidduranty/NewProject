@@ -21,7 +21,10 @@ function Icons() {
   }, []);
   return (
     <div className="icons-container" ref={menuRef}>
-      <img src="user.png" alt="" onClick={() => setOpen(!open)} />
+      <div className="user-container">
+        <img src="user.png" alt="" onClick={() => setOpen(!open)} />
+        <span>Nom Prénom</span>
+      </div>
       <div className="icons-container-count">
         <Link to="/favorite">
           <img src="favorite.png" alt="favorite img" />
