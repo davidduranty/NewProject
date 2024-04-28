@@ -24,9 +24,9 @@ function Bag() {
         <table>
           <thead>
             <tr>
-              <th>Image</th>
-              <th>Nom</th>
-              <th>Prix</th>
+              <th>{t("title.tableauImg")}</th>
+              <th>{t("title.tableauName")}</th>
+              <th>{t("title.tableauPrice")}</th>
             </tr>
           </thead>
           <tbody>
