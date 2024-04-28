@@ -28,7 +28,10 @@
     "bag": "SACHETS DE NOËL",
     "break": "Petit-déjeuner",
     "coups": "Mes coups de coeur",
-    "panier": "Mon panier"
+    "panier": "Mon panier",
+    "tableauImg": "Image",
+    "tableauName": "Nom",
+    "tableauPrice": "Prix"
   },
 
   "footer": {
