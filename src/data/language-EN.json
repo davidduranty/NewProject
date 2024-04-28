@@ -28,7 +28,10 @@
     "bag": "CHRISTMAS BAGS",
     "break": "BreakFast",
     "coups": "My favorites",
-    "panier": "My basket"
+    "panier": "My bag",
+    "tableauImg": "Picture",
+    "tableauName": "Name",
+    "tableauPrice": "Price"
   },
 
   "footer": {
