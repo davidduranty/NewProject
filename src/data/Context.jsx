@@ -13,8 +13,8 @@ export function ApiProvider({ children }) {
   const [counterBag, setCounterBag] = useState(0);
   const [favoriteCount, setFavoriteCount] = useState(0);
   const [open, setOpen] = useState(false);
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
 
   // const [favorites, setFavorites] = useState(new Map());
   const [getAddBag, setGetAddBag] = useState(
@@ -31,12 +31,16 @@ export function ApiProvider({ children }) {
     setCounterBag(counterBag + 1);
   };
 
-  const handleFirstnameChange = (e) => {
-    setFirstname(e.target.value);
+  const handleCreateAccount = (newFirstName, newLastName) => {
+    setFirstName(newFirstName);
+    setLastName(newLastName);
   };
-  const handleLastnameChange = (e) => {
-    setLastname(e.target.value);
-  };
+  // const handleFirstnameChange = (e) => {
+  //   setFirstname(e.target.value);
+  // };
+  // const handleLastnameChange = (e) => {
+  //   setLastname(e.target.value);
+  // };
   // const addToFavorites = (item) => {
   //   setFavorites((prevFavorites) => [...prevFavorites, item]);
   // };
@@ -198,8 +202,7 @@ export function ApiProvider({ children }) {
         incrementFavoriteCount,
         open,
         setOpen,
-        handleFirstnameChange,
-        handleLastnameChange,
+        handleCreateAccount,
         lastname,
         firstname,
       }}

@@ -4,17 +4,12 @@ import { Link } from "react-router-dom";
 import { useApi } from "../../../data/Context";
 
 const Form = () => {
-  const {
-    handleFirstnameChange,
-    handleLastnameChange,
-    firstname,
-    lastname,
-    setFirstname,
-    setLastname,
-  } = useApi();
+  const { handleCreateAccount } = useApi();
   const [showNewClient, setShowNewClient] = useState(false);
   const [showOldClient, setShowOldClient] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   const openNewClientPopup = () => {
     setShowNewClient(true);
@@ -26,7 +21,7 @@ const Form = () => {
   };
 
   const handleClickLogin = () => {
-    console.log(firstname + " " + lastname);
+    handleCreateAccount(firstName, lastName);
   };
   return (
     <div className={`container-login ${showPopup ? "show" : "hide"}`}>
@@ -59,15 +54,17 @@ const Form = () => {
             <input
               type="text"
               placeholder="Prénom *"
-              value={setFirstname}
-              onChange={handleFirstnameChange}
+              value={firstName}
+              // onChange={handleFirstnameChange}
+              onChange={(e) => setFirstName(e.target.value)}
             />
             <span></span>
             <input
               type="text"
               placeholder="Nom *"
-              value={setLastname}
-              onChange={handleLastnameChange}
+              value={lastName}
+              // onChange={handleLastnameChange}
+              onChange={(e) => setLastName(e.target.value)}
             />
             <span></span>
             <input type="email" placeholder="Email *" autoComplete="none" />

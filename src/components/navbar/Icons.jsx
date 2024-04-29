@@ -25,7 +25,7 @@ function Icons() {
       <div className="user-container">
         <img src="user.png" alt="" onClick={() => setOpen(!open)} />
         <span>
-          {lastname} {firstname}
+          {lastname && firstname ? `Bonjour ${lastname} ${firstname}` : ""}
         </span>
       </div>
       <div className="icons-container-count">
