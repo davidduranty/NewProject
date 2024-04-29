@@ -31,7 +31,8 @@
     "panier": "Mon panier",
     "tableauImg": "Image",
     "tableauName": "Nom",
-    "tableauPrice": "Prix"
+    "tableauPrice": "Prix",
+    "empty": "C'est vide"
   },
 
   "footer": {
