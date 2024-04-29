@@ -75,7 +75,11 @@ function CardSelectionSmallBreafast({ dej }) {
           {count > 0 && (
             <p
               onClick={() => {
-                addBag(dej.name[0], dej.img, dej.price * count);
+                addBag(
+                  isFrench ? dej.name[0] : dej.name[1],
+                  dej.img,
+                  dej.price * count
+                );
                 incrementBagCount();
               }}
             >

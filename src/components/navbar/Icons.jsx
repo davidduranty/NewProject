@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { useApi } from "../../data/Context";
 // import { Link } from "react-router-dom";
 function Icons() {
-  const { counterBag, favoriteCount, open, setOpen } = useApi();
+  const { counterBag, favoriteCount, open, setOpen, firstname, lastname } =
+    useApi();
 
   let menuRef = useRef();
 
@@ -23,7 +24,9 @@ function Icons() {
     <div className="icons-container" ref={menuRef}>
       <div className="user-container">
         <img src="user.png" alt="" onClick={() => setOpen(!open)} />
-        <span>Nom Prénom</span>
+        <span>
+          {lastname} {firstname}
+        </span>
       </div>
       <div className="icons-container-count">
         <Link to="/favorite">
