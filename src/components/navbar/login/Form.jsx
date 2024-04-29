@@ -1,8 +1,17 @@
 import { useState } from "react";
 import OldClient from "./OldClient";
 import { Link } from "react-router-dom";
+import { useApi } from "../../../data/Context";
 
 const Form = () => {
+  const {
+    handleFirstnameChange,
+    handleLastnameChange,
+    firstname,
+    lastname,
+    setFirstname,
+    setLastname,
+  } = useApi();
   const [showNewClient, setShowNewClient] = useState(false);
   const [showOldClient, setShowOldClient] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
@@ -14,6 +23,10 @@ const Form = () => {
 
   const closePopup = () => {
     setShowPopup(false);
+  };
+
+  const handleClickLogin = () => {
+    console.log(firstname + " " + lastname);
   };
   return (
     <div className={`container-login ${showPopup ? "show" : "hide"}`}>
@@ -43,9 +56,19 @@ const Form = () => {
             <p>Monsieur</p>
           </div>
           <div className="form-input">
-            <input type="text" placeholder="Prénom *" />
+            <input
+              type="text"
+              placeholder="Prénom *"
+              value={setFirstname}
+              onChange={handleFirstnameChange}
+            />
             <span></span>
-            <input type="text" placeholder="Nom *" />
+            <input
+              type="text"
+              placeholder="Nom *"
+              value={setLastname}
+              onChange={handleLastnameChange}
+            />
             <span></span>
             <input type="email" placeholder="Email *" autoComplete="none" />
             <span></span>
@@ -66,7 +89,7 @@ const Form = () => {
               confidentialité Doman Frères. Je certifie avoir 15 ans révolus.
             </p>
           </div>
-          <button className="btn" type="submit">
+          <button className="btn" type="button" onClick={handleClickLogin}>
             CREER MON COMPTE
           </button>
           <p>Les champs marqués d une * sont obligatoires.</p>
@@ -79,7 +102,7 @@ const Form = () => {
             <input id="pass" type="password" placeholder="Mot de passe *" />
           </div>
 
-          <button className="btn" id="btn" type="submit">
+          <button className="btn" id="btn" type="button">
             CONNECTER
           </button>
         </div>
