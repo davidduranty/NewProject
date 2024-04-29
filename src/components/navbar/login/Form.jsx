@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import OldClient from "./OldClient";
 import { Link } from "react-router-dom";
+import { useApi } from "../../../data/Context";
 
 const Form = () => {
+  const { handleCreateAccount } = useApi();
   const [showNewClient, setShowNewClient] = useState(false);
   const [showOldClient, setShowOldClient] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [firstName, setFirstName] = useState(
+    localStorage.getItem("firstname") || ""
+  );
+  const [lastName, setLastName] = useState(
+    localStorage.getItem("lastname") || ""
+  );
 
   const openNewClientPopup = () => {
     setShowNewClient(true);
@@ -15,6 +23,18 @@ const Form = () => {
   const closePopup = () => {
     setShowPopup(false);
   };
+
+  const handleClickLogin = () => {
+    handleCreateAccount(firstName, lastName);
+  };
+  useEffect(() => {
+    localStorage.setItem("firstname", firstName);
+  }, [firstName]);
+
+  useEffect(() => {
+    localStorage.setItem("lastname", lastName);
+  }, [lastName]);
+
   return (
     <div className={`container-login ${showPopup ? "show" : "hide"}`}>
       <div className="lien-home">
@@ -43,9 +63,19 @@ const Form = () => {
             <p>Monsieur</p>
           </div>
           <div className="form-input">
-            <input type="text" placeholder="Prénom *" />
+            <input
+              type="text"
+              placeholder="Prénom *"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
             <span></span>
-            <input type="text" placeholder="Nom *" />
+            <input
+              type="text"
+              placeholder="Nom *"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+            />
             <span></span>
             <input type="email" placeholder="Email *" autoComplete="none" />
             <span></span>
@@ -66,7 +96,7 @@ const Form = () => {
               confidentialité Doman Frères. Je certifie avoir 15 ans révolus.
             </p>
           </div>
-          <button className="btn" type="submit">
+          <button className="btn" type="button" onClick={handleClickLogin}>
             CREER MON COMPTE
           </button>
           <p>Les champs marqués d une * sont obligatoires.</p>
@@ -79,7 +109,7 @@ const Form = () => {
             <input id="pass" type="password" placeholder="Mot de passe *" />
           </div>
 
-          <button className="btn" id="btn" type="submit">
+          <button className="btn" id="btn" type="button">
             CONNECTER
           </button>
         </div>
