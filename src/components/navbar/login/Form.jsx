@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import OldClient from "./OldClient";
 import { Link } from "react-router-dom";
 import { useApi } from "../../../data/Context";
@@ -8,8 +8,12 @@ const Form = () => {
   const [showNewClient, setShowNewClient] = useState(false);
   const [showOldClient, setShowOldClient] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState(
+    localStorage.getItem("firstname") || ""
+  );
+  const [lastName, setLastName] = useState(
+    localStorage.getItem("lastname") || ""
+  );
 
   const openNewClientPopup = () => {
     setShowNewClient(true);
@@ -23,6 +27,14 @@ const Form = () => {
   const handleClickLogin = () => {
     handleCreateAccount(firstName, lastName);
   };
+  useEffect(() => {
+    localStorage.setItem("firstname", firstName);
+  }, [firstName]);
+
+  useEffect(() => {
+    localStorage.setItem("lastname", lastName);
+  }, [lastName]);
+
   return (
     <div className={`container-login ${showPopup ? "show" : "hide"}`}>
       <div className="lien-home">
@@ -55,7 +67,6 @@ const Form = () => {
               type="text"
               placeholder="Prénom *"
               value={firstName}
-              // onChange={handleFirstnameChange}
               onChange={(e) => setFirstName(e.target.value)}
             />
             <span></span>
@@ -63,7 +74,6 @@ const Form = () => {
               type="text"
               placeholder="Nom *"
               value={lastName}
-              // onChange={handleLastnameChange}
               onChange={(e) => setLastName(e.target.value)}
             />
             <span></span>

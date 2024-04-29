@@ -13,8 +13,12 @@ export function ApiProvider({ children }) {
   const [counterBag, setCounterBag] = useState(0);
   const [favoriteCount, setFavoriteCount] = useState(0);
   const [open, setOpen] = useState(false);
-  const [firstname, setFirstName] = useState("");
-  const [lastname, setLastName] = useState("");
+  const [firstname, setFirstName] = useState(
+    localStorage.getItem("firstname") || ""
+  );
+  const [lastname, setLastName] = useState(
+    localStorage.getItem("lastname") || ""
+  );
 
   // const [favorites, setFavorites] = useState(new Map());
   const [getAddBag, setGetAddBag] = useState(
