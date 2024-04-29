@@ -31,7 +31,8 @@
     "panier": "My bag",
     "tableauImg": "Picture",
     "tableauName": "Name",
-    "tableauPrice": "Price"
+    "tableauPrice": "Price",
+    "empty": "It's empty"
   },
 
   "footer": {
