@@ -66,7 +66,7 @@ function CardSelectionSmallBreafast({ dej }) {
             className="btn-like"
             type="button"
             onClick={() => {
-              onLike(dej.name[0], dej.img);
+              onLike(isFrench ? dej.name[0] : dej.name[1], dej.img);
               incrementFavoriteCount();
             }}
           >
