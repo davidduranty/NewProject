@@ -53,7 +53,11 @@ const CardMoment = ({ moment }) => {
             {count > 0 && (
               <span
                 onClick={() => {
-                  addBag(moment.name[0], moment.img, moment.price * count);
+                  addBag(
+                    isFrench ? moment.name[0] : moment.name[1],
+                    moment.img,
+                    moment.price * count
+                  );
                   incrementBagCount();
                 }}
               >

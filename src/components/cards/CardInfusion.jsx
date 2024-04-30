@@ -67,7 +67,7 @@ const CardInfusion = ({ infusion }) => {
               <span
                 onClick={() => {
                   addBag(
-                    infusion.name[0],
+                    isFrench ? infusion.name[0] : infusion.name[1],
                     infusion.img,
                     infusion.price * count
                   );
