@@ -73,7 +73,7 @@ function CardBoxesChristmas({ box }) {
               className="btn-like-box"
               type="button"
               onClick={() => {
-                onLike(box.name[0], box.img);
+                onLike(isFrench ? box.name[0] : box.name[1], box.img);
                 incrementFavoriteCount();
               }}
             >

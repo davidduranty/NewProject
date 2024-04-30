@@ -93,7 +93,11 @@ function CardCoffret({ coffret }) {
             {count > 0 && (
               <span
                 onClick={() => {
-                  addBag(coffret.name[0], coffret.img, coffret.price * count);
+                  addBag(
+                    isFrench ? coffret.name[0] : coffret.name[1],
+                    coffret.img,
+                    coffret.price * count
+                  );
                   incrementBagCount();
                 }}
               >

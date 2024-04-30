@@ -18,7 +18,9 @@ function Bag() {
   return (
     <>
       <div className="title-bag-container">
-        <h1 className="title-bag">{t("title.panier")}</h1>
+        <h1 className="title-bag">
+          {getAddBag.length ? t("title.panier") : t("title.panierVide")}
+        </h1>
       </div>
       <div className="bag-container">
         <table>

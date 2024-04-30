@@ -46,7 +46,7 @@ const CardBreakfast = ({ breakfast }) => {
               <p
                 onClick={() => {
                   addBag(
-                    breakfast.name[0],
+                    isFrench ? breakfast.name[0] : breakfast.name[1],
                     breakfast.img,
                     breakfast.price * count
                   );

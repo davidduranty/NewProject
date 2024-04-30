@@ -29,6 +29,7 @@
     "break": "BreakFast",
     "coups": "My favorites",
     "panier": "My bag",
+    "panierVide": "My bag is empty",
     "tableauImg": "Picture",
     "tableauName": "Name",
     "tableauPrice": "Price",
