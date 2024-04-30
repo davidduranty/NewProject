@@ -20,25 +20,16 @@ $color6: rgb(173, 50, 50, 0.75);
   justify-content: center;
   align-items: center;
 }
-
-// .container-response {
-//   max-width: 1200px;
-//   padding-inline: 12px;
-// }
-// .container-max,
-// .container-response {
-//   margin-inline: auto;
-//   width: 100%;
-// }
-// .container-max {
-//   max-width: 2800px;
-// }
-
-// @mixin end {
-//     display: flex;
-//     justify-content: end;
-//     align-items: center;
-// }
+.progress-bar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: red;
+  transform-origin: 0%;
+  z-index: 12;
+}
 
 @mixin start {
   display: flex;
