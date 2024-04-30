@@ -8,6 +8,7 @@ function Bag() {
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     let total = 0;
     getAddBag.forEach((item) => {
       total += parseFloat(item.price);
