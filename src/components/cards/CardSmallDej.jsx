@@ -53,7 +53,11 @@ const CardSmallDej = ({ tasse }) => {
           {count > 0 && (
             <p
               onClick={() => {
-                addBag(tasse.name[0], tasse.img, tasse.price * count);
+                addBag(
+                  isFrench ? tasse.name[0] : tasse.name[1],
+                  tasse.img,
+                  tasse.price * count
+                );
                 incrementBagCount();
               }}
             >

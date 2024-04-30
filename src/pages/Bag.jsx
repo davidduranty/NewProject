@@ -8,6 +8,7 @@ function Bag() {
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     let total = 0;
     getAddBag.forEach((item) => {
       total += parseFloat(item.price);
@@ -18,7 +19,9 @@ function Bag() {
   return (
     <>
       <div className="title-bag-container">
-        <h1 className="title-bag">{t("title.panier")}</h1>
+        <h1 className="title-bag">
+          {getAddBag.length ? t("title.panier") : t("title.panierVide")}
+        </h1>
       </div>
       <div className="bag-container">
         <table>

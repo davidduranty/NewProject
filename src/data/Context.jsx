@@ -28,12 +28,12 @@ export function ApiProvider({ children }) {
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || []
   );
-  const incrementFavoriteCount = () => {
-    setFavoriteCount(favoriteCount + 1);
-  };
-  const incrementBagCount = () => {
-    setCounterBag(counterBag + 1);
-  };
+  // const incrementFavoriteCount = () => {
+  //   setFavoriteCount(favoriteCount + 1);
+  // };
+  // const incrementBagCount = () => {
+  //   setCounterBag(counterBag + 1);
+  // };
 
   const handleCreateAccount = (newFirstName, newLastName) => {
     setFirstName(newFirstName);
@@ -201,9 +201,9 @@ export function ApiProvider({ children }) {
         addToBag,
         getAddBag,
         counterBag,
-        incrementBagCount,
+        // incrementBagCount,
         favoriteCount,
-        incrementFavoriteCount,
+        // incrementFavoriteCount,
         open,
         setOpen,
         handleCreateAccount,

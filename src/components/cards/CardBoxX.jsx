@@ -84,7 +84,11 @@ function CardBoxX({ boxX }) {
             {count > 0 && (
               <span
                 onClick={() => {
-                  addBag(boxX.name[0], boxX.img, boxX.price * count);
+                  addBag(
+                    isFrench ? boxX.name[0] : boxX.name[1],
+                    boxX.img,
+                    boxX.price * count
+                  );
                   incrementBagCount();
                 }}
               >

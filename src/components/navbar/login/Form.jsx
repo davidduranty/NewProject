@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useApi } from "../../../data/Context";
 
 const Form = () => {
+  const [cgv, setCgv] = useState(false);
   const { handleCreateAccount } = useApi();
   const [showNewClient, setShowNewClient] = useState(false);
   const [showOldClient, setShowOldClient] = useState(false);
@@ -23,7 +24,9 @@ const Form = () => {
   const closePopup = () => {
     setShowPopup(false);
   };
-
+  const handleClickCGV = () => {
+    setCgv(true);
+  };
   const handleClickLogin = () => {
     handleCreateAccount(firstName, lastName);
   };
@@ -90,13 +93,21 @@ const Form = () => {
             </p>
           </div>
           <div className="check-2">
-            <input type="checkbox" />
+            <input type="checkbox" onClick={handleClickCGV} />
             <p>
               J accepte les conditions générales de ventes et la politique de
               confidentialité Doman Frères. Je certifie avoir 15 ans révolus.
             </p>
           </div>
-          <button className="btn" type="button" onClick={handleClickLogin}>
+          <button
+            className="btn"
+            type="button"
+            onClick={() => {
+              handleClickLogin && cgv
+                ? handleClickLogin()
+                : alert("Vous devez accepter les CGV");
+            }}
+          >
             CREER MON COMPTE
           </button>
           <p>Les champs marqués d une * sont obligatoires.</p>

@@ -53,7 +53,11 @@ const Card = ({ tea }) => {
             {count > 0 && (
               <span
                 onClick={() => {
-                  addBag(tea.name[0], tea.img, tea.price * count);
+                  addBag(
+                    isFrench ? tea.name[0] : tea.name[1],
+                    tea.img,
+                    tea.price * count
+                  );
                   incrementBagCount();
                 }}
               >
