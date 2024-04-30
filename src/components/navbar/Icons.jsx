@@ -2,9 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import Form from "./login/Form";
 import { Link } from "react-router-dom";
 import { useApi } from "../../data/Context";
+import { useTranslation } from "react-i18next";
+
 // import { Link } from "react-router-dom";
 function Icons() {
   const { open, setOpen, firstname, lastname, getAddBag, favorites } = useApi();
+  const { t } = useTranslation();
 
   let menuRef = useRef();
 
@@ -24,7 +27,9 @@ function Icons() {
       <div className="user-container">
         <img src="user.png" alt="" onClick={() => setOpen(!open)} />
         <span>
-          {lastname && firstname ? `Bonjour ${lastname} ${firstname}` : ""}
+          {lastname && firstname
+            ? `${t("title.hello")} ${lastname} ${firstname}`
+            : ""}
         </span>
       </div>
       <div className="icons-container-count">

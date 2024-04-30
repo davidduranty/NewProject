@@ -33,7 +33,8 @@
     "tableauImg": "Picture",
     "tableauName": "Name",
     "tableauPrice": "Price",
-    "empty": "It's empty"
+    "empty": "It's empty",
+    "hello": "Hi"
   },
 
   "footer": {
