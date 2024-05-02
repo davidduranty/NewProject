@@ -8,6 +8,7 @@ function Favorite() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="favorite-container">
       <h1 className="title-favorite">
@@ -23,12 +24,15 @@ function Favorite() {
                 <img src={favorite.img} alt={favorite.name} />
                 <p>{favorite.name}</p>
               </li>
-              <button
-                type="button"
-                onClick={() => handleClickDeleteFavorite(index)}
-              >
-                Supprimer
-              </button>
+              <div className="btn-delete-favorite-container">
+                <button
+                  className="btn-delete-favorite"
+                  type="button"
+                  onClick={() => handleClickDeleteFavorite(index)}
+                >
+                  Retirer
+                </button>
+              </div>
             </div>
           ))
         )}
