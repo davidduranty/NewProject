@@ -1,5 +1,7 @@
 .favorite-container {
-  margin: 10% 20%;
+  // border: 1px solid black;
+
+  margin: 10%;
   .title-favorite {
     text-align: center;
     font-size: 6rem;
@@ -7,38 +9,65 @@
     color: rgba(167, 39, 39, 0.767);
   }
   .ul-favorite {
-    margin: 0 auto;
     @include center;
-    column-gap: 50px;
-    width: 110%;
-    overflow: auto;
-    height: 500px;
-    overflow-y: hidden;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    // width: 110%;
+    padding: 0 50px;
+    // overflow: auto;
+    min-height: 500px;
+    // overflow-y: hidden;
     .favorite-empty {
       font-size: 6rem;
       width: 100%;
       text-align: center;
       color: rgba(167, 39, 39, 0.767);
     }
-
-    li {
-      border: 1px solid black;
-      border-radius: 10px;
-      width: 500px;
-      height: 450px;
-      padding: 30px;
-
-      img {
-        width: 300px;
-        height: 350px;
-      }
-      p {
-        width: 300px;
-        margin-top: 10px 20px;
-        text-align: center;
-        font-size: 1rem;
+    .favorite-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: column;
+      // width: 100%;
+      li {
+        border-radius: 10px;
+        width: 290px;
+        height: 420px;
         padding: 5px;
-        font-family: "font2";
+
+        img {
+          width: 280px;
+          height: 350px;
+        }
+        p {
+          width: 300px;
+          margin-top: 10px 20px;
+          text-align: center;
+          font-size: 1rem;
+          padding: 5px;
+          font-family: "font2";
+        }
+      }
+      .btn-delete-favorite-container {
+        display: flex;
+        justify-content: center;
+        .btn-delete-favorite {
+          text-align: center;
+          width: 50%;
+          background: red;
+          padding: 10px 15px;
+          border-radius: 5px;
+          color: white;
+          border: none;
+          cursor: pointer;
+          transition: 0.5s ease-in-out;
+
+          &:hover {
+            transition: 0.5s ease-in-out;
+            transform: rotate(20deg);
+          }
+        }
       }
     }
   }

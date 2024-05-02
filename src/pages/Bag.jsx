@@ -3,7 +3,7 @@ import { useApi } from "../data/Context";
 import { useTranslation } from "react-i18next";
 
 function Bag() {
-  const { getAddBag } = useApi();
+  const { getAddBag, handleClickDelete } = useApi();
   const { t } = useTranslation();
   const [totalPrice, setTotalPrice] = useState(0);
 
@@ -34,21 +34,31 @@ function Bag() {
           </thead>
           <tbody>
             {getAddBag.map((favorite, index) => (
-              <tr key={index}>
-                <td className="array-bag">
-                  <img
-                    className="img-bag"
-                    src={favorite.img}
-                    alt={favorite.name}
-                  />
-                </td>
-                <td className="name-bag">
-                  <p>{favorite.name}</p>
-                </td>
-                <td className="name-price">
-                  <span>{favorite.price}</span>
-                </td>
-              </tr>
+              <>
+                <tr key={index}>
+                  <td className="array-bag">
+                    <img
+                      className="img-bag"
+                      src={favorite.img}
+                      alt={favorite.name}
+                    />
+                  </td>
+                  <td className="name-bag">
+                    <p>{favorite.name}</p>
+                  </td>
+                  <td className="name-price">
+                    <span>{favorite.price}</span>
+                  </td>
+                  <div className="btn-delete-bag">
+                    <button
+                      type="button"
+                      onClick={() => handleClickDelete(index)}
+                    >
+                      Supprimer
+                    </button>
+                  </div>
+                </tr>
+              </>
             ))}
           </tbody>
         </table>

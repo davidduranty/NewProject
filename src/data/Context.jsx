@@ -28,33 +28,23 @@ export function ApiProvider({ children }) {
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || []
   );
-  // const incrementFavoriteCount = () => {
-  //   setFavoriteCount(favoriteCount + 1);
-  // };
-  // const incrementBagCount = () => {
-  //   setCounterBag(counterBag + 1);
-  // };
 
+  const handleClickDelete = (indexToDelete) => {
+    const updatedBag = getAddBag.filter((_, index) => index !== indexToDelete);
+    localStorage.setItem("bag", JSON.stringify(updatedBag));
+    window.location.reload();
+  };
+  const handleClickDeleteFavorite = (indexToDelete) => {
+    const updatedFavorite = favorites.filter(
+      (_, index) => index !== indexToDelete
+    );
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorite));
+    window.location.reload();
+  };
   const handleCreateAccount = (newFirstName, newLastName) => {
     setFirstName(newFirstName);
     setLastName(newLastName);
   };
-  // const handleFirstnameChange = (e) => {
-  //   setFirstname(e.target.value);
-  // };
-  // const handleLastnameChange = (e) => {
-  //   setLastname(e.target.value);
-  // };
-  // const addToFavorites = (item) => {
-  //   setFavorites((prevFavorites) => [...prevFavorites, item]);
-  // };
-
-  // async function toogleFavorite(name) {
-  //   favorites.set(name, favorites.has(name) ? !favorites.get(name) : true);
-
-  //   setFavorites(favorites);
-  //   setGetDej(getDej);
-  // }
   const addToBag = (item) => {
     const updateAddToBag = [...getAddBag, item];
     setGetAddBag(updateAddToBag);
@@ -206,6 +196,8 @@ export function ApiProvider({ children }) {
         handleCreateAccount,
         lastname,
         firstname,
+        handleClickDelete,
+        handleClickDeleteFavorite,
       }}
     >
       {children}
