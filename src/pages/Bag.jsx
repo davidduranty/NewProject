@@ -3,7 +3,7 @@ import { useApi } from "../data/Context";
 import { useTranslation } from "react-i18next";
 
 function Bag() {
-  const { getAddBag } = useApi();
+  const { getAddBag, handleClickDelete } = useApi();
   const { t } = useTranslation();
   const [totalPrice, setTotalPrice] = useState(0);
 
@@ -50,7 +50,12 @@ function Bag() {
                     <span>{favorite.price}</span>
                   </td>
                   <div className="btn-delete-bag">
-                    <button type="button">Supprimer</button>
+                    <button
+                      type="button"
+                      onClick={() => handleClickDelete(index)}
+                    >
+                      Supprimer
+                    </button>
                   </div>
                 </tr>
               </>
