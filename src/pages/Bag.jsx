@@ -34,21 +34,26 @@ function Bag() {
           </thead>
           <tbody>
             {getAddBag.map((favorite, index) => (
-              <tr key={index}>
-                <td className="array-bag">
-                  <img
-                    className="img-bag"
-                    src={favorite.img}
-                    alt={favorite.name}
-                  />
-                </td>
-                <td className="name-bag">
-                  <p>{favorite.name}</p>
-                </td>
-                <td className="name-price">
-                  <span>{favorite.price}</span>
-                </td>
-              </tr>
+              <>
+                <tr key={index}>
+                  <td className="array-bag">
+                    <img
+                      className="img-bag"
+                      src={favorite.img}
+                      alt={favorite.name}
+                    />
+                  </td>
+                  <td className="name-bag">
+                    <p>{favorite.name}</p>
+                  </td>
+                  <td className="name-price">
+                    <span>{favorite.price}</span>
+                  </td>
+                  <div className="btn-delete-bag">
+                    <button type="button">Supprimer</button>
+                  </div>
+                </tr>
+              </>
             ))}
           </tbody>
         </table>
