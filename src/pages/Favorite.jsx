@@ -3,7 +3,7 @@ import { useApi } from "../data/Context";
 import { useTranslation } from "react-i18next";
 
 function Favorite() {
-  const { favorites } = useApi();
+  const { favorites, handleClickDeleteFavorite } = useApi();
   const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,10 +18,18 @@ function Favorite() {
           <p className="favorite-empty">{t("title.empty")}</p>
         ) : (
           favorites.map((favorite, index) => (
-            <li key={index}>
-              <img src={favorite.img} alt={favorite.name} />
-              <p>{favorite.name}</p>
-            </li>
+            <div className="favorite-content">
+              <li key={index}>
+                <img src={favorite.img} alt={favorite.name} />
+                <p>{favorite.name}</p>
+              </li>
+              <button
+                type="button"
+                onClick={() => handleClickDeleteFavorite(index)}
+              >
+                Supprimer
+              </button>
+            </div>
           ))
         )}
       </ul>

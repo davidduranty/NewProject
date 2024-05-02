@@ -1,5 +1,5 @@
 .favorite-container {
-  margin: 10% 20%;
+  margin: 10%;
   .title-favorite {
     text-align: center;
     font-size: 6rem;
@@ -7,10 +7,10 @@
     color: rgba(167, 39, 39, 0.767);
   }
   .ul-favorite {
-    margin: 0 auto;
+    border: 1px solid black;
     @include center;
-    column-gap: 50px;
-    width: 110%;
+    column-gap: 10px;
+    // width: 110%;
     overflow: auto;
     height: 500px;
     overflow-y: hidden;
@@ -20,25 +20,26 @@
       text-align: center;
       color: rgba(167, 39, 39, 0.767);
     }
-
-    li {
-      border: 1px solid black;
-      border-radius: 10px;
-      width: 500px;
-      height: 450px;
-      padding: 30px;
-
-      img {
-        width: 300px;
-        height: 350px;
-      }
-      p {
-        width: 300px;
-        margin-top: 10px 20px;
-        text-align: center;
-        font-size: 1rem;
+    .favorite-content {
+      width: 100%;
+      li {
+        border-radius: 10px;
+        width: 290px;
+        height: 420px;
         padding: 5px;
-        font-family: "font2";
+
+        img {
+          width: 280px;
+          height: 350px;
+        }
+        p {
+          width: 300px;
+          margin-top: 10px 20px;
+          text-align: center;
+          font-size: 1rem;
+          padding: 5px;
+          font-family: "font2";
+        }
       }
     }
   }

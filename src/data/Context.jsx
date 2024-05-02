@@ -34,7 +34,13 @@ export function ApiProvider({ children }) {
     localStorage.setItem("bag", JSON.stringify(updatedBag));
     window.location.reload();
   };
-
+  const handleClickDeleteFavorite = (indexToDelete) => {
+    const updatedFavorite = favorites.filter(
+      (_, index) => index !== indexToDelete
+    );
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorite));
+    window.location.reload();
+  };
   const handleCreateAccount = (newFirstName, newLastName) => {
     setFirstName(newFirstName);
     setLastName(newLastName);
@@ -191,6 +197,7 @@ export function ApiProvider({ children }) {
         lastname,
         firstname,
         handleClickDelete,
+        handleClickDeleteFavorite,
       }}
     >
       {children}
