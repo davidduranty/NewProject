@@ -113,4 +113,82 @@
       }
     }
   }
+  .language-container {
+    @include center;
+    width: 10%;
+
+    .btn-en,
+    .btn-fr {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      background: transparent;
+      border: none;
+    }
+    .btn-en {
+      margin-right: 10px;
+    }
+    .btn-fr {
+      margin-left: 10px;
+    }
+    .active {
+      background: red;
+      color: #fff;
+    }
+    .actived {
+      background: red;
+      color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-container {
+    display: flex;
+    justify-content: space-around;
+    .ul {
+      display: none;
+    }
+    .icons-container {
+      width: 30%;
+      justify-content: end;
+
+      .user-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 100px;
+
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+        }
+        span {
+          width: 100px;
+          font-size: 0.6rem;
+          text-align: center;
+        }
+      }
+      .icons-container-count {
+        img {
+          width: 30px;
+          height: 30px;
+          margin-left: 20px;
+        }
+        span {
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
+    .language-container {
+      width: 20%;
+
+      .btn-en,
+      .btn-fr {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 }
