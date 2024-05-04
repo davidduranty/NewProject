@@ -234,5 +234,22 @@
         row-gap: 10px;
       }
     }
+    .footer-container-milieu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+
+      .doman-freres-container,
+      .nous-trouver-container,
+      .pro-container,
+      .suivez-container {
+        width: 200px;
+      }
+      .pro-container,
+      .suivez-container {
+        border-top: 2px solid black;
+      }
+    }
   }
 }
