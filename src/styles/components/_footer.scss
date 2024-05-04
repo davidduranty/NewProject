@@ -218,3 +218,61 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .footer-container {
+    .footer-container-haut {
+      display: flex;
+      flex-direction: column;
+      .paiement-securise,
+      .sav-qualite {
+        margin-top: 50px;
+      }
+      .paiement-securise,
+      .sav-qualite,
+      .frais-de-port-container {
+        display: grid;
+        row-gap: 10px;
+      }
+    }
+    .footer-container-milieu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+
+      .doman-freres-container,
+      .nous-trouver-container,
+      .pro-container,
+      .suivez-container {
+        width: 200px;
+      }
+      .pro-container,
+      .suivez-container {
+        border-top: 2px solid black;
+      }
+    }
+    .footer-bas {
+      .all-droits-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+        .all-droits {
+          height: 50px;
+          border-bottom: 2px solid black;
+        }
+
+        // width: 200px;
+        .lien-container-bas {
+          margin: 0 auto;
+          width: 470px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 50px;
+          a {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
