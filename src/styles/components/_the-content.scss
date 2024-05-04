@@ -1,16 +1,18 @@
 .the-container {
   width: 100%;
   min-height: 10vh;
-  margin: 0 20%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .teas-balls-container {
-  max-height: 120px;
+  min-height: 120px;
   margin: 100px 0;
   display: flex;
   column-gap: 10px;
   position: relative;
-  max-width: 50%;
+
   .img {
     position: relative;
     width: 150px;
@@ -59,6 +61,15 @@
           transition: 0.3s ease-in-out;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .the-container {
+    .teas-balls-container {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
