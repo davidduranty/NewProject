@@ -8,7 +8,7 @@ const SwiperBest = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <>
       <div className="title-best-container">
         <div className="title-best">
           <h1>{t("title.best")}</h1>
@@ -33,7 +33,7 @@ const SwiperBest = () => {
           </Swiper>
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
