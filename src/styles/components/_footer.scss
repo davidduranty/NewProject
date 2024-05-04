@@ -251,5 +251,28 @@
         border-top: 2px solid black;
       }
     }
+    .footer-bas {
+      .all-droits-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+        .all-droits {
+          height: 50px;
+          border-bottom: 2px solid black;
+        }
+
+        // width: 200px;
+        .lien-container-bas {
+          margin: 0 auto;
+          width: 470px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 50px;
+          a {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
   }
 }
