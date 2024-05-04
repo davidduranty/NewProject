@@ -218,3 +218,21 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .footer-container {
+    .footer-container-haut {
+      display: flex;
+      flex-direction: column;
+      .paiement-securise,
+      .sav-qualite {
+        margin-top: 50px;
+      }
+      .paiement-securise,
+      .sav-qualite,
+      .frais-de-port-container {
+        display: grid;
+        row-gap: 10px;
+      }
+    }
+  }
+}
