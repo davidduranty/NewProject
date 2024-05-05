@@ -3,24 +3,24 @@ import { useApi } from "../data/Context";
 import { useTranslation } from "react-i18next";
 
 function Bag() {
-  const { getAddBag, handleClickDelete } = useApi();
+  const { uniqueToBag, handleClickDelete } = useApi();
   const { t } = useTranslation();
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     let total = 0;
-    getAddBag.forEach((item) => {
+    uniqueToBag.forEach((item) => {
       total += parseFloat(item.price);
     });
     setTotalPrice(total.toFixed(2));
-  }, [getAddBag]);
+  }, [uniqueToBag]);
 
   return (
     <>
       <div className="title-bag-container">
         <h1 className="title-bag">
-          {getAddBag.length ? t("title.panier") : t("title.panierVide")}
+          {uniqueToBag.length ? t("title.panier") : t("title.panierVide")}
         </h1>
       </div>
       <div className="bag-container">
@@ -33,7 +33,7 @@ function Bag() {
             </tr>
           </thead>
           <tbody>
-            {getAddBag.map((favorite, index) => (
+            {uniqueToBag.map((favorite, index) => (
               <>
                 <tr key={index}>
                   <td className="array-bag">

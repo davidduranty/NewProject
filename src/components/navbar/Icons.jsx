@@ -6,7 +6,8 @@ import { useTranslation } from "react-i18next";
 
 // import { Link } from "react-router-dom";
 function Icons() {
-  const { open, setOpen, firstname, lastname, getAddBag, favorites } = useApi();
+  const { open, setOpen, firstname, lastname, uniqueToBag, uniqueFavorites } =
+    useApi();
   const { t } = useTranslation();
 
   let menuRef = useRef();
@@ -36,13 +37,13 @@ function Icons() {
         <Link to="/favorite">
           <img src="favorite.png" alt="favorite img" />
         </Link>
-        <span>{favorites.length}</span>
+        <span>{uniqueFavorites.length}</span>
       </div>
       <div className="icons-container-count">
         <Link to="/bag">
           <img src="bag.png" alt="bag img" />
         </Link>
-        <span>{getAddBag.length}</span>
+        <span>{uniqueToBag.length}</span>
       </div>
 
       {open && <Form />}

@@ -3,7 +3,8 @@ import { useApi } from "../data/Context";
 import { useTranslation } from "react-i18next";
 
 function Favorite() {
-  const { favorites, handleClickDeleteFavorite } = useApi();
+  const { handleClickDeleteFavorite, uniqueFavorites } = useApi();
+
   const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,13 +13,13 @@ function Favorite() {
   return (
     <div className="favorite-container">
       <h1 className="title-favorite">
-        {favorites.length ? t("title.coups") : ""}
+        {uniqueFavorites.length ? t("title.coups") : ""}
       </h1>
       <ul className="ul-favorite">
-        {!favorites.length ? (
+        {!uniqueFavorites.length ? (
           <p className="favorite-empty">{t("title.empty")}</p>
         ) : (
-          favorites.map((favorite, index) => (
+          uniqueFavorites.map((favorite, index) => (
             <div className="favorite-content">
               <li key={index}>
                 <img src={favorite.img} alt={favorite.name} />
