@@ -32,9 +32,9 @@ const CardInfusion = ({ infusion }) => {
     setModalOpen(!modalOpen);
   };
 
-  const handleModalClose = () => {
-    setModalOpen(false);
-  };
+  // const handleModalClose = () => {
+  //   setModalOpen(false);
+  // };
   const viewImage = () => {
     setShowImg(true);
   };
