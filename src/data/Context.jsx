@@ -11,6 +11,7 @@ export function ApiProvider({ children }) {
   const [getInfusion, setGetInfusion] = useState([]);
   const [count, setCount] = useState(0);
   const [uniqueFavorites, setUniqueFavorites] = useState([]);
+  const [uniqueToBag, setUniqueToBag] = useState([]);
   const [counterBag, setCounterBag] = useState(0);
   const [favoriteCount, setFavoriteCount] = useState(0);
   const [open, setOpen] = useState(false);
@@ -47,9 +48,11 @@ export function ApiProvider({ children }) {
     setLastName(newLastName);
   };
   const addToBag = (item) => {
-    const updateAddToBag = [...getAddBag, item];
-    setGetAddBag(updateAddToBag);
-    localStorage.setItem("bag", JSON.stringify(updateAddToBag));
+    if (!getAddBag.find((bag) => bag.name === item.name)) {
+      const updateAddToBag = [...getAddBag, item];
+      setGetAddBag(updateAddToBag);
+      localStorage.setItem("bag", JSON.stringify(updateAddToBag));
+    }
   };
   const addToFavorites = (item) => {
     if (!favorites.find((favorite) => favorite.name === item.name)) {
@@ -80,7 +83,17 @@ export function ApiProvider({ children }) {
       return false;
     });
     setUniqueFavorites(filteredFavorites);
-  }, [favorites]);
+
+    const uniqueNamesBag = new Set();
+    const filteredAddBag = getAddBag.filter((addBag) => {
+      if (!uniqueNamesBag.has(addBag.name)) {
+        uniqueNamesBag.add(addBag.name);
+        return true;
+      }
+      return false;
+    });
+    setUniqueToBag(filteredAddBag);
+  }, [favorites, getAddBag]);
   const getData = async () => {
     try {
       const res = await axios.get("http://localhost:5172/thes/");
@@ -211,6 +224,7 @@ export function ApiProvider({ children }) {
         handleClickDelete,
         handleClickDeleteFavorite,
         uniqueFavorites,
+        uniqueToBag,
       }}
     >
       {children}

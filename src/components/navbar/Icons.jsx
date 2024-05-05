@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 // import { Link } from "react-router-dom";
 function Icons() {
-  const { open, setOpen, firstname, lastname, getAddBag, uniqueFavorites } =
+  const { open, setOpen, firstname, lastname, uniqueToBag, uniqueFavorites } =
     useApi();
   const { t } = useTranslation();
 
@@ -43,7 +43,7 @@ function Icons() {
         <Link to="/bag">
           <img src="bag.png" alt="bag img" />
         </Link>
-        <span>{getAddBag.length}</span>
+        <span>{uniqueToBag.length}</span>
       </div>
 
       {open && <Form />}
