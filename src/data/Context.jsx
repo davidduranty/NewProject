@@ -10,6 +10,7 @@ export function ApiProvider({ children }) {
   const [getDej, setGetDej] = useState([]);
   const [getInfusion, setGetInfusion] = useState([]);
   const [count, setCount] = useState(0);
+  const [uniqueFavorites, setUniqueFavorites] = useState([]);
   const [counterBag, setCounterBag] = useState(0);
   const [favoriteCount, setFavoriteCount] = useState(0);
   const [open, setOpen] = useState(false);
@@ -51,9 +52,11 @@ export function ApiProvider({ children }) {
     localStorage.setItem("bag", JSON.stringify(updateAddToBag));
   };
   const addToFavorites = (item) => {
-    const updatedFavorites = [...favorites, item];
-    setFavorites(updatedFavorites);
-    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+    if (!favorites.find((favorite) => favorite.name === item.name)) {
+      const updatedFavorites = [...favorites, item];
+      setFavorites(updatedFavorites);
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+    }
   };
 
   const getDataInfusion = async () => {
@@ -68,7 +71,16 @@ export function ApiProvider({ children }) {
 
   useEffect(() => {
     getDataInfusion();
-  }, []);
+    const uniqueNames = new Set();
+    const filteredFavorites = favorites.filter((favorite) => {
+      if (!uniqueNames.has(favorite.name)) {
+        uniqueNames.add(favorite.name);
+        return true;
+      }
+      return false;
+    });
+    setUniqueFavorites(filteredFavorites);
+  }, [favorites]);
   const getData = async () => {
     try {
       const res = await axios.get("http://localhost:5172/thes/");
@@ -198,6 +210,7 @@ export function ApiProvider({ children }) {
         firstname,
         handleClickDelete,
         handleClickDeleteFavorite,
+        uniqueFavorites,
       }}
     >
       {children}
