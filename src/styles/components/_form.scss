@@ -130,6 +130,18 @@
         transition: 0.5s ease-in-out;
         border-radius: 5px;
       }
+      .load {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: xx-large;
+        background: teal;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+      }
       p {
         text-align: center;
       }
