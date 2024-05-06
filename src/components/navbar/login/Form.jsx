@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import OldClient from "./OldClient";
+
 import { Link } from "react-router-dom";
 import { useApi } from "../../../data/Context";
 
@@ -7,7 +7,7 @@ const Form = () => {
   const [cgv, setCgv] = useState(false);
   const { handleCreateAccount } = useApi();
   const [showNewClient, setShowNewClient] = useState(false);
-  const [showOldClient, setShowOldClient] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [firstName, setFirstName] = useState(
     localStorage.getItem("firstname") || ""
@@ -16,11 +16,6 @@ const Form = () => {
     localStorage.getItem("lastname") || ""
   );
 
-  const openNewClientPopup = () => {
-    setShowNewClient(true);
-    setShowOldClient(false);
-  };
-
   const closePopup = () => {
     setShowPopup(false);
   };
@@ -28,7 +23,11 @@ const Form = () => {
     setCgv(true);
   };
   const handleClickLogin = () => {
-    handleCreateAccount(firstName, lastName);
+    setLoading(true); // Début du chargement
+    setTimeout(() => {
+      handleCreateAccount(firstName, lastName);
+      setLoading(false); // Fin du chargement
+    }, 2000);
   };
   useEffect(() => {
     localStorage.setItem("firstname", firstName);
@@ -110,6 +109,7 @@ const Form = () => {
           >
             CREER MON COMPTE
           </button>
+          {loading && <div>chargement</div>}
           <p>Les champs marqués d une * sont obligatoires.</p>
         </div>
 
@@ -126,7 +126,6 @@ const Form = () => {
         </div>
       </div>
       {showNewClient && <Form />}
-      {showOldClient && <OldClient />}
     </div>
   );
 };

@@ -23,10 +23,25 @@ function Icons() {
       document.removeEventListener("click", handlers);
     };
   }, []);
+
+  const handleClickRemove = () => {
+    localStorage.removeItem("firstname");
+    localStorage.removeItem("lastname");
+    window.location.reload();
+  };
   return (
     <div className="icons-container" ref={menuRef}>
       <div className="user-container">
         <img src="user.png" alt="" onClick={() => setOpen(!open)} />
+        <span
+          className="inOrOut"
+          style={
+            lastname && firstname
+              ? { background: "green" }
+              : { background: "red" }
+          }
+          onClick={handleClickRemove}
+        ></span>
         <span>
           {lastname && firstname
             ? `${t("title.hello")} ${lastname} ${firstname}`
