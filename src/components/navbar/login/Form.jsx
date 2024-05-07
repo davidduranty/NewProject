@@ -6,7 +6,6 @@ import { useApi } from "../../../data/Context";
 const Form = () => {
   const [cgv, setCgv] = useState(false);
   const { handleCreateAccount } = useApi();
-  const [showNewClient, setShowNewClient] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [firstName, setFirstName] = useState(
@@ -52,7 +51,7 @@ const Form = () => {
             <li>Nouveau Client</li>
           </nav>
         </div>
-        <div className="container-client">
+        <div className="container-client" id="container-client">
           <nav>
             <li>Déjà Client</li>
           </nav>
@@ -109,7 +108,11 @@ const Form = () => {
           >
             CREER MON COMPTE
           </button>
-          {loading && <div>chargement</div>}
+          {loading && (
+            <div className="load">
+              <h1>CHARGEMENT</h1>
+            </div>
+          )}
           <p>Les champs marqués d une * sont obligatoires.</p>
         </div>
 
@@ -125,7 +128,6 @@ const Form = () => {
           </button>
         </div>
       </div>
-      {showNewClient && <Form />}
     </div>
   );
 };

@@ -130,6 +130,18 @@
         transition: 0.5s ease-in-out;
         border-radius: 5px;
       }
+      .load {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: xx-large;
+        background: teal;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+      }
       p {
         text-align: center;
       }
@@ -225,6 +237,32 @@ button:hover {
       border-bottom: 3px solid black;
       transition: 0.2s ease-in-out;
       cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-login {
+    .lien-home {
+      margin: none;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      #form {
+        width: 100%;
+        border: none;
+      }
+    }
+    .new-old {
+      .container-client {
+        height: 100px;
+        nav {
+          height: 50px;
+        }
+      }
+      #container-client {
+        display: none;
+      }
     }
   }
 }
