@@ -33,103 +33,6 @@
 .container-breakfast {
   display: flex;
   max-width: 80%;
-  max-height: 600px;
-  margin: 0 12%;
-
-  img {
-    width: 100%;
-    max-height: 700px;
-    border-radius: 10px;
-  }
-
-  .tasse-map {
-    display: flex;
-    gap: 20px;
-    padding-left: 20px;
-
-    .ul-settings {
-      position: relative;
-      width: 100%;
-      max-width: 350px;
-      min-height: 400px;
-      border: 1px solid rgba(221, 217, 217, 0.549);
-      border-radius: 10px;
-      box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
-      cursor: pointer;
-      padding-left: 5px;
-      margin-bottom: 20px;
-      display: flex;
-
-      img {
-        width: 100%;
-      }
-
-      h1 {
-        width: 100%;
-        height: 45px;
-        font-family: "font1";
-        padding-top: 5px;
-        font-size: 1.1rem;
-        min-height: 40px;
-        margin-bottom: 10px;
-      }
-
-      h2 {
-        margin-top: 30px;
-        min-height: 10px;
-        font-size: 1rem;
-        height: 30px;
-      }
-
-      p {
-        padding-top: 10px;
-        font-family: "font2";
-      }
-      .image-tasse-frame {
-        background: black;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 580px;
-        border-radius: 10px;
-        @include center;
-        flex-direction: column;
-
-        .title-tasse-iframe-container {
-          background: black;
-          position: absolute;
-          top: 40%;
-          width: 90%;
-          left: 5%;
-          .h1-tasse-iframe {
-            color: white;
-            text-align: center;
-          }
-        }
-        .text-tasse-frame {
-          text-align: center;
-          margin: 15px;
-          color: #fff;
-          font-size: 0.6rem;
-          height: 115px;
-        }
-        .btn-tasse-img {
-          margin: 12px 0;
-          padding: 10px 30px;
-          transition-delay: 2.5 ease-in-out;
-          &:hover {
-            background: rgb(197, 72, 72);
-            color: #fff;
-            transition-delay: 2.5 ease-in-out;
-          }
-        }
-      }
-    }
-  }
-}
-.container-breakfast {
-  display: flex;
-  max-width: 80%;
   max-height: 700px;
   margin: 0 12%;
 
@@ -156,8 +59,8 @@
       margin-bottom: 20px;
 
       img {
-        max-width: 100%;
-        min-height: 400px;
+        width: 100%;
+        height: 400px;
       }
 
       h1 {
@@ -361,6 +264,28 @@
           background: rgb(197, 72, 72);
           color: #fff;
           transition-delay: 2.5 ease-in-out;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-breakfast {
+    flex-direction: column;
+    height: 1000px;
+    img {
+      width: 100%;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+    }
+    .tasse-map {
+      max-height: 300px;
+
+      .ul-settings {
+        height: 300px;
+        h1 {
+          padding-bottom: 50px;
         }
       }
     }

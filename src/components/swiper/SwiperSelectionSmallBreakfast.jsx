@@ -48,7 +48,7 @@ function SwiperSelectionSmallBreakfast() {
       </div>
       <div className="selection-map">
         {getDej.slice(0, rangeValue).map((dej) => (
-          <CardSelectionSmallBreafast dej={dej} key={dej} />
+          <CardSelectionSmallBreafast dej={dej} key={dej.id} />
         ))}
         <div className="input-range">
           <label htmlFor="">{rangeValue}</label>
