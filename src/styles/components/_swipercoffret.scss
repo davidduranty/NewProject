@@ -107,3 +107,21 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .caroussel-container-box {
+    .caroussel-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card-container-box {
+        .li-box {
+          width: 200px;
+          height: 400px;
+          .h1-box {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

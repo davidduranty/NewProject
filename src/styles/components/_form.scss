@@ -240,3 +240,29 @@ button:hover {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .container-login {
+    .lien-home {
+      margin: none;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      #form {
+        width: 100%;
+        border: none;
+      }
+    }
+    .new-old {
+      .container-client {
+        height: 100px;
+        nav {
+          height: 50px;
+        }
+      }
+      #container-client {
+        display: none;
+      }
+    }
+  }
+}
