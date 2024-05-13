@@ -8,6 +8,7 @@ import Accessoires from "../liens-navbar/Accessoires";
 import FamillyTeas from "../liens-navbar/FamillyTeas";
 import Language from "./Language";
 import { useTranslation } from "react-i18next";
+import Burger from "./Burger";
 
 function Navigation() {
   const { t } = useTranslation();
@@ -35,6 +36,7 @@ function Navigation() {
   }, []);
   return (
     <div className="navigation-container">
+      <Burger />
       <Logo />
       <ul className="ul" ref={menuRef}>
         <li className="li" onClick={() => setShowInfusion(!showInfusion)}>
