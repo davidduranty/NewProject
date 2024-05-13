@@ -55,7 +55,6 @@
     @include center;
     cursor: pointer;
     margin: 0 0 0 20px;
-    border: 1px solid red;
 
     img {
       width: 30px;
@@ -75,7 +74,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid teal;
     .user-container {
       display: flex;
       flex-direction: column;
@@ -96,7 +94,6 @@
         }
       }
       .inOrOut {
-        border: 1px solid teal;
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -124,7 +121,6 @@
   .language-container {
     @include center;
     width: 10%;
-    border: 1px solid blue;
 
     .btn-en,
     .btn-fr {
