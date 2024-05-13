@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  .burger-container {
+    border: 1px solid transparent;
+    width: 60px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    margin-right: 240px;
+    animation: burger 2s ease-in-out;
+
+    .first-content,
+    .second-content,
+    .third-content {
+      border: 2px solid black;
+      height: 1px;
+      width: 30px;
+    }
+    .first-content.active {
+      transform: rotate(45deg);
+    }
+    .second-content:hover {
+      display: none;
+    }
+    .third-content:hover {
+      transform: rotate(-45deg);
+    }
+  }
+}
