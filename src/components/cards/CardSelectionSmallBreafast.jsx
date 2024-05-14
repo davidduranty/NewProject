@@ -80,6 +80,10 @@ function CardSelectionSmallBreafast({ dej }) {
           {count > 0 && (
             <p
               onClick={() => {
+                if (!firstname) {
+                  alert("Vous devez avoir un compte actif");
+                  return;
+                }
                 addBag(
                   isFrench ? dej.name[0] : dej.name[1],
                   dej.img,

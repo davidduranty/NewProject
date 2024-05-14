@@ -88,6 +88,10 @@ function CardSachet({ sachet }) {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? sachet.name[0] : sachet.name[1],
                     sachet.img,

@@ -98,6 +98,10 @@ function CardCoffret({ coffret }) {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? coffret.name[0] : coffret.name[1],
                     coffret.img,

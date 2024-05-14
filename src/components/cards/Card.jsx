@@ -6,8 +6,13 @@ import i18n from "../../I18n";
 const Card = ({ tea }) => {
   const isFrench = i18n.language === "fr";
 
-  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    addToBag,
+    incrementBagCount,
+    firstname,
+  } = useApi();
   const [count, setCount] = useState(0);
   const [showImg, setShowImg] = useState(false);
 
@@ -53,6 +58,10 @@ const Card = ({ tea }) => {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? tea.name[0] : tea.name[1],
                     tea.img,
