@@ -27,6 +27,8 @@ function Icons() {
   const handleClickRemove = () => {
     localStorage.removeItem("firstname");
     localStorage.removeItem("lastname");
+    localStorage.removeItem("bag");
+    localStorage.removeItem("favorites");
     window.location.reload();
   };
   return (
