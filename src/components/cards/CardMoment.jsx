@@ -6,8 +6,13 @@ import i18n from "../../I18n";
 const CardMoment = ({ moment }) => {
   const isFrench = i18n.language === "fr";
 
-  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    addToBag,
+    incrementBagCount,
+    firstname,
+  } = useApi();
   const [count, setCount] = useState(0);
   const [showImg, setShowImg] = useState(false);
 
@@ -53,6 +58,10 @@ const CardMoment = ({ moment }) => {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? moment.name[0] : moment.name[1],
                     moment.img,

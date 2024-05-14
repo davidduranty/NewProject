@@ -10,7 +10,7 @@ const CardBreakfast = ({ breakfast }) => {
   function addBag(name, img, price) {
     addToBag({ name, img, price });
   }
-  const { handleClickLess, handleClickMore } = useApi();
+  const { handleClickLess, handleClickMore, firstname } = useApi();
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
@@ -45,6 +45,10 @@ const CardBreakfast = ({ breakfast }) => {
             {count > 0 && (
               <p
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? breakfast.name[0] : breakfast.name[1],
                     breakfast.img,

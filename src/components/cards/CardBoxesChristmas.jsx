@@ -74,7 +74,7 @@ function CardBoxesChristmas({ box }) {
               className="btn-like-box"
               type="button"
               onClick={() => {
-                if (!firstname.length) {
+                if (!firstname) {
                   alert("Vous devez avoir un compte actif");
                   return;
                 }
@@ -87,6 +87,10 @@ function CardBoxesChristmas({ box }) {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(box.name[0], box.img, box.price * count);
                   incrementBagCount();
                 }}

@@ -76,7 +76,7 @@ function CardBoxX({ boxX }) {
               className="btn-like-box"
               type="button"
               onClick={() => {
-                if (!firstname.length) {
+                if (!firstname) {
                   alert("Vous devez avoir un compte actif");
                   return;
                 }
@@ -89,6 +89,10 @@ function CardBoxX({ boxX }) {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? boxX.name[0] : boxX.name[1],
                     boxX.img,

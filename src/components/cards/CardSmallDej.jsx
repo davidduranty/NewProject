@@ -6,8 +6,13 @@ import i18n from "../../I18n";
 const CardSmallDej = ({ tasse }) => {
   const isFrench = i18n.language === "fr";
 
-  const { handleClickLess, handleClickMore, addToBag, incrementBagCount } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    addToBag,
+    incrementBagCount,
+    firstname,
+  } = useApi();
   const [count, setCount] = useState(0);
   // const [showImage, setShowImage] = useState(true);
   const [showImg, setShowImg] = useState(false);
@@ -53,6 +58,10 @@ const CardSmallDej = ({ tasse }) => {
           {count > 0 && (
             <p
               onClick={() => {
+                if (!firstname) {
+                  alert("Vous devez avoir un compte actif");
+                  return;
+                }
                 addBag(
                   isFrench ? tasse.name[0] : tasse.name[1],
                   tasse.img,
