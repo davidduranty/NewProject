@@ -13,6 +13,7 @@ function CardSachet({ sachet }) {
     incrementBagCount,
     addToFavorites,
     incrementFavoriteCount,
+    firstname,
   } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
@@ -74,6 +75,10 @@ function CardSachet({ sachet }) {
               className="btn-like-box"
               type="button"
               onClick={() => {
+                if (!firstname.length) {
+                  alert("Vous devez avoir un compte actif");
+                  return;
+                }
                 onLike(sachet.name[0], sachet.img);
                 incrementFavoriteCount();
               }}
