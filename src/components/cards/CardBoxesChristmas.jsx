@@ -74,7 +74,7 @@ function CardBoxesChristmas({ box }) {
               className="btn-like-box"
               type="button"
               onClick={() => {
-                if (!firstname.length) {
+                if (!firstname) {
                   alert("Vous devez avoir un compte actif");
                   return;
                 }

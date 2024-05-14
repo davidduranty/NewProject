@@ -67,7 +67,7 @@ function CardSelectionSmallBreafast({ dej }) {
             className="btn-like"
             type="button"
             onClick={() => {
-              if (!firstname.length) {
+              if (!firstname) {
                 alert("Vous devez avoir un compte actif");
                 return;
               }
