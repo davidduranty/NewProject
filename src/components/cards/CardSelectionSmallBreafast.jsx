@@ -2,6 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
+import Modal from "../Modal";
 
 function CardSelectionSmallBreafast({ dej }) {
   const {
@@ -12,6 +13,8 @@ function CardSelectionSmallBreafast({ dej }) {
     addToBag,
     addToFavorites,
     firstname,
+    setShowModal,
+    showModal,
   } = useApi();
   const isFrench = i18n.language === "fr";
   const [showImg, setShowImg] = useState(false);
@@ -81,7 +84,7 @@ function CardSelectionSmallBreafast({ dej }) {
             <p
               onClick={() => {
                 if (!firstname) {
-                  alert("Vous devez avoir un compte actif");
+                  setShowModal(true);
                   return;
                 }
                 addBag(
@@ -121,6 +124,7 @@ function CardSelectionSmallBreafast({ dej }) {
           </button>
         </div>
       )}
+      {showModal && <Modal />}
     </div>
 
     // </ul>

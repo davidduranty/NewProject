@@ -19,7 +19,6 @@ function Home() {
     <>
       <ContentImg />
       <TeasBallsContainer />
-      <Modal />
       <SwiperBest />
       <SwiperSelectionMoment />
     </>

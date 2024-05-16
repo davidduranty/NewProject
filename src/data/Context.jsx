@@ -5,6 +5,7 @@ import axios from "axios";
 const ContextGeneral = createContext();
 
 export function ApiProvider({ children }) {
+  const [showModal, setShowModal] = useState(false);
   const [tea, setTea] = useState([]);
   const [getMoment, setGetMoment] = useState([]);
   const [getDej, setGetDej] = useState([]);
@@ -225,6 +226,8 @@ export function ApiProvider({ children }) {
         handleClickDeleteFavorite,
         uniqueFavorites,
         uniqueToBag,
+        showModal,
+        setShowModal,
       }}
     >
       {children}

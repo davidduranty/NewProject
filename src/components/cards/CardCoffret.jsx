@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
+import Modal from "../Modal";
 
 function CardCoffret({ coffret }) {
   const [apiCoffret, setApiCoffret] = useState([]);
@@ -14,6 +15,8 @@ function CardCoffret({ coffret }) {
     incrementFavoriteCount,
     addToFavorites,
     firstname,
+    setShowModal,
+    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
@@ -99,7 +102,7 @@ function CardCoffret({ coffret }) {
               <span
                 onClick={() => {
                   if (!firstname) {
-                    alert("Vous devez avoir un compte actif");
+                    setShowModal(true);
                     return;
                   }
                   addBag(
@@ -116,6 +119,7 @@ function CardCoffret({ coffret }) {
           </div>
         </div>
       </li>
+      {showModal && <Modal />}
     </div>
   );
 }

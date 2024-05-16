@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
+import Modal from "../Modal";
 
 function CardSachet({ sachet }) {
   const [apiBoites, setApiBoites] = useState([]);
@@ -14,6 +15,8 @@ function CardSachet({ sachet }) {
     addToFavorites,
     incrementFavoriteCount,
     firstname,
+    setShowModal,
+    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
@@ -76,7 +79,7 @@ function CardSachet({ sachet }) {
               type="button"
               onClick={() => {
                 if (!firstname) {
-                  alert("Vous devez avoir un compte actif");
+                  setShowModal(true);
                   return;
                 }
                 onLike(sachet.name[0], sachet.img);
@@ -89,7 +92,7 @@ function CardSachet({ sachet }) {
               <span
                 onClick={() => {
                   if (!firstname) {
-                    alert("Vous devez avoir un compte actif");
+                    setShowModal(true);
                     return;
                   }
                   addBag(
@@ -106,6 +109,7 @@ function CardSachet({ sachet }) {
           </div>
         </div>
       </li>
+      {showModal && <Modal />}
     </div>
   );
 }

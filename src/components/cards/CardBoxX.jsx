@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
+import Modal from "../Modal";
 
 function CardBoxX({ boxX }) {
   const [apiBoites, setApiBoites] = useState([]);
@@ -14,6 +15,8 @@ function CardBoxX({ boxX }) {
     addToFavorites,
     incrementFavoriteCount,
     firstname,
+    setShowModal,
+    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
@@ -90,7 +93,7 @@ function CardBoxX({ boxX }) {
               <span
                 onClick={() => {
                   if (!firstname) {
-                    alert("Vous devez avoir un compte actif");
+                    setShowModal(true);
                     return;
                   }
                   addBag(
@@ -107,6 +110,7 @@ function CardBoxX({ boxX }) {
           </div>
         </div>
       </li>
+      {showModal && <Modal />}
     </div>
   );
 }
