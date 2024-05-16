@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
 import i18n from "../../I18n";
+import Modal from "../Modal";
 
 const Card = ({ tea }) => {
   const isFrench = i18n.language === "fr";
@@ -12,6 +13,8 @@ const Card = ({ tea }) => {
     addToBag,
     incrementBagCount,
     firstname,
+    setShowModal,
+    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   const [showImg, setShowImg] = useState(false);
@@ -59,7 +62,7 @@ const Card = ({ tea }) => {
               <span
                 onClick={() => {
                   if (!firstname) {
-                    alert("Vous devez avoir un compte actif");
+                    setShowModal(true);
                     return;
                   }
                   addBag(
@@ -95,6 +98,7 @@ const Card = ({ tea }) => {
           </button>
         </div>
       )}
+      {showModal && <Modal />}
     </div>
   );
 };

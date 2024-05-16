@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
+import Modal from "../Modal";
 
 function CardBoxesChristmas({ box }) {
   const [apiBoites, setApiBoites] = useState([]);
@@ -15,6 +16,8 @@ function CardBoxesChristmas({ box }) {
     addToFavorites,
     incrementFavoriteCount,
     firstname,
+    setShowModal,
+    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
@@ -88,7 +91,7 @@ function CardBoxesChristmas({ box }) {
               <span
                 onClick={() => {
                   if (!firstname) {
-                    alert("Vous devez avoir un compte actif");
+                    setShowModal(true);
                     return;
                   }
                   addBag(box.name[0], box.img, box.price * count);
@@ -101,6 +104,7 @@ function CardBoxesChristmas({ box }) {
           </div>
         </div>
       </li>
+      {showModal && <Modal />}
     </div>
   );
 }

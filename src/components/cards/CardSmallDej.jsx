@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
+import Modal from "../Modal";
 
 const CardSmallDej = ({ tasse }) => {
   const isFrench = i18n.language === "fr";
@@ -12,6 +13,8 @@ const CardSmallDej = ({ tasse }) => {
     addToBag,
     incrementBagCount,
     firstname,
+    setShowModal,
+    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   // const [showImage, setShowImage] = useState(true);
@@ -59,7 +62,7 @@ const CardSmallDej = ({ tasse }) => {
             <p
               onClick={() => {
                 if (!firstname) {
-                  alert("Vous devez avoir un compte actif");
+                  setShowModal(true);
                   return;
                 }
                 addBag(
@@ -96,6 +99,7 @@ const CardSmallDej = ({ tasse }) => {
           </div>
         )}
       </ul>
+      {showModal && <Modal />}
     </>
   );
 };
