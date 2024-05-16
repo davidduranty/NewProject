@@ -11,6 +11,7 @@ function CardSelectionSmallBreafast({ dej }) {
     incrementFavoriteCount,
     addToBag,
     addToFavorites,
+    firstname,
   } = useApi();
   const isFrench = i18n.language === "fr";
   const [showImg, setShowImg] = useState(false);
@@ -66,6 +67,10 @@ function CardSelectionSmallBreafast({ dej }) {
             className="btn-like"
             type="button"
             onClick={() => {
+              if (!firstname) {
+                alert("Vous devez avoir un compte actif");
+                return;
+              }
               onLike(isFrench ? dej.name[0] : dej.name[1], dej.img);
               incrementFavoriteCount();
             }}
@@ -75,6 +80,10 @@ function CardSelectionSmallBreafast({ dej }) {
           {count > 0 && (
             <p
               onClick={() => {
+                if (!firstname) {
+                  alert("Vous devez avoir un compte actif");
+                  return;
+                }
                 addBag(
                   isFrench ? dej.name[0] : dej.name[1],
                   dej.img,

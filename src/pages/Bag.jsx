@@ -51,6 +51,7 @@ function Bag() {
                   </td>
                   <div className="btn-delete-bag">
                     <button
+                      id="btn-delete-bag"
                       type="button"
                       onClick={() => handleClickDelete(index)}
                     >

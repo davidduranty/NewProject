@@ -94,7 +94,6 @@
         }
       }
       .inOrOut {
-        border: 1px solid teal;
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -150,7 +149,8 @@
 @media screen and (max-width: 768px) {
   .navigation-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    padding-right: 20px;
     .ul {
       display: none;
     }
@@ -189,7 +189,8 @@
       }
     }
     .language-container {
-      width: 20%;
+      width: 10%;
+      margin: 0 10px;
 
       .btn-en,
       .btn-fr {

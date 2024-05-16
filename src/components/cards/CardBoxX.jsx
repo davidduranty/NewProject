@@ -13,6 +13,7 @@ function CardBoxX({ boxX }) {
     incrementBagCount,
     addToFavorites,
     incrementFavoriteCount,
+    firstname,
   } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
@@ -75,6 +76,10 @@ function CardBoxX({ boxX }) {
               className="btn-like-box"
               type="button"
               onClick={() => {
+                if (!firstname) {
+                  alert("Vous devez avoir un compte actif");
+                  return;
+                }
                 onLike(boxX.name[0], boxX.img);
                 incrementFavoriteCount();
               }}
@@ -84,6 +89,10 @@ function CardBoxX({ boxX }) {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? boxX.name[0] : boxX.name[1],
                     boxX.img,

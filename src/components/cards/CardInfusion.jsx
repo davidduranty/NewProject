@@ -5,8 +5,13 @@ import ModalInfusion from "../../modal/ModalInfusionImg";
 import i18n from "../../I18n";
 
 const CardInfusion = ({ infusion }) => {
-  const { handleClickLess, handleClickMore, incrementBagCount, addToBag } =
-    useApi();
+  const {
+    handleClickLess,
+    handleClickMore,
+    incrementBagCount,
+    addToBag,
+    firstname,
+  } = useApi();
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const isFrench = i18n.language === "fr";
@@ -66,6 +71,10 @@ const CardInfusion = ({ infusion }) => {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? infusion.name[0] : infusion.name[1],
                     infusion.img,

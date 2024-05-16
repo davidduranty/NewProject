@@ -13,6 +13,7 @@ function CardCoffret({ coffret }) {
     incrementBagCount,
     incrementFavoriteCount,
     addToFavorites,
+    firstname,
   } = useApi();
   const [count, setCount] = useState(0);
   const isFrench = i18n.language === "fr";
@@ -84,6 +85,10 @@ function CardCoffret({ coffret }) {
               className="btn-like-box"
               type="button"
               onClick={() => {
+                if (!firstname) {
+                  alert("Vous devez avoir un compte actif");
+                  return;
+                }
                 onLike(coffret.name[0], coffret.img);
                 incrementFavoriteCount();
               }}
@@ -93,6 +98,10 @@ function CardCoffret({ coffret }) {
             {count > 0 && (
               <span
                 onClick={() => {
+                  if (!firstname) {
+                    alert("Vous devez avoir un compte actif");
+                    return;
+                  }
                   addBag(
                     isFrench ? coffret.name[0] : coffret.name[1],
                     coffret.img,
