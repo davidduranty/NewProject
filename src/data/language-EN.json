@@ -34,7 +34,9 @@
     "tableauName": "Name",
     "tableauPrice": "Price",
     "empty": "It's empty",
-    "hello": "Hi"
+    "hello": "Hi",
+    "delete": "Delete",
+    "pull": "Pull"
   },
 
   "footer": {

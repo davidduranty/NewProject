@@ -62,6 +62,7 @@
         cursor: pointer;
         color: white;
         transition: 0.5s ease-in-out;
+        min-width: 90px;
 
         &:hover {
           transition: 0.5s ease-in-out;

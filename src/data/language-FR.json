@@ -34,7 +34,9 @@
     "tableauName": "Nom",
     "tableauPrice": "Prix",
     "empty": "C'est vide",
-    "hello": "Bonjour"
+    "hello": "Bonjour",
+    "delete": "Supprimer",
+    "pull": "Retirer"
   },
 
   "footer": {

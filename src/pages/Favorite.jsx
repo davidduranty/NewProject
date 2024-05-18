@@ -31,7 +31,7 @@ function Favorite() {
                   type="button"
                   onClick={() => handleClickDeleteFavorite(index)}
                 >
-                  Retirer
+                  {t("title.pull")}
                 </button>
               </div>
             </div>
