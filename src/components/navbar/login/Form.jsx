@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useApi } from "../../../data/Context";
 
 const Form = () => {
+  const { t } = useTranslation();
   const [cgv, setCgv] = useState(false);
   const { handleCreateAccount } = useApi();
   const [loading, setLoading] = useState(false);
@@ -60,8 +61,8 @@ const Form = () => {
       <div className="main">
         <div className="form" id="form">
           <div className="mrs-mr">
-            <p>Madame</p>
-            <p>Monsieur</p>
+            <p>{t("title.woman")}</p>
+            <p>{t("title.men")}</p>
           </div>
           <div className="form-input">
             <input
