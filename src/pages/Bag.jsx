@@ -55,7 +55,7 @@ function Bag() {
                       type="button"
                       onClick={() => handleClickDelete(index)}
                     >
-                      Supprimer
+                      {t("title.delete")}
                     </button>
                   </div>
                 </tr>
