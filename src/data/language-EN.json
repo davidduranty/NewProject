@@ -36,7 +36,10 @@
     "empty": "It's empty",
     "hello": "Hi",
     "delete": "Delete",
-    "pull": "Pull"
+    "pull": "Pull",
+    "woman": "Madame",
+    "men": "Monsieur",
+    "register": "You are not registered!!"
   },
 
   "footer": {
