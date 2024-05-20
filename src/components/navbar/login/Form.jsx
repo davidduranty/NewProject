@@ -7,6 +7,7 @@ const Form = () => {
   const { t } = useTranslation();
   const [errorFirstName, setErrorFirstName] = useState();
   const [errorLastName, setErrorLastName] = useState();
+  const [errorEmail, setErrorEmail] = useState();
   const [cgv, setCgv] = useState(false);
   const { handleCreateAccount } = useApi();
   const [loading, setLoading] = useState(false);
@@ -17,6 +18,7 @@ const Form = () => {
   const [lastName, setLastName] = useState(
     localStorage.getItem("lastname") || ""
   );
+  const [email, setEmail] = useState(localStorage.getItem("email") || "");
 
   const closePopup = () => {
     setShowPopup(false);
@@ -64,6 +66,16 @@ const Form = () => {
       setErrorLastName("");
     }
   };
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+    const regex = /^[a-zA-Z\s]*$/;
+    if (!regex.test(value)) {
+      setErrorEmail("Ne doit contenir que des lettres ");
+    } else {
+      setErrorEmail("");
+    }
+  };
 
   return (
     <div className={`container-login ${showPopup ? "show" : "hide"}`}>
@@ -107,8 +119,14 @@ const Form = () => {
               onChange={handleLastNameChange}
             />
             <span>{errorLastName}</span>
-            <input type="email" placeholder="Email *" autoComplete="none" />
-            <span></span>
+            <input
+              type="email"
+              placeholder="Email *"
+              autoComplete="none"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <span>{errorEmail}</span>
             <input type="password" placeholder="Mot de passe *" />
             <span></span>
           </div>
