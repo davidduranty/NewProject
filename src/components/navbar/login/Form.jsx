@@ -5,6 +5,8 @@ import { useApi } from "../../../data/Context";
 
 const Form = () => {
   const { t } = useTranslation();
+  const [errorFirstName, setErrorFirstName] = useState();
+  const [errorLastName, setErrorLastName] = useState();
   const [cgv, setCgv] = useState(false);
   const { handleCreateAccount } = useApi();
   const [loading, setLoading] = useState(false);
@@ -23,6 +25,11 @@ const Form = () => {
     setCgv(true);
   };
   const handleClickLogin = () => {
+    const regex = /^[a-zA-Z\s]*$/;
+    if (!regex.test(firstName && lastName)) {
+      alert("Ne doit contenir que des lettres et des espaces");
+      return;
+    }
     setLoading(true); // Début du chargement
     setTimeout(() => {
       handleCreateAccount(firstName, lastName);
@@ -36,6 +43,27 @@ const Form = () => {
   useEffect(() => {
     localStorage.setItem("lastname", lastName);
   }, [lastName]);
+
+  const handleFirstNameChange = (e) => {
+    const value = e.target.value;
+    setFirstName(value);
+    const regex = /^[a-zA-Z\s]*$/;
+    if (!regex.test(value)) {
+      setErrorFirstName("Ne doit contenir que des lettres et des espaces");
+    } else {
+      setErrorFirstName("");
+    }
+  };
+  const handleLastNameChange = (e) => {
+    const value = e.target.value;
+    setLastName(value);
+    const regex = /^[a-zA-Z\s]*$/;
+    if (!regex.test(value)) {
+      setErrorLastName("Ne doit contenir que des lettres et des espaces");
+    } else {
+      setErrorLastName("");
+    }
+  };
 
   return (
     <div className={`container-login ${showPopup ? "show" : "hide"}`}>
@@ -69,16 +97,16 @@ const Form = () => {
               type="text"
               placeholder="Prénom *"
               value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
+              onChange={handleFirstNameChange}
             />
-            <span></span>
+            <span>{errorFirstName}</span>
             <input
               type="text"
               placeholder="Nom *"
               value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              onChange={handleLastNameChange}
             />
-            <span></span>
+            <span>{errorLastName}</span>
             <input type="email" placeholder="Email *" autoComplete="none" />
             <span></span>
             <input type="password" placeholder="Mot de passe *" />
