@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
-import ModalInfusion from "../../modal/ModalInfusionImg";
 import i18n from "../../I18n";
-import Modal from "../Modal";
 
 const CardInfusion = ({ infusion }) => {
   const {
@@ -13,7 +11,6 @@ const CardInfusion = ({ infusion }) => {
     addToBag,
     firstname,
     setShowModal,
-    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
@@ -115,7 +112,6 @@ const CardInfusion = ({ infusion }) => {
           </button>
         </div>
       )}
-      {showModal && <Modal />}
     </div>
   );
 };

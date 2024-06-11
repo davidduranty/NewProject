@@ -2,9 +2,10 @@ import Card from "../cards/Card";
 import { useApi } from "../../data/Context";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslation } from "react-i18next";
+import Modal from "../Modal";
 
 const SwiperBest = () => {
-  const { tea, getDataFilter } = useApi();
+  const { tea, getDataFilter, showModal } = useApi();
   const { t } = useTranslation();
 
   return (
@@ -22,17 +23,14 @@ const SwiperBest = () => {
           </div>
         </div>
       </div>
-      <div className="caroussel-container">
-        <ul className="caroussel">
-          <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
-            {tea.map((tea) => (
-              <SwiperSlide>
-                <Card tea={tea} key={tea.id} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </ul>
-      </div>
+      <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
+        {tea.map((tea) => (
+          <SwiperSlide>
+            <Card tea={tea} key={tea.id} />
+          </SwiperSlide>
+        ))}
+        {showModal && <Modal />}
+      </Swiper>
     </>
   );
 };

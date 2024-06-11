@@ -6,9 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 
 import CardBreakfast from "../cards/CardBreakfast";
+import Modal from "../Modal";
+import { useApi } from "../../data/Context";
 const SwiperBreakfast = () => {
   const { t } = useTranslation();
-
+  const { showModal } = useApi();
   const [shop, setShop] = useState([]);
 
   useEffect(() => {
@@ -27,6 +29,7 @@ const SwiperBreakfast = () => {
                 <CardBreakfast breakfast={breakfast} key={breakfast.id} />
               </SwiperSlide>
             ))}
+            {showModal && <Modal />}
           </Swiper>
         </ul>
       </div>
