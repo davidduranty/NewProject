@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
 import i18n from "../../I18n";
-import Modal from "../Modal";
 
 const CardMoment = ({ moment }) => {
   const isFrench = i18n.language === "fr";
@@ -14,7 +13,6 @@ const CardMoment = ({ moment }) => {
     incrementBagCount,
     firstname,
     setShowModal,
-    showModal,
   } = useApi();
   const [count, setCount] = useState(0);
   const [showImg, setShowImg] = useState(false);
@@ -104,7 +102,6 @@ const CardMoment = ({ moment }) => {
           </div>
         )}
       </div>
-      {showModal && <Modal />}
     </>
   );
 };

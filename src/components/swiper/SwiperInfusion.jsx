@@ -1,9 +1,10 @@
 import { useApi } from "../../data/Context";
+import Modal from "../Modal";
 import CardInfusion from "../cards/CardInfusion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 function SwiperInfusion() {
-  const { getInfusion } = useApi();
+  const { getInfusion, showModal } = useApi();
   return (
     <>
       <div className="caroussel-container">
@@ -14,6 +15,7 @@ function SwiperInfusion() {
                 <CardInfusion infusion={infusion} key={infusion.id} />
               </SwiperSlide>
             ))}
+            {showModal && <Modal />}
           </Swiper>
         </ul>
       </div>
