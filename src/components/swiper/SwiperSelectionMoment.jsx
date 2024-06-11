@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslation } from "react-i18next";
 
 import { useApi } from "../../data/Context";
+import Modal from "../Modal";
 
 const SwiperSelectionMoment = () => {
-  const { getMoment, getDataFilterMoment } = useApi();
+  const { getMoment, getDataFilterMoment, showModal } = useApi();
   const { t } = useTranslation();
 
   return (
@@ -32,6 +33,7 @@ const SwiperSelectionMoment = () => {
                 <CardMoment moment={moment} key={index} />
               </SwiperSlide>
             ))}
+            {showModal && <Modal />}
           </Swiper>
         </ul>
       </div>
