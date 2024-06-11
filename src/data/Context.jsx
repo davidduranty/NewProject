@@ -13,8 +13,6 @@ export function ApiProvider({ children }) {
   const [count, setCount] = useState(0);
   const [uniqueFavorites, setUniqueFavorites] = useState([]);
   const [uniqueToBag, setUniqueToBag] = useState([]);
-  const [counterBag, setCounterBag] = useState(0);
-  const [favoriteCount, setFavoriteCount] = useState(0);
   const [open, setOpen] = useState(false);
   const [firstname, setFirstName] = useState(
     localStorage.getItem("firstname") || ""
@@ -23,7 +21,6 @@ export function ApiProvider({ children }) {
     localStorage.getItem("lastname") || ""
   );
 
-  // const [favorites, setFavorites] = useState(new Map());
   const [getAddBag, setGetAddBag] = useState(
     JSON.parse(localStorage.getItem("bag")) || []
   );
@@ -94,6 +91,9 @@ export function ApiProvider({ children }) {
       return false;
     });
     setUniqueToBag(filteredAddBag);
+    getData();
+    getDataSelect();
+    getSelectionTea();
   }, [favorites, getAddBag]);
   const getData = async () => {
     try {
@@ -106,18 +106,31 @@ export function ApiProvider({ children }) {
   };
 
   const getDataFilter = async (word) => {
-    await axios.get("http://localhost:5172/thes/").then((res) => {
-      setTea(
-        res.data.filter((el) =>
-          (el.name[0] || el.name[1]).toLowerCase().includes(word.toLowerCase())
-        )
+    try {
+      const res = await axios.get("http://localhost:5172/thes/");
+      const filteredData = res.data.filter((el) =>
+        (el.name[0] || el.name[1]).toLowerCase().includes(word.toLowerCase())
       );
-    });
+
+      if (filteredData.length > 0) {
+        setTea(filteredData);
+      } else {
+        console.log("Le mot n'est pas dans la liste.");
+      }
+    } catch (error) {
+      console.error("Erreur lors de la récupération des données:", error);
+    }
   };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // const getDataFilter = async (word) => {
+  //   await axios.get("http://localhost:5172/thes/").then((res) => {
+  //     setTea(
+  //       res.data.filter((el) =>
+  //         (el.name[0] || el.name[1]).toLowerCase().includes(word.toLowerCase())
+  //       )
+  //     );
+  //   });
+  // };
 
   const getDataSelect = () => {
     axios
@@ -136,9 +149,6 @@ export function ApiProvider({ children }) {
         )
       );
   };
-  useEffect(() => {
-    getDataSelect();
-  }, []);
 
   const getSelectionTea = () => {
     axios
@@ -180,9 +190,6 @@ export function ApiProvider({ children }) {
         document.getElementById("my-input").value = "";
       });
   };
-  useEffect(() => {
-    getSelectionTea();
-  }, []);
 
   function handleClickLess() {
     if (count > 0) {
@@ -215,8 +222,6 @@ export function ApiProvider({ children }) {
         addToFavorites,
         addToBag,
         getAddBag,
-        counterBag,
-        favoriteCount,
         open,
         setOpen,
         handleCreateAccount,
