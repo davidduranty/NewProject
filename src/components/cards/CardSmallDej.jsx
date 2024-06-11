@@ -41,7 +41,7 @@ const CardSmallDej = ({ tasse }) => {
 
   return (
     <div className="tasse-map">
-      <ul className="ul-settings">
+      <li className="ul-settings">
         <img className="img-tasse" src={tasse.img} alt="Tasse Doman" />
         <h1>{isFrench ? tasse.name[0] : tasse.name[1]}</h1>
         <h2>{isFrench ? tasse.content[0] : tasse.content[1]}</h2>
@@ -98,7 +98,7 @@ const CardSmallDej = ({ tasse }) => {
             </button>
           </div>
         )}
-      </ul>
+      </li>
       {showModal && <Modal />}
     </div>
   );
