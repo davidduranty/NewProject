@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
 import Modal from "../Modal";
+import { useTranslation } from "react-i18next";
 
 function CardSelectionSmallBreafast({ dej }) {
   const {
@@ -17,6 +18,7 @@ function CardSelectionSmallBreafast({ dej }) {
     showModal,
   } = useApi();
   const isFrench = i18n.language === "fr";
+  const { t } = useTranslation();
   const [showImg, setShowImg] = useState(false);
 
   const [count, setCount] = useState(0);
@@ -120,7 +122,7 @@ function CardSelectionSmallBreafast({ dej }) {
             className="btn-selection-img"
             onClick={() => setShowImg(false)}
           >
-            Fermer
+            {t("title.closeCard")}
           </button>
         </div>
       )}

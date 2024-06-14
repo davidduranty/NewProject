@@ -506,11 +506,16 @@
         "Coffrets cadeaux | Coffrets thés Sachets",
         "Gift boxes | Tea boxes Sachets"
       ],
+      "text": [
+        "Ce coffret en bois noir DAMMANN Frères est garni de 48 sachets Cristal® individuellement enveloppés. Il contient 6 sachets de chacun des 8 thés suivants :BREAKFAST - Mélange classique de thés noirs CEYLAN O.P. - Thé noir du Sri Lanka SENCHA FUKUYU - Thé vert du Japon THÉ VERT A LA MENTHE - Thé vert aromatisé Thé vert, feuilles de menthe douce et menthe poivrée, arôme naturel menthe",
+        "This DAMMANN Frères black wooden box is filled with 48 individually wrapped Cristal® sachets. It contains 6 bags of each of the following 8 teas:BREAKFAST - Classic blend of black teas CEYLAN O.P. - Black tea from Sri Lanka SENCHA FUKUYU - Green tea from Japan MINT GREEN TEA - Flavored green tea Green tea, sweet mint leaves and peppermint, natural mint flavor"
+      ],
       "price": 86.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
       "id": 1
     },
+
     {
       "img": "theiere.webp",
       "name": [
@@ -518,6 +523,10 @@
         "PARCELAIN TEAPOT - DOMAN FRERES TEAPOT 0.6L"
       ],
       "content": ["Théières | Porcelaine", "Teapots | Porcelain"],
+      "text": [
+        "Théière porcelaine DAMMANN Frères sans filtre. Contenance : 50 cl. Dimensions : L19cm / H12,5cm / P11cm",
+        "DAMMANN Frères porcelain teapot without filter. Capacity: 50 cl. Dimensions: L19cm / H12.5cm / D11cm"
+      ],
       "price": 21.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -529,6 +538,10 @@
         "TASSE A THÉ ET SOUS-TASSE DOMAN FRERES",
         "DOMAN BROTHERS TEA CUP AND SAUCER"
       ],
+      "text": [
+        "Tasse et sous-tasse Dammann Frères. Une tasse en porcelaine blanche assortie à une soucoupe. Contenance: 15 cl - Dimensions : Ø 9/5 cm",
+        "Dammann Frères cup and saucer. A white porcelain cup matched with a saucer. Capacity: 15 cl - Dimensions: Ø 9/5 cm"
+      ],
       "content": ["Bols/Tasses/Autres | Tasses", "Bowls/Cups/Others | Cups"],
       "price": 11.0,
       "icon": "👜",
@@ -539,6 +552,10 @@
       "img": "supportSachet.webp",
       "name": ["COUPELLE REPOSE-SACHET", "BAG REST CUP"],
       "content": ["ACCESSOIRES", "ACCESSORIES"],
+      "text": [
+        "Coupelle repose-sachet en porcelaine blanche avec l'inscription 'DAMMANN Frères' à l'intérieur. Pratique pour déposer votre sachet de thé ou d'infusion après avoir été infusé. Il servira également à compléter votre service à thé en porcelaine. Ø/H: 8 / 2,5 cm",
+        "White porcelain sachet rest cup with the inscription 'DAMMANN Brother' inside. Practical for storing your tea or infusion bag after it has been infused. It will also be used to complete your porcelain tea service. Ø/H: 8 / 2.5 cm"
+      ],
       "price": 5.0,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -551,6 +568,10 @@
         "PERFORATED STAINLESS STEEL TEA BALL - DIAM 4 CM"
       ],
       "content": ["Pour préparer votre thé", "To prepare your tea"],
+      "text": [
+        "Boule à thé ronde inox perforé avec chainette. Dimensions: 6,5 cm",
+        "Round perforated stainless steel tea ball with chain."
+      ],
       "price": 5.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
@@ -560,6 +581,10 @@
       "img": "cuillere.webp",
       "name": ["CUILLERE-MESURE INOX", " STAINLESS STEEL MEASURING SPOON"],
       "content": ["Pour préparer votre thé", "To prepare your tea"],
+      "text": [
+        "Cette cuillère doseur en acier inoxydable avec l'inscription 'DAMMANN Frères' sur son manche, permet de mesurer la quantité de feuilles de thé pour la préparation de son infusion. Une cuillère remplie correspond à une tasse de thé, soit environ 2g. H/l: 9/4,5 cm",
+        "This stainless steel measuring spoon with the inscription 'DAMMANN Brother' on its handle allows you to measure the quantity of tea leaves for the preparation of your infusion. A filled spoon corresponds to a cup of tea, or approximately 2g. H/W: 9/4.5 cm"
+      ],
       "price": 6.5,
       "icon": "👜",
       "view": "👁️‍🗨️",
