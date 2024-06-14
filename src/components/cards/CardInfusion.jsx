@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
 import i18n from "../../I18n";
+import { useTranslation } from "react-i18next";
 
 const CardInfusion = ({ infusion }) => {
   const {
@@ -15,6 +16,8 @@ const CardInfusion = ({ infusion }) => {
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const isFrench = i18n.language === "fr";
+  const { t } = useTranslation();
+
   const [showImg, setShowImg] = useState(false);
 
   function addBag(name, img, price) {
@@ -108,7 +111,7 @@ const CardInfusion = ({ infusion }) => {
             <p>{isFrench ? infusion.text[0] : infusion.text[1]}</p>
           </div>
           <button className="btn-img" onClick={() => setShowImg(false)}>
-            Fermer
+            {t("title.closeCard")}
           </button>
         </div>
       )}

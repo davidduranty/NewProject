@@ -2,9 +2,14 @@ import PropTypes from "prop-types";
 import { useApi } from "../../data/Context";
 import { useState } from "react";
 import i18n from "../../I18n";
+import { useTranslation } from "react-i18next";
 
 const CardBreakfast = ({ breakfast }) => {
   const isFrench = i18n.language === "fr";
+  const { t } = useTranslation();
+
+  const [showImg, setShowImg] = useState(false);
+
   const { addToBag, incrementBagCount, setShowModal } = useApi();
 
   function addBag(name, img, price) {
@@ -23,6 +28,10 @@ const CardBreakfast = ({ breakfast }) => {
       setCount(count - 1);
       handleClickLess();
     }
+  };
+
+  const viewImage = () => {
+    setShowImg(true);
   };
   return (
     <div className="card-container">
@@ -60,26 +69,30 @@ const CardBreakfast = ({ breakfast }) => {
                 {breakfast.icon}
               </p>
             )}
-            <p>{breakfast.view}</p>
+            <p onClick={viewImage}>{breakfast.view}</p>
           </div>
         </div>
       </li>
-      {/* {showImg && (
+      {showImg && (
         <div className="image-frame">
           <div className="title-iframe-container">
             <h1 className="h1-iframe">
-              {isFrench ? tea.name[0] : tea.name[1]}
+              {isFrench ? breakfast.name[0] : breakfast.name[1]}
             </h1>
           </div>
-          <img className="img-box" src={tea.img} alt={"image" + tea.name} />
+          <img
+            className="img-box"
+            src={breakfast.img}
+            alt={"image" + breakfast.name}
+          />
           <div className="text-frame">
-            <p>{isFrench ? tea.text[0] : tea.text[1]}</p>
+            <p>{isFrench ? breakfast.text[0] : breakfast.text[1]}</p>
           </div>
           <button className="btn-img" onClick={() => setShowImg(false)}>
-            Fermer
+            {t("title.closeCard")}
           </button>
         </div>
-      )} */}
+      )}
     </div>
   );
 };

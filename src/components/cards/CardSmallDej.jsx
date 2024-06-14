@@ -3,9 +3,11 @@ import { useState } from "react";
 import { useApi } from "../../data/Context";
 import i18n from "../../I18n";
 import Modal from "../Modal";
+import { useTranslation } from "react-i18next";
 
 const CardSmallDej = ({ tasse }) => {
   const isFrench = i18n.language === "fr";
+  const { t } = useTranslation();
 
   const {
     handleClickLess,
@@ -94,7 +96,7 @@ const CardSmallDej = ({ tasse }) => {
               <p>{isFrench ? tasse.text[0] : tasse.text[1]}</p>
             </div>
             <button className="btn-tasse-img" onClick={() => setShowImg(false)}>
-              Fermer
+              {t("title.closeCard")}
             </button>
           </div>
         )}

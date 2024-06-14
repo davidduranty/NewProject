@@ -39,7 +39,8 @@
     "pull": "Retirer",
     "woman": "Madame",
     "men": "Monsieur",
-    "register": "Vous n'êtes pas enrengistrés!!"
+    "register": "Vous n'êtes pas enrengistrés!!",
+    "closeCard": "Fermer"
   },
 
   "footer": {
