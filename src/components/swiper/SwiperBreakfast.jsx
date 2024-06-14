@@ -24,9 +24,9 @@ const SwiperBreakfast = () => {
       <div className="caroussel-container">
         <ul className="caroussel">
           <Swiper id="swiperInfusion" spaceBetween={10} slidesPerView={3}>
-            {shop.map((breakfast) => (
+            {shop.map((breakfast, index) => (
               <SwiperSlide>
-                <CardBreakfast breakfast={breakfast} key={breakfast.id} />
+                <CardBreakfast breakfast={breakfast} key={index} />
               </SwiperSlide>
             ))}
             {showModal && <Modal />}

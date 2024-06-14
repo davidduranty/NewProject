@@ -39,7 +39,8 @@
     "pull": "Pull",
     "woman": "Madame",
     "men": "Monsieur",
-    "register": "You are not registered!!"
+    "register": "You are not registered!!",
+    "closeCard": "Close"
   },
 
   "footer": {
